@@ -76,7 +76,12 @@ namespace Fall2020_CSC403_Project {
       }
     }
 
-    private void EnemyDamage(int amount) {
+    private void btnHeal_Click(object sender, EventArgs e)
+    {
+        Close();
+    }
+
+        private void EnemyDamage(int amount) {
       enemy.AlterHealth(amount);
     }
 
@@ -88,5 +93,6 @@ namespace Fall2020_CSC403_Project {
       picBossBattle.Visible = false;
       tmrFinalBattle.Enabled = false;
     }
-  }
+
+    }
 }
