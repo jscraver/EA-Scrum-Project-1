@@ -8,14 +8,18 @@ namespace Fall2020_CSC403_Project.code
 {
     public class HealthPotion : Item
     {
-        public HealthPotion()
+        public HealthPotion(string name, int quantity, Player player) : base(name, quantity, player)
         {
-            MaxQuantity = 3;
         }
 
         public void useHealthPotion()
         {
-            player.AlterHealth(10);
+            Player.AlterHealth(5);
+        }
+
+        public void useMaxHealthPotion()
+        {
+            Player.AlterToMaxHealth();
         }
     }
 }
