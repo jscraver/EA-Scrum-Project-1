@@ -12,6 +12,10 @@ namespace Fall2020_CSC403_Project {
     private Enemy enemyCheeto;
     private Character[] walls;
 
+    private HealthPotion healthPotion;
+
+    private Inventory inventory;
+
     private DateTime timeBegin;
     private FrmBattle frmBattle;
 
@@ -27,6 +31,8 @@ namespace Fall2020_CSC403_Project {
       bossKoolaid = new Enemy(CreatePosition(picBossKoolAid), CreateCollider(picBossKoolAid, PADDING));
       enemyPoisonPacket = new Enemy(CreatePosition(picEnemyPoisonPacket), CreateCollider(picEnemyPoisonPacket, PADDING));
       enemyCheeto = new Enemy(CreatePosition(picEnemyCheeto), CreateCollider(picEnemyCheeto, PADDING));
+      healthPotion = new HealthPotion("Health Potion", 3, player);
+      inventory = new Inventory(healthPotion, 3);
 
       bossKoolaid.Img = picBossKoolAid.BackgroundImage;
       enemyPoisonPacket.Img = picEnemyPoisonPacket.BackgroundImage;
@@ -43,6 +49,8 @@ namespace Fall2020_CSC403_Project {
       }
 
       Game.player = player;
+      Game.healthPotion = healthPotion;
+      Game.inventory = inventory;
       timeBegin = DateTime.Now;
     }
 
