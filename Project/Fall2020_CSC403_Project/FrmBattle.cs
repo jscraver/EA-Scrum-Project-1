@@ -42,7 +42,7 @@ namespace Fall2020_CSC403_Project {
       // check if sword durability is 0
       if (sword.Durability <= 0)
       {
-        inventorySword.setQuantity(0);
+        inventorySword.SetQuantity(0);
       }
 
     // show health

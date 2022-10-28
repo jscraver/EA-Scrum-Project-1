@@ -2,10 +2,12 @@
 
 namespace Fall2020_CSC403_Project.code
 {
+    // inventory class
     public class Inventory
     {
         public Item InventoryItem { get; set; }
         public int Quantity { get; set; }
+        // class requires an item and the items quanitity
         public Inventory(Item item, int quantity)
         {
             InventoryItem = item;
@@ -19,7 +21,7 @@ namespace Fall2020_CSC403_Project.code
         {
             Quantity -= amount;
         }
-        public void setQuantity(int amount)
+        public void SetQuantity(int amount)
         {
             Quantity = amount;
         }

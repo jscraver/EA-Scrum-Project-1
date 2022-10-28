@@ -51,6 +51,7 @@
     <Compile Include="Game.cs" />
     <Compile Include="HealthPotion.cs" />
     <Compile Include="Inventory.cs" />
+    <Compile Include="InventorySystem.cs" />
     <Compile Include="Item.cs" />
     <Compile Include="NPC.cs" />
     <Compile Include="Player.cs" />

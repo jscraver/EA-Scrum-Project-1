@@ -34,8 +34,8 @@ namespace Fall2020_CSC403_Project {
       bossKoolaid = new Enemy(CreatePosition(picBossKoolAid), CreateCollider(picBossKoolAid, PADDING));
       enemyPoisonPacket = new Enemy(CreatePosition(picEnemyPoisonPacket), CreateCollider(picEnemyPoisonPacket, PADDING));
       enemyCheeto = new Enemy(CreatePosition(picEnemyCheeto), CreateCollider(picEnemyCheeto, PADDING));
-      healthPotion = new HealthPotion("Health Potion", player);
-      sword = new Sword("Sword", player, 3); 
+      healthPotion = new HealthPotion("Health Potion", player, 3);
+      sword = new Sword("Sword", player, 1, 3); 
       inventoryHeal = new Inventory(healthPotion, 3);
       inventorySword = new Inventory(sword, 1);
 
