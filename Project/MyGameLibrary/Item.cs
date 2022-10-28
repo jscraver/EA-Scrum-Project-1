@@ -10,18 +10,17 @@ namespace Fall2020_CSC403_Project.code
 	{
 
         public string Name { get; set; }
-        public int MaxQuantity { get; set; }
         public Player Player { get; private set; }
-
-        protected Item()
-        {
-            MaxQuantity = 1;
-        }
 
         public Item(string name, int quantity, Player player)
         {
             Name = name;
-            MaxQuantity = quantity;
+            Player = player;
+        }
+
+        protected Item(string name, Player player)
+        {
+            Name = name;
             Player = player;
         }
     }

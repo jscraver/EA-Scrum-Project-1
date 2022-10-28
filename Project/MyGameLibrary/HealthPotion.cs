@@ -8,8 +8,8 @@ namespace Fall2020_CSC403_Project.code
 {
     public class HealthPotion : Item
     {
-        public HealthPotion(string name, int quantity, Player player) : base(name, quantity, player)
-        {
+        public HealthPotion(string name, Player player) : base(name, player){
+
         }
 
         public void useHealthPotion()

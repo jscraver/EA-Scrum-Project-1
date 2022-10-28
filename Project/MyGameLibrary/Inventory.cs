@@ -11,13 +11,17 @@ namespace Fall2020_CSC403_Project.code
             InventoryItem = item;
             Quantity = quantity;
         }
-        public void AddToQuantity(int amountToAdd)
+        public void AddToQuantity(int amount)
         {
-            Quantity += amountToAdd;
+            Quantity += amount;
         }
-        public void DeleteFromQuantity(int amountToDelete)
+        public void DeleteFromQuantity(int amount)
         {
-            Quantity -= amountToDelete;
+            Quantity -= amount;
+        }
+        public void setQuantity(int amount)
+        {
+            Quantity = amount;
         }
     }
 }

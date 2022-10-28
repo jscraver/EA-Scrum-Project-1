@@ -8,7 +8,8 @@ namespace Fall2020_CSC403_Project.code {
   public static class Game {
     public static Player player = null;
     public static HealthPotion healthPotion = null;
-    public static Inventory inventory = null;
-
+    public static Inventory inventoryHeal = null;
+    public static Inventory inventorySword = null;
+    public static Sword sword = null;
   }
 }
