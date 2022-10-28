@@ -35,6 +35,7 @@
             this.tmrFinalBattle = new System.Windows.Forms.Timer(this.components);
             this.btnHeal = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
+            this.buttonStrong = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picBossBattle)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picEnemy)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picPlayer)).BeginInit();
@@ -157,6 +158,16 @@
             this.label3.TabIndex = 9;
             this.label3.Text = "Left:";
             // 
+            // buttonStrong
+            // 
+            this.buttonStrong.Location = new System.Drawing.Point(455, 628);
+            this.buttonStrong.Name = "buttonStrong";
+            this.buttonStrong.Size = new System.Drawing.Size(171, 53);
+            this.buttonStrong.TabIndex = 10;
+            this.buttonStrong.Text = "STRONG Attack";
+            this.buttonStrong.UseVisualStyleBackColor = true;
+            this.buttonStrong.Click += new System.EventHandler(this.buttonStrong_Click);
+            // 
             // FrmBattle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -164,6 +175,7 @@
             this.BackColor = System.Drawing.Color.Green;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1096, 742);
+            this.Controls.Add(this.buttonStrong);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btnHeal);
             this.Controls.Add(this.picBossBattle);
@@ -200,5 +212,6 @@
     private System.Windows.Forms.Timer tmrFinalBattle;
         private System.Windows.Forms.Button btnHeal;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button buttonStrong;
     }
 }

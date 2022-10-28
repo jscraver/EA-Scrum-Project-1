@@ -12,13 +12,17 @@ namespace Fall2020_CSC403_Project {
     private Enemy enemy;
     private Player player;
     private HealthPotion healthPotion;
-    private Inventory inventory;
+    private Sword sword;
+    private Inventory inventoryHeal;
+    private Inventory inventorySword;
 
     private FrmBattle() {
       InitializeComponent();
       player = Game.player;
       healthPotion = Game.healthPotion;
-      inventory = Game.inventory;
+      inventoryHeal = Game.inventoryHeal;
+      inventorySword = Game.inventorySword;
+      sword = Game.sword;
     }
 
     public void Setup() {
@@ -33,7 +37,13 @@ namespace Fall2020_CSC403_Project {
       player.AttackEvent += EnemyDamage;
 
       // Initialize correct label text for health potion quantity
-      label3.Text = String.Format("Left: {0}", inventory.Quantity);
+      label3.Text = String.Format("Left: {0}", inventoryHeal.Quantity);
+      
+      // check if sword durability is 0
+      if (sword.Durability <= 0)
+      {
+        inventorySword.setQuantity(0);
+      }
 
     // show health
     UpdateHealthBars();
@@ -72,33 +82,66 @@ namespace Fall2020_CSC403_Project {
     }
 
     private void btnAttack_Click(object sender, EventArgs e) {
-      player.OnAttack(-4);
-      if (enemy.Health > 0) {
-        enemy.OnAttack(-2);
-      }
+        if (inventorySword.Quantity > 0)
+        {
+            sword.attackWithSwordLight();
+            sword.subtractDurability(1);
+        }
+        else
+        {
+            player.OnAttack(-2);
+        }
 
-      UpdateHealthBars();
-      if (player.Health <= 0 || enemy.Health <= 0) {
+        if (enemy.Health > 0)
+        {
+            enemy.OnAttack(-2);
+        }
+       
+        if (player.Health <= 0 || enemy.Health <= 0) {
         instance = null;
         Close();
-      }
+        }
+
+        UpdateHealthBars();
     }
       
     private void btnHeal_Click(object sender, EventArgs e) {
-       if (player.Health <= 15 & inventory.Quantity > 0) {
+       if (player.Health <= 15 & inventoryHeal.Quantity > 0) {
             healthPotion.useHealthPotion();
-            inventory.Quantity -= 1; 
+            inventoryHeal.DeleteFromQuantity(1);
        }
-       else if (player.Health > 15 & player.Health < 20 & inventory.Quantity > 0) {
+       else if (player.Health > 15 & player.Health < 20 & inventoryHeal.Quantity > 0) {
             healthPotion.useMaxHealthPotion();
-            inventory.Quantity -= 1;
+            inventoryHeal.DeleteFromQuantity(1);
        }
 
-       label3.Text = String.Format("Left: {0}", inventory.Quantity);
+       label3.Text = String.Format("Left: {0}", inventoryHeal.Quantity);
+
        UpdateHealthBars();
     }
 
-        private void EnemyDamage(int amount) {
+    private void buttonStrong_Click(object sender, EventArgs e)
+    {
+        if (inventorySword.Quantity > 0 & sword.Durability == 3)
+        {
+            sword.attackWithSwordHeavy();
+            sword.subtractDurability(3);
+        
+            if (enemy.Health > 0)
+            {
+                enemy.OnAttack(-2);
+            }
+
+            if (player.Health <= 0 || enemy.Health <= 0)
+            {
+                instance = null;
+                Close();
+            }
+
+        }
+        UpdateHealthBars();
+    }
+    private void EnemyDamage(int amount) {
         enemy.AlterHealth(amount);
     }
 
