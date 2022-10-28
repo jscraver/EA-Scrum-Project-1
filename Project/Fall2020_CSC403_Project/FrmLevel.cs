@@ -65,6 +65,15 @@ namespace Fall2020_CSC403_Project {
       lblInGameTime.Text = "Time: " + time.ToString();
     }
 
+    private void tmrEnemyMove_Tick(object sender, EventArgs e) {
+        enemyPoisonPacket.Move();
+        enemyPoisonPacket.GoDown();
+        if (HitAWall(enemyPoisonPacket)) {
+            
+        }
+    }   
+  
+
     private void tmrPlayerMove_Tick(object sender, EventArgs e) {
       // move player
       player.Move();
@@ -75,14 +84,28 @@ namespace Fall2020_CSC403_Project {
       }
 
       // check collision with enemies
-      if (HitAChar(player, enemyPoisonPacket)) {
+      if (HitAChar(player, enemyPoisonPacket) && enemyPoisonPacket.Health > 0) {
         Fight(enemyPoisonPacket);
       }
-      else if (HitAChar(player, enemyCheeto)) {
+      if (HitAChar(player, enemyCheeto) && enemyCheeto.Health > 0) {
         Fight(enemyCheeto);
       }
-      if (HitAChar(player, bossKoolaid)) {
+      if (HitAChar(player, bossKoolaid) && bossKoolaid.Health > 0) {
         Fight(bossKoolaid);
+      }
+
+      // check health of enemies and player
+      if (enemyPoisonPacket.Health <= 0) { 
+        picEnemyPoisonPacket.Dispose();
+      }
+      if (enemyCheeto.Health <= 0) { 
+        picEnemyCheeto.Dispose();
+      }
+       if (bossKoolaid.Health <= 0) { 
+        picBossKoolAid.Dispose();
+      }
+      if (player.Health <= 0) {
+        Application.Restart();
       }
 
       // update player's picture box
