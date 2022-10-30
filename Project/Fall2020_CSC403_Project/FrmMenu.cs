@@ -17,12 +17,6 @@ namespace Fall2020_CSC403_Project
         {
             InitializeComponent();
         }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void Form1_Load(object sender, EventArgs e)
         {
         
@@ -33,13 +27,6 @@ namespace Fall2020_CSC403_Project
             FrmLevel level = new FrmLevel();
             level.Show();
            
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            this.TopMost = true;
-            this.FormBorderStyle = FormBorderStyle.None;
-            this.WindowState = FormWindowState.Maximized;
         }
     }
 }
