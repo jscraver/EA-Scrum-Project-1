@@ -1,6 +1,7 @@
 ﻿using Fall2020_CSC403_Project.code;
 using Fall2020_CSC403_Project.Properties;
 using System;
+using System.Diagnostics.Tracing;
 using System.Drawing;
 using System.Drawing.Text;
 using System.Media;
@@ -35,14 +36,31 @@ namespace Fall2020_CSC403_Project {
       // Observer pattern
       enemy.AttackEvent += PlayerDamage;
       player.AttackEvent += EnemyDamage;
-
-      // Initialize correct label text for health potion quantity
-      label3.Text = String.Format("Left: {0}", inventoryHeal.Quantity);
       
       // check if sword durability is 0
       if (sword.Durability <= 0)
       {
         inventorySword.setQuantity(0);
+      }
+
+      if (sword.Durability > 0) {
+        picSword.Image = Properties.Resources.sword;
+      }
+
+      if (inventoryHeal.Quantity == 3) {
+         picHealthPot1.Image = Properties.Resources.health_potion; 
+         picHealthPot2.Image = Properties.Resources.health_potion; 
+         picHealthPot3.Image = Properties.Resources.health_potion; 
+      }
+      else if (inventoryHeal.Quantity == 2) {
+         
+         picHealthPot1.Image = Properties.Resources.health_potion;
+         picHealthPot2.Image = Properties.Resources.health_potion;
+
+      }
+      else if (inventoryHeal.Quantity == 1) {
+
+         picHealthPot1.Image = Properties.Resources.health_potion;
       }
 
     // show health
@@ -87,6 +105,7 @@ namespace Fall2020_CSC403_Project {
             sword.attackWithSwordLight();
             sword.subtractDurability(1);
         }
+
         else
         {
             player.OnAttack(-2);
@@ -101,8 +120,13 @@ namespace Fall2020_CSC403_Project {
         instance = null;
         Close();
         }
+        // remove sword image when sword breaks
+        if (sword.Durability <= 0)
+        {
+            picSword.Image = null;
+        }
 
-        UpdateHealthBars();
+            UpdateHealthBars();
     }
       
     private void btnHeal_Click(object sender, EventArgs e) {
@@ -114,8 +138,19 @@ namespace Fall2020_CSC403_Project {
             healthPotion.useMaxHealthPotion();
             inventoryHeal.DeleteFromQuantity(1);
        }
-
-       label3.Text = String.Format("Left: {0}", inventoryHeal.Quantity);
+       // display potions on screen in inventory
+       if (inventoryHeal.Quantity == 2) {
+            
+                picHealthPot3.Image = null;
+       }
+       else if (inventoryHeal.Quantity == 1) {
+         
+                picHealthPot2.Image = null;
+       }
+       else if (inventoryHeal.Quantity == 0) { 
+    
+                picHealthPot1.Image = null;
+       }
 
        UpdateHealthBars();
     }
@@ -126,6 +161,7 @@ namespace Fall2020_CSC403_Project {
         {
             sword.attackWithSwordHeavy();
             sword.subtractDurability(3);
+            picSword.Image = Properties.Resources.health_potion;
         
             if (enemy.Health > 0)
             {
@@ -139,6 +175,7 @@ namespace Fall2020_CSC403_Project {
             }
 
         }
+        
         UpdateHealthBars();
     }
     private void EnemyDamage(int amount) {
