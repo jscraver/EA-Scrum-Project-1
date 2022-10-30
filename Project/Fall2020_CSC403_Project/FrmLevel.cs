@@ -15,6 +15,9 @@ namespace Fall2020_CSC403_Project {
     private DateTime timeBegin;
     private FrmBattle frmBattle;
 
+    static int SWITCH1 = 1;
+    static int SWITCH2 = 1;
+
     public FrmLevel() {
       InitializeComponent();
     }
@@ -65,14 +68,47 @@ namespace Fall2020_CSC403_Project {
       lblInGameTime.Text = "Time: " + time.ToString();
     }
 
+    private int EnemyMovement(Enemy enemy, PictureBox pb, int SWITCH) {
+      int s = SWITCH;
+      enemy.Move();
+      if (HitAWall(enemy)) {
+            enemy.MoveBack();
+            s = s*(-1);
+      }
+      if (s == 1) {
+        enemy.GoDown();
+      }
+      else {
+        enemy.GoUp();
+      }
+      pb.Location = new Point((int)enemy.Position.x, (int)enemy.Position.y);
+      return s;
+    }
+
+    private void EnemyVision(Enemy enemy, PictureBox pb, int SWITCH) {
+      int s = SWITCH;
+      Rectangle rect;
+      if (s == 1) {
+        rect = new Rectangle((int)enemy.Position.x, (int)enemy.Position.y, pb.Width, 150);
+      } 
+      else { 
+        rect = new Rectangle((int)enemy.Position.x, (int)enemy.Position.y - 150 + pb.Height, pb.Width, 150);
+      }
+      if (CharWasSeen(player.Collider.rect, rect) && enemy.Health > 0) {
+        Fight(enemy);
+      }
+      this.Invalidate();
+    }
+
     private void tmrEnemyMove_Tick(object sender, EventArgs e) {
-        enemyPoisonPacket.Move();
-        enemyPoisonPacket.GoDown();
-        if (HitAWall(enemyPoisonPacket)) {
-            
-        }
+      SWITCH1 = EnemyMovement(enemyPoisonPacket, picEnemyPoisonPacket, SWITCH1);
+      SWITCH2 = EnemyMovement(enemyCheeto, picEnemyCheeto, SWITCH2);
     }   
-  
+
+    private void tmrEnemyLook_Tick(object sender, EventArgs e) {
+      EnemyVision(enemyPoisonPacket, picEnemyPoisonPacket, SWITCH1);
+      EnemyVision(enemyCheeto, picEnemyCheeto, SWITCH2);
+    }
 
     private void tmrPlayerMove_Tick(object sender, EventArgs e) {
       // move player
@@ -109,7 +145,7 @@ namespace Fall2020_CSC403_Project {
       }
 
       // update player's picture box
-      picPlayer.Location = new Point((int)player.Position.x, (int)player.Position.y);
+      picPlayer.Location = new Point((int)player.Position.x, (int)player.Position.y);      
     }
 
     private bool HitAWall(Character c) {
@@ -125,6 +161,10 @@ namespace Fall2020_CSC403_Project {
 
     private bool HitAChar(Character you, Character other) {
       return you.Collider.Intersects(other.Collider);
+    }
+
+    private bool CharWasSeen(Rectangle you, Rectangle rec) {
+      return you.IntersectsWith(rec);
     }
 
     private void Fight(Enemy enemy) {

@@ -7,7 +7,6 @@ using System.Threading.Tasks;
 namespace Fall2020_CSC403_Project.code {
   public class Character {
     private const int GO_INC = 3;
-    private int GO = 3;
 
     public Vector2 MoveSpeed { get; private set; }
     public Vector2 LastPosition { get; private set; }
@@ -44,14 +43,6 @@ namespace Fall2020_CSC403_Project.code {
 
     public void ResetMoveSpeed() {
       MoveSpeed = new Vector2(0, 0);
-    }
-
-    public void Go() {
-      MoveSpeed = new Vector2(0, -GO);
-    }
-    
-    public void Reverse() {
-       GO *= -1;
     }
   }
 }
