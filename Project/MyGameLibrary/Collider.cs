@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Fall2020_CSC403_Project.code {
   public class Collider {
-    private Rectangle rect;
+    public Rectangle rect;
 
     public Collider(Rectangle rect) {
       this.rect = rect;
