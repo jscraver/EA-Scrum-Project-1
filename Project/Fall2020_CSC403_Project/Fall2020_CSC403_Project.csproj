@@ -130,6 +130,36 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Properties\Maps\TestMap1.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Grass Texture.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\output-onlinepngtools.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ice Texture.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lava Texture.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Snow Texture.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Stone Texture.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dirt Texture.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Portal Texture.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Water Texture.png" />
+  </ItemGroup>
+  <ItemGroup>
     <None Include="Resources\health_potion.png" />
   </ItemGroup>
   <ItemGroup>
