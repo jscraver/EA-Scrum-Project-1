@@ -35,9 +35,6 @@ namespace Fall2020_CSC403_Project {
     private Inventory inventoryHeal;
     private Inventory inventorySword;
 
-    private DateTime timeBegin;
-    private FrmBattle frmBattle;
-
     static int SWITCH1 = 1;
     static int SWITCH2 = 1;
 
@@ -198,49 +195,6 @@ namespace Fall2020_CSC403_Project {
       EnemyVision(enemyCheeto, picEnemyCheeto, SWITCH2);
     }
 
-    private void tmrPlayerMove_Tick(object sender, EventArgs e) {
-      // move player
-      player.Move();
-
-      // check collision with walls
-      if (HitAWall(player)) {
-          player.MoveBack();
-      }
-
-      // check collision with enemies
-      if (HitAChar(player, enemyPoisonPacket) && enemyPoisonPacket.Health > 0) {
-          Fight(enemyPoisonPacket);
-      }
-      if (HitAChar(player, enemyCheeto) && enemyCheeto.Health > 0) {
-          Fight(enemyCheeto);
-      }
-      if (HitAChar(player, bossKoolaid) && bossKoolaid.Health > 0) {
-          Fight(bossKoolaid);
-      }
-
-      // check health of enemies and player
-      if (enemyPoisonPacket.Health <= 0) { 
-          picEnemyPoisonPacket.Dispose();
-      }
-      if (enemyCheeto.Health <= 0) { 
-          picEnemyCheeto.Dispose();
-      }
-       if (bossKoolaid.Health <= 0) { 
-          picBossKoolAid.Dispose();
-      }
-      if (player.Health <= 0) {
-          Application.Restart();
-      }
-
-      // update player's picture box
-      picPlayer.Location = new Point((int)player.Position.x, (int)player.Position.y);
-
-      // update health bar
-      float playerHealthPer = player.Health / (float)player.MaxHealth;
-      const int MAX_HEALTHBAR_WIDTH = 226;
-      lblPlayerHealthFull.Width = (int)(MAX_HEALTHBAR_WIDTH * playerHealthPer);
-    }
-
     private Collider CreateCollider(PictureBox pic, int padding) {
       Rectangle rect = new Rectangle(pic.Location, new Size(pic.Size.Width - padding, pic.Size.Height - padding));
       return new Collider(rect);
@@ -319,6 +273,9 @@ namespace Fall2020_CSC403_Project {
 
       // update player's picture box
       picPlayer.Location = new Point((int)player.Position.x, (int)player.Position.y);
+      float playerHealthPer = player.Health / (float)player.MaxHealth;
+      const int MAX_HEALTHBAR_WIDTH = 226;
+      lblPlayerHealthFull.Width = (int)(MAX_HEALTHBAR_WIDTH * playerHealthPer);
     }
 
     private void tmrSpecialInteraction_Tick(object sender, EventArgs e) {
@@ -389,17 +346,6 @@ namespace Fall2020_CSC403_Project {
     }
     private bool HitAChar(Character you, Character other) {
       return you.Collider.Intersects(other.Collider);
-    }
-
-    private void Fight(Enemy enemy) {
-      player.ResetMoveSpeed();
-      player.MoveBack();
-      frmBattle = FrmBattle.GetInstance(enemy);
-      frmBattle.Show();
-
-      if (enemy == bossKoolaid) {
-          frmBattle.SetupForBossBattle();
-      }
     }
 
     private void FrmLevel_KeyDown(object sender, KeyEventArgs e) {

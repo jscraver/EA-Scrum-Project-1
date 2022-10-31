@@ -11,14 +11,14 @@ namespace Fall2020_CSC403_Project.code
             Durability = durability;
         }
 
-        public void attackWithSwordLight()
+        public void attackWithSwordLight(Player player)
         {
-            Player.OnAttack(-3);
+            player.OnAttack(-3);
         }
 
-        public void attackWithSwordHeavy()
+        public void attackWithSwordHeavy(Player player)
         {
-            Player.OnAttack(-10);
+            player.OnAttack(-10);
         }
 
         public void subtractDurability(int amount)

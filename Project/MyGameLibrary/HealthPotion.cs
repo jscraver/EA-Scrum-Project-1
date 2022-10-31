@@ -12,14 +12,14 @@ namespace Fall2020_CSC403_Project.code
 
         }
 
-        public void useHealthPotion()
+        public void useHealthPotion(Player player)
         {
-            Player.AlterHealth(5);
+            player.AlterHealth(5);
         }
 
-        public void useMaxHealthPotion()
+        public void useMaxHealthPotion(Player player)
         {
-            Player.AlterToMaxHealth();
+            player.AlterToMaxHealth();
         }
     }
 }

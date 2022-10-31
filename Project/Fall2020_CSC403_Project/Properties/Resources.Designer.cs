@@ -142,6 +142,16 @@ namespace Fall2020_CSC403_Project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap health_potion {
+            get {
+                object obj = ResourceManager.GetObject("health_potion", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Ice_Texture {
             get {
                 object obj = ResourceManager.GetObject("Ice_Texture", resourceCulture);
@@ -155,9 +165,6 @@ namespace Fall2020_CSC403_Project.Properties {
         internal static System.Drawing.Bitmap Lava_Texture {
             get {
                 object obj = ResourceManager.GetObject("Lava_Texture", resourceCulture);
-        internal static System.Drawing.Bitmap health_potion {
-            get {
-                object obj = ResourceManager.GetObject("health_potion", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -178,9 +185,6 @@ namespace Fall2020_CSC403_Project.Properties {
         internal static System.Drawing.Bitmap Portal_Texture {
             get {
                 object obj = ResourceManager.GetObject("Portal_Texture", resourceCulture);
-        internal static System.Drawing.Bitmap sword {
-            get {
-                object obj = ResourceManager.GetObject("sword", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -196,17 +200,26 @@ namespace Fall2020_CSC403_Project.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to
-        ///00000000000000000
-        ///01111111111111110
-        ///01111111111111110
-        ///01111111111111110
-        ///01111111111111110
-        ///01111111111111110
-        ///01111111111111110
-        ///01111111111111110
-        ///01111111111111110
-        ///00000000000000000.
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sword {
+            get {
+                object obj = ResourceManager.GetObject("sword", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 1010101010101010101010101010101010
+        ///1088404040404040404040404040404010
+        ///1040404040404040404040404040A24010
+        ///1040404040404040404040404040404010
+        ///1040404040404040404040404040404010
+        ///1040404040404040404040404040404010
+        ///10404040404040404040404040A2404010
+        ///10404040E1E1E1E1E1E140404040404010
+        ///1040404064646464646440404040404010
+        ///1010101010101010101010101010101010.
         /// </summary>
         internal static string TestMap1 {
             get {
@@ -222,12 +235,6 @@ namespace Fall2020_CSC403_Project.Properties {
                 object obj = ResourceManager.GetObject("Water_Texture", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
-        }
-        internal static System.Drawing.Bitmap Brick_Texture {
-            get {
-                object obj = ResourceManager.GetObject("Brick_Texture", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }   
         }
     }
 }

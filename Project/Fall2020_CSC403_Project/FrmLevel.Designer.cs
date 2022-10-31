@@ -2004,8 +2004,8 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Playbill", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Image = global::Fall2020_CSC403_Project.Properties.Resources.wall;
-            this.label1.Location = new System.Drawing.Point(90, 663);
+            this.label1.Image = global::Fall2020_CSC403_Project.Properties.Resources.Brick_Texture;
+            this.label1.Location = new System.Drawing.Point(200, 11);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(50, 21);
             this.label1.TabIndex = 19;
@@ -2016,7 +2016,7 @@
             this.lblPlayerHealthFull.BackColor = System.Drawing.Color.Blue;
             this.lblPlayerHealthFull.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPlayerHealthFull.ForeColor = System.Drawing.Color.White;
-            this.lblPlayerHealthFull.Location = new System.Drawing.Point(90, 684);
+            this.lblPlayerHealthFull.Location = new System.Drawing.Point(280, 17);
             this.lblPlayerHealthFull.Name = "lblPlayerHealthFull";
             this.lblPlayerHealthFull.Size = new System.Drawing.Size(226, 20);
             this.lblPlayerHealthFull.TabIndex = 18;

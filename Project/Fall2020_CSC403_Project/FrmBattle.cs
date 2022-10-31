@@ -102,7 +102,7 @@ namespace Fall2020_CSC403_Project {
     private void btnAttack_Click(object sender, EventArgs e) {
         if (inventorySword.Quantity > 0)
         {
-            sword.attackWithSwordLight();
+            sword.attackWithSwordLight(player);
             sword.subtractDurability(1);
         }
 
@@ -131,11 +131,11 @@ namespace Fall2020_CSC403_Project {
       
     private void btnHeal_Click(object sender, EventArgs e) {
        if (player.Health <= 15 & inventoryHeal.Quantity > 0) {
-            healthPotion.useHealthPotion();
+            healthPotion.useHealthPotion(player);
             inventoryHeal.DeleteFromQuantity(1);
        }
        else if (player.Health > 15 & player.Health < 20 & inventoryHeal.Quantity > 0) {
-            healthPotion.useMaxHealthPotion();
+            healthPotion.useMaxHealthPotion(player);
             inventoryHeal.DeleteFromQuantity(1);
        }
        // display potions on screen in inventory
@@ -159,7 +159,7 @@ namespace Fall2020_CSC403_Project {
     {
         if (inventorySword.Quantity > 0 & sword.Durability == 3)
         {
-            sword.attackWithSwordHeavy();
+            sword.attackWithSwordHeavy(player);
             sword.subtractDurability(3);
             picSword.Image = Properties.Resources.health_potion;
         
