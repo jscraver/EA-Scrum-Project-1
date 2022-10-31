@@ -118,16 +118,22 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <metadata name="tmrUpdateInGameTime.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>288, 17</value>
+  </metadata>
+  <metadata name="tmrEnemyMove.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <metadata name="tmrEnemyLook.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>155, 17</value>
+  </metadata>
   <metadata name="tmrPlayerMove.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>196, 17</value>
+    <value>467, 17</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="picBossKoolAid.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAhIAAAMYCAYAAACe0Q5tAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAP
-        YAAAD2ABenhFjQAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNui8sowAAP+KSURBVHhe
+        XgAAD14BBc04LQAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNui8sowAAP+KSURBVHhe
         7L2HmxxpdTU+0zlPT86SRjOjURzlnHPOOecsjSbn6Z6ck3LWLmsMBhuMMWDj8NmAwRgwmAwm2MCC/f3+
         ifO759a0VizNkne1fO8+z9mqebu66q2qfnTPe8O5CQAM/h/Bj//nJ8544wYGBgYGBr8t4g4avLvw+v/+
         jz3e+Gf/7fMT7z16uLu2qa6iuqGm6vGrT/Dlr38l+6f/389s8Y43MDAwMDD4TRF30ODdi+//93/5n77n

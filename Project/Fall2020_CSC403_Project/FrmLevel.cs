@@ -160,8 +160,13 @@ namespace Fall2020_CSC403_Project {
       }
 
       // update player's picture box
-      picPlayer.Location = new Point((int)player.Position.x, (int)player.Position.y);      
-    }
+      picPlayer.Location = new Point((int)player.Position.x, (int)player.Position.y);
+
+        // update health bar
+        float playerHealthPer = player.Health / (float)player.MaxHealth;
+        const int MAX_HEALTHBAR_WIDTH = 226;
+        lblPlayerHealthFull.Width = (int)(MAX_HEALTHBAR_WIDTH * playerHealthPer);
+        }
 
     private bool HitAWall(Character c) {
       bool hitAWall = false;
@@ -215,10 +220,6 @@ namespace Fall2020_CSC403_Project {
           player.ResetMoveSpeed();
           break;
       }
-    }
-
-    private void lblInGameTime_Click(object sender, EventArgs e) {
-
     }
   }
 }
