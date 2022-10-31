@@ -155,6 +155,9 @@ namespace Fall2020_CSC403_Project.Properties {
         internal static System.Drawing.Bitmap Lava_Texture {
             get {
                 object obj = ResourceManager.GetObject("Lava_Texture", resourceCulture);
+        internal static System.Drawing.Bitmap health_potion {
+            get {
+                object obj = ResourceManager.GetObject("health_potion", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -175,6 +178,9 @@ namespace Fall2020_CSC403_Project.Properties {
         internal static System.Drawing.Bitmap Portal_Texture {
             get {
                 object obj = ResourceManager.GetObject("Portal_Texture", resourceCulture);
+        internal static System.Drawing.Bitmap sword {
+            get {
+                object obj = ResourceManager.GetObject("sword", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -190,7 +196,8 @@ namespace Fall2020_CSC403_Project.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 00000000000000000
+        ///   Looks up a localized string similar to
+        ///00000000000000000
         ///01111111111111110
         ///01111111111111110
         ///01111111111111110
@@ -215,6 +222,12 @@ namespace Fall2020_CSC403_Project.Properties {
                 object obj = ResourceManager.GetObject("Water_Texture", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
+        }
+        internal static System.Drawing.Bitmap Brick_Texture {
+            get {
+                object obj = ResourceManager.GetObject("Brick_Texture", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }   
         }
     }
 }

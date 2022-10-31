@@ -58,6 +58,12 @@
     <Compile Include="FrmLevel.Designer.cs">
       <DependentUpon>FrmLevel.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMenu.designer.cs">
+      <DependentUpon>FrmMenu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FrmBattle.resx">
@@ -65,6 +71,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmLevel.resx">
       <DependentUpon>FrmLevel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMenu.resx">
+      <DependentUpon>FrmMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -124,9 +133,6 @@
     <None Include="Properties\Maps\TestMap1.txt" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\grass_texture.bmp" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\Grass Texture.png" />
   </ItemGroup>
   <ItemGroup>
@@ -137,9 +143,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Lava Texture.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Sand Texture.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Snow Texture.png" />
@@ -154,25 +157,13 @@
     <None Include="Resources\Portal Texture.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Wood Plank Texture.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Wood Log Texture.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Smooth Stone Texture.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\Water Texture.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Obsidian Texture.png" />
+    <None Include="Resources\health_potion.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Gloawstone Texture.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Gravel Texture.png" />
+    <None Include="Resources\sword.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
