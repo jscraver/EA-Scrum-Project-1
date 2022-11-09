@@ -1,6 +1,7 @@
 ﻿using Fall2020_CSC403_Project.code;
 using Fall2020_CSC403_Project.Properties;
 using System;
+using System.Threading.Tasks;
 using System.Diagnostics.Tracing;
 using System.Drawing;
 using System.Drawing.Text;
@@ -28,6 +29,7 @@ namespace Fall2020_CSC403_Project {
 
     public void Setup() {
       // update for this enemy
+      label5.Text = "";
       picEnemy.BackgroundImage = enemy.Img;
       picEnemy.Refresh();
       BackColor = enemy.Color;
@@ -99,16 +101,23 @@ namespace Fall2020_CSC403_Project {
       lblEnemyHealthFull.Text = enemy.Health.ToString();
     }
 
-    private void btnAttack_Click(object sender, EventArgs e) {
+    private async void btnAttack_Click(object sender, EventArgs e) {
         if (inventorySword.Quantity > 0)
         {
             sword.attackWithSwordLight(player);
             sword.subtractDurability(1);
-        }
+            label6.Text = "MR. PEANUT strikes for 4 damage";
+            await Task.Delay(2000);
+            label6.Text = "";
+            }
 
         else
         {
             player.OnAttack(-2);
+            label6.Text = "MR. PEANUT strikes for 2 damage";
+            await Task.Delay(2000);
+            label6.Text = "";
+
         }
 
         if (enemy.Health > 0)
@@ -190,6 +199,5 @@ namespace Fall2020_CSC403_Project {
       picBossBattle.Visible = false;
       tmrFinalBattle.Enabled = false;
     }
-
     }
 }

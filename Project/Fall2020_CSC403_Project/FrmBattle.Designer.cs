@@ -40,6 +40,9 @@
             this.picBossBattle = new System.Windows.Forms.PictureBox();
             this.picEnemy = new System.Windows.Forms.PictureBox();
             this.picPlayer = new System.Windows.Forms.PictureBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picSword)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picHealthPot3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picHealthPot2)).BeginInit();
@@ -65,7 +68,7 @@
             this.lblPlayerHealthFull.BackColor = System.Drawing.Color.Blue;
             this.lblPlayerHealthFull.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPlayerHealthFull.ForeColor = System.Drawing.Color.White;
-            this.lblPlayerHealthFull.Location = new System.Drawing.Point(71, 60);
+            this.lblPlayerHealthFull.Location = new System.Drawing.Point(71, 374);
             this.lblPlayerHealthFull.Name = "lblPlayerHealthFull";
             this.lblPlayerHealthFull.Size = new System.Drawing.Size(226, 20);
             this.lblPlayerHealthFull.TabIndex = 3;
@@ -74,18 +77,18 @@
             // 
             this.label1.BackColor = System.Drawing.Color.Black;
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label1.Location = new System.Drawing.Point(70, 59);
+            this.label1.Location = new System.Drawing.Point(71, 374);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(229, 23);
+            this.label1.Size = new System.Drawing.Size(226, 20);
             this.label1.TabIndex = 4;
             // 
             // label2
             // 
             this.label2.BackColor = System.Drawing.Color.Black;
             this.label2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label2.Location = new System.Drawing.Point(515, 59);
+            this.label2.Location = new System.Drawing.Point(522, 374);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(229, 23);
+            this.label2.Size = new System.Drawing.Size(226, 20);
             this.label2.TabIndex = 5;
             // 
             // lblEnemyHealthFull
@@ -93,7 +96,7 @@
             this.lblEnemyHealthFull.BackColor = System.Drawing.Color.Blue;
             this.lblEnemyHealthFull.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEnemyHealthFull.ForeColor = System.Drawing.Color.White;
-            this.lblEnemyHealthFull.Location = new System.Drawing.Point(516, 60);
+            this.lblEnemyHealthFull.Location = new System.Drawing.Point(522, 374);
             this.lblEnemyHealthFull.Name = "lblEnemyHealthFull";
             this.lblEnemyHealthFull.Size = new System.Drawing.Size(226, 20);
             this.lblEnemyHealthFull.TabIndex = 6;
@@ -107,7 +110,7 @@
             // 
             this.btnHeal.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHeal.Location = new System.Drawing.Point(70, 511);
-            this.btnHeal.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnHeal.Margin = new System.Windows.Forms.Padding(2);
             this.btnHeal.Name = "btnHeal";
             this.btnHeal.Size = new System.Drawing.Size(128, 41);
             this.btnHeal.TabIndex = 8;
@@ -119,7 +122,7 @@
             // 
             this.buttonStrong.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonStrong.Location = new System.Drawing.Point(70, 454);
-            this.buttonStrong.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonStrong.Margin = new System.Windows.Forms.Padding(2);
             this.buttonStrong.Name = "buttonStrong";
             this.buttonStrong.Size = new System.Drawing.Size(128, 43);
             this.buttonStrong.TabIndex = 10;
@@ -131,7 +134,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Playbill", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(254, 397);
+            this.label4.Location = new System.Drawing.Point(253, 412);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(71, 21);
             this.label4.TabIndex = 14;
@@ -139,7 +142,7 @@
             // 
             // picSword
             // 
-            this.picSword.Location = new System.Drawing.Point(226, 465);
+            this.picSword.Location = new System.Drawing.Point(226, 480);
             this.picSword.Name = "picSword";
             this.picSword.Size = new System.Drawing.Size(38, 38);
             this.picSword.TabIndex = 15;
@@ -147,7 +150,7 @@
             // 
             // picHealthPot3
             // 
-            this.picHealthPot3.Location = new System.Drawing.Point(314, 421);
+            this.picHealthPot3.Location = new System.Drawing.Point(314, 436);
             this.picHealthPot3.Name = "picHealthPot3";
             this.picHealthPot3.Size = new System.Drawing.Size(38, 38);
             this.picHealthPot3.TabIndex = 13;
@@ -155,7 +158,7 @@
             // 
             // picHealthPot2
             // 
-            this.picHealthPot2.Location = new System.Drawing.Point(270, 421);
+            this.picHealthPot2.Location = new System.Drawing.Point(270, 436);
             this.picHealthPot2.Name = "picHealthPot2";
             this.picHealthPot2.Size = new System.Drawing.Size(38, 38);
             this.picHealthPot2.TabIndex = 12;
@@ -163,7 +166,7 @@
             // 
             // picHealthPot1
             // 
-            this.picHealthPot1.Location = new System.Drawing.Point(226, 421);
+            this.picHealthPot1.Location = new System.Drawing.Point(226, 436);
             this.picHealthPot1.Name = "picHealthPot1";
             this.picHealthPot1.Size = new System.Drawing.Size(38, 38);
             this.picHealthPot1.TabIndex = 11;
@@ -182,27 +185,53 @@
             // 
             // picEnemy
             // 
-            this.picEnemy.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.picEnemy.BackColor = System.Drawing.Color.Transparent;
             this.picEnemy.BackgroundImage = global::Fall2020_CSC403_Project.Properties.Resources.enemy_koolaid;
             this.picEnemy.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.picEnemy.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.picEnemy.Location = new System.Drawing.Point(515, 98);
+            this.picEnemy.Location = new System.Drawing.Point(554, 128);
             this.picEnemy.Name = "picEnemy";
-            this.picEnemy.Size = new System.Drawing.Size(229, 267);
+            this.picEnemy.Size = new System.Drawing.Size(194, 237);
             this.picEnemy.TabIndex = 1;
             this.picEnemy.TabStop = false;
             // 
             // picPlayer
             // 
-            this.picPlayer.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.picPlayer.BackColor = System.Drawing.Color.Transparent;
             this.picPlayer.BackgroundImage = global::Fall2020_CSC403_Project.Properties.Resources.player;
             this.picPlayer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.picPlayer.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.picPlayer.Location = new System.Drawing.Point(70, 98);
+            this.picPlayer.Location = new System.Drawing.Point(70, 128);
             this.picPlayer.Name = "picPlayer";
-            this.picPlayer.Size = new System.Drawing.Size(229, 267);
+            this.picPlayer.Size = new System.Drawing.Size(194, 237);
             this.picPlayer.TabIndex = 0;
             this.picPlayer.TabStop = false;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Playbill", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(76, 76);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(177, 49);
+            this.label3.TabIndex = 16;
+            this.label3.Text = "MR. PEANUT";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Playbill", 24F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(594, 92);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(0, 33);
+            this.label5.TabIndex = 17;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(311, 145);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(0, 21);
+            this.label6.TabIndex = 18;
             // 
             // FrmBattle
             // 
@@ -211,6 +240,9 @@
             this.BackColor = System.Drawing.Color.Green;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(822, 603);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.picSword);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.picHealthPot3);
@@ -260,5 +292,8 @@
         private System.Windows.Forms.PictureBox picHealthPot3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox picSword;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
     }
 }
