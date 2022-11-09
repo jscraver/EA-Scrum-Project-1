@@ -37,9 +37,24 @@ namespace Fall2020_CSC403_Project {
 
     static int SWITCH1 = 1;
     static int SWITCH2 = 1;
+    static int mode = 0;
 
     public FrmLevel() {
       InitializeComponent();
+      mode = FrmMenu.mode;
+      if (mode == 1)
+      {
+        this.WindowState = FormWindowState.Normal;
+        this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+        this.Bounds = Screen.PrimaryScreen.Bounds;
+        mode = 1;
+            }
+      if (mode == 2)
+      {
+        this.WindowState = FormWindowState.Maximized;
+        this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Sizable;
+        mode = 2;
+      }
     }
 
     private void FrmLevel_Load(object sender, EventArgs e) {
