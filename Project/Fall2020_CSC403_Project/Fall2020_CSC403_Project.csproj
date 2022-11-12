@@ -52,6 +52,12 @@
     <Compile Include="FrmBattle.Designer.cs">
       <DependentUpon>FrmBattle.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmCharacterSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCharacterSelect.Designer.cs">
+      <DependentUpon>FrmCharacterSelect.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmLevel.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,6 +80,9 @@
     </Compile>
     <EmbeddedResource Include="FrmBattle.resx">
       <DependentUpon>FrmBattle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCharacterSelect.resx">
+      <DependentUpon>FrmCharacterSelect.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmLevel.resx">
       <DependentUpon>FrmLevel.cs</DependentUpon>
@@ -173,6 +182,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\sword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player_3.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

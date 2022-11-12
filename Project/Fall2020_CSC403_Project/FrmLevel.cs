@@ -38,24 +38,37 @@ namespace Fall2020_CSC403_Project {
     static int SWITCH1 = 1;
     static int SWITCH2 = 1;
     static int mode = 0;
+    public static int charClass = 0;
+    public static string username = "";
 
-    public FrmLevel() {
-      InitializeComponent();
-      mode = FrmMenu.mode;
-      if (mode == 1)
-      {
-        this.WindowState = FormWindowState.Normal;
-        this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-        this.Bounds = Screen.PrimaryScreen.Bounds;
-        mode = 1;
+        public FrmLevel()
+        {
+            InitializeComponent();
+            mode = FrmMenu.mode;
+            username = FrmCharacterSelect.username;
+            if (mode == 1)
+            {
+                this.WindowState = FormWindowState.Normal;
+                this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+                this.Bounds = Screen.PrimaryScreen.Bounds;
+                mode = 1;
             }
-      if (mode == 2)
-      {
-        this.WindowState = FormWindowState.Maximized;
-        this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Sizable;
-        mode = 2;
-      }
-    }
+            if (mode == 2)
+            {
+                this.WindowState = FormWindowState.Maximized;
+                this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Sizable;
+                mode = 2;
+            }
+            charClass = FrmCharacterSelect.charClass;
+            if (charClass == 2)
+            {
+                picPlayer.BackgroundImage = global::Fall2020_CSC403_Project.Properties.Resources.player_2;
+            }
+            if (charClass == 3)
+            {
+                picPlayer.BackgroundImage = global::Fall2020_CSC403_Project.Properties.Resources.player_3;
+            }
+        }
 
     private void FrmLevel_Load(object sender, EventArgs e) {
       const int LEVEL_ROW_SIZE = 10;
@@ -162,7 +175,22 @@ namespace Fall2020_CSC403_Project {
       picPlayer.BringToFront();
       this.lblInGameTime.BringToFront();
       timeBegin = DateTime.Now;
+
+    if (charClass == 2)
+    {
+        player.GO_INC = 8; 
+        player.AlterHealth(-5); 
+        player.strength = 4;
     }
+    if (charClass == 3)
+    {
+        player.GO_INC = 1; 
+        player.AlterHealth(-10); 
+        player.strength = 1;
+    }
+      
+
+  }
 
     private Vector2 CreatePosition(PictureBox pic) {
       return new Vector2(pic.Location.X, pic.Location.Y);
