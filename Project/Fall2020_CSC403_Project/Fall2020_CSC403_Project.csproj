@@ -201,5 +201,11 @@
   <ItemGroup>
     <None Include="Resources\player_3_skin.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Exploration_music_v2.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Battle_music_v2.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

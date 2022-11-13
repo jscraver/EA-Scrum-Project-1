@@ -1,13 +1,13 @@
 using Fall2020_CSC403_Project.code;
-using Fall2020_CSC403_Project.Properties;
 using System;
 using System.Linq;
 using System.Drawing;
 using System.Windows.Forms;
-using System.CodeDom;
 using MyGameLibrary;
 using System.IO;
 using System.Runtime.InteropServices;
+using System.Media;
+using System.Xml.Serialization;
 
 namespace Fall2020_CSC403_Project {
   public partial class FrmLevel : Form{
@@ -78,8 +78,14 @@ namespace Fall2020_CSC403_Project {
                 else picPlayer.BackgroundImage = global::Fall2020_CSC403_Project.Properties.Resources.player_3;
             }
         }
+    SoundPlayer explorationmusic = new SoundPlayer(Properties.Resources.Exploration_music_v2);
+
+    public FrmLevel() {
+      InitializeComponent();
+    }
 
     private void FrmLevel_Load(object sender, EventArgs e) {
+
       const int LEVEL_ROW_SIZE = 10;
       const int LEVEL_COLUMN_SIZE = 17;
       const int PADDING = 7;
@@ -201,6 +207,9 @@ namespace Fall2020_CSC403_Project {
 
   }
 
+
+      explorationmusic.PlayLooping();
+    }
     private Vector2 CreatePosition(PictureBox pic) {
       return new Vector2(pic.Location.X, pic.Location.Y);
     }
@@ -282,7 +291,13 @@ namespace Fall2020_CSC403_Project {
       player.ResetMoveSpeed();
       player.MoveBack();
       frmBattle = FrmBattle.GetInstance(enemy);
+      frmBattle.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmBattle_Closed);
       frmBattle.Show();
+    }
+    
+    private void FrmBattle_Closed(object sender, FormClosedEventArgs e)
+    {
+      explorationmusic.PlayLooping();
     }
 
     private void tmrPlayerMove_Tick(object sender, EventArgs e) {
