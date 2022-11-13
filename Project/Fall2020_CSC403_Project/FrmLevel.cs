@@ -7,6 +7,7 @@ using System.Windows.Forms;
 using System.CodeDom;
 using MyGameLibrary;
 using System.IO;
+using System.Runtime.InteropServices;
 
 namespace Fall2020_CSC403_Project {
   public partial class FrmLevel : Form{
@@ -39,6 +40,7 @@ namespace Fall2020_CSC403_Project {
     static int SWITCH2 = 1;
     static int mode = 0;
     public static int charClass = 0;
+    public static int skin = 0;
     public static string username = "";
 
         public FrmLevel()
@@ -60,13 +62,20 @@ namespace Fall2020_CSC403_Project {
                 mode = 2;
             }
             charClass = FrmCharacterSelect.charClass;
+            skin = FrmCharacterSelect.skin;
+            if (charClass == 1)
+            {
+                if (skin == 1) picPlayer.BackgroundImage = global::Fall2020_CSC403_Project.Properties.Resources.player_skin;
+            }
             if (charClass == 2)
             {
-                picPlayer.BackgroundImage = global::Fall2020_CSC403_Project.Properties.Resources.player_2;
+                if (skin == 1) picPlayer.BackgroundImage = global::Fall2020_CSC403_Project.Properties.Resources.player_2_skin;
+                else picPlayer.BackgroundImage = global::Fall2020_CSC403_Project.Properties.Resources.player_2;
             }
             if (charClass == 3)
             {
-                picPlayer.BackgroundImage = global::Fall2020_CSC403_Project.Properties.Resources.player_3;
+                if (skin == 1) picPlayer.BackgroundImage = global::Fall2020_CSC403_Project.Properties.Resources.player_3_skin;
+                else picPlayer.BackgroundImage = global::Fall2020_CSC403_Project.Properties.Resources.player_3;
             }
         }
 

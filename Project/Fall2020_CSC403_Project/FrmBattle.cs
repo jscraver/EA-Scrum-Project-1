@@ -17,6 +17,7 @@ namespace Fall2020_CSC403_Project {
     private Inventory inventoryHeal;
     private Inventory inventorySword;
     public static int charClass = 1;
+    public static int skin = 0;
 
     private FrmBattle() {
       InitializeComponent();
@@ -26,6 +27,7 @@ namespace Fall2020_CSC403_Project {
       inventorySword = Game.inventorySword;
       sword = Game.sword;
       charClass = FrmLevel.charClass;
+      skin = FrmLevel.skin;
     }
 
     public void Setup() {
@@ -35,14 +37,20 @@ namespace Fall2020_CSC403_Project {
       BackColor = enemy.Color;
       picBossBattle.Visible = false;
 
-      // update player picture
+            // update player picture
+      if (charClass == 1)
+      {
+        if (skin == 1) picPlayer.BackgroundImage = global::Fall2020_CSC403_Project.Properties.Resources.player_skin;
+      }
       if (charClass == 2)
       {
-        picPlayer.BackgroundImage = global::Fall2020_CSC403_Project.Properties.Resources.player_2;
+        if (skin == 1) picPlayer.BackgroundImage = global::Fall2020_CSC403_Project.Properties.Resources.player_2_skin;
+        else picPlayer.BackgroundImage = global::Fall2020_CSC403_Project.Properties.Resources.player_2;
       }
       if (charClass == 3)
       {
-        picPlayer.BackgroundImage = global::Fall2020_CSC403_Project.Properties.Resources.player_3;
+        if (skin == 1) picPlayer.BackgroundImage = global::Fall2020_CSC403_Project.Properties.Resources.player_3_skin;
+        else picPlayer.BackgroundImage = global::Fall2020_CSC403_Project.Properties.Resources.player_3;
       }
 
       // Observer pattern
