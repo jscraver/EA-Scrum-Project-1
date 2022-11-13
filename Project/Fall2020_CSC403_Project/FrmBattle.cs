@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Drawing.Text;
 using System.Media;
 using System.Windows.Forms;
+using System.Xml.Serialization;
 
 namespace Fall2020_CSC403_Project {
   public partial class FrmBattle : Form {
@@ -16,6 +17,8 @@ namespace Fall2020_CSC403_Project {
     private Sword sword;
     private Inventory inventoryHeal;
     private Inventory inventorySword;
+
+    private SoundPlayer battleMusic = new SoundPlayer(Properties.Resources.Battle_music_v2);
 
     private FrmBattle() {
       InitializeComponent();
@@ -65,17 +68,7 @@ namespace Fall2020_CSC403_Project {
 
     // show health
     UpdateHealthBars();
-    }
-
-    public void SetupForBossBattle() {
-      picBossBattle.Location = Point.Empty;
-      picBossBattle.Size = ClientSize;
-      picBossBattle.Visible = true;
-
-      SoundPlayer simpleSound = new SoundPlayer(Resources.final_battle);
-      simpleSound.Play();
-
-      tmrFinalBattle.Enabled = true;
+    battleMusic.PlayLooping();
     }
 
     public static FrmBattle GetInstance(Enemy enemy) {
@@ -117,8 +110,8 @@ namespace Fall2020_CSC403_Project {
         }
        
         if (player.Health <= 0 || enemy.Health <= 0) {
-        instance = null;
-        Close();
+            instance = null;
+            EndBattle();
         }
         // remove sword image when sword breaks
         if (sword.Durability <= 0)
@@ -171,7 +164,7 @@ namespace Fall2020_CSC403_Project {
             if (player.Health <= 0 || enemy.Health <= 0)
             {
                 instance = null;
-                Close();
+                EndBattle();
             }
 
         }
@@ -191,5 +184,9 @@ namespace Fall2020_CSC403_Project {
       tmrFinalBattle.Enabled = false;
     }
 
+    private void EndBattle() {
+      battleMusic.Stop();
+      Close();
     }
+  }
 }
