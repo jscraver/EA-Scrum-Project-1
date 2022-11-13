@@ -80,10 +80,6 @@ namespace Fall2020_CSC403_Project {
         }
     SoundPlayer explorationmusic = new SoundPlayer(Properties.Resources.Exploration_music_v2);
 
-    public FrmLevel() {
-      InitializeComponent();
-    }
-
     private void FrmLevel_Load(object sender, EventArgs e) {
 
       const int LEVEL_ROW_SIZE = 10;
@@ -203,13 +199,13 @@ namespace Fall2020_CSC403_Project {
         player.AlterHealth(-10); 
         player.strength = 1;
     }
-      
 
+    explorationmusic.PlayLooping();
   }
 
 
-      explorationmusic.PlayLooping();
-    }
+      
+    
     private Vector2 CreatePosition(PictureBox pic) {
       return new Vector2(pic.Location.X, pic.Location.Y);
     }
