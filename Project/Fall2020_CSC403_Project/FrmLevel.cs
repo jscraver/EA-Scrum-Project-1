@@ -7,7 +7,8 @@ using MyGameLibrary;
 using System.IO;
 using System.Runtime.InteropServices;
 using System.Media;
-using System.Xml.Serialization;
+using System.IO;
+using System.Collections.Generic;
 
 namespace Fall2020_CSC403_Project {
   public partial class FrmLevel : Form{
@@ -206,6 +207,9 @@ namespace Fall2020_CSC403_Project {
 
       
     
+      axWindowsMediaPlayer1.URL = @"Exploration_music_v2.wav";
+      axWindowsMediaPlayer1.settings.playCount = 9999;
+    }
     private Vector2 CreatePosition(PictureBox pic) {
       return new Vector2(pic.Location.X, pic.Location.Y);
     }
@@ -286,14 +290,15 @@ namespace Fall2020_CSC403_Project {
     private void Fight(Enemy enemy) {
       player.ResetMoveSpeed();
       player.MoveBack();
+      axWindowsMediaPlayer1.Ctlcontrols.stop();
       frmBattle = FrmBattle.GetInstance(enemy);
-      frmBattle.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmBattle_Closed);
+      frmBattle.FormClosed += new FormClosedEventHandler(this.FrmBattle_Closed);
       frmBattle.Show();
     }
     
     private void FrmBattle_Closed(object sender, FormClosedEventArgs e)
     {
-      explorationmusic.PlayLooping();
+      axWindowsMediaPlayer1.Ctlcontrols.play();
     }
 
     private void tmrPlayerMove_Tick(object sender, EventArgs e) {
