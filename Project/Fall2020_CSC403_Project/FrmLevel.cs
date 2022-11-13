@@ -43,11 +43,13 @@ namespace Fall2020_CSC403_Project {
     public static int charClass = 0;
     public static int skin = 0;
     public static string username = "";
+    public static int volume_level = 0;
 
         public FrmLevel()
         {
             InitializeComponent();
-            mode = FrmMenu.mode;
+            mode = FrmCharacterSelect.mode;
+            volume_level = FrmCharacterSelect.volume_level;
             username = FrmCharacterSelect.username;
             if (mode == 1)
             {
@@ -58,8 +60,9 @@ namespace Fall2020_CSC403_Project {
             }
             if (mode == 2)
             {
-                this.WindowState = FormWindowState.Maximized;
+                this.WindowState = FormWindowState.Normal;
                 this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Sizable;
+                this.Bounds = Screen.PrimaryScreen.Bounds;
                 mode = 2;
             }
             charClass = FrmCharacterSelect.charClass;
@@ -79,7 +82,6 @@ namespace Fall2020_CSC403_Project {
                 else picPlayer.BackgroundImage = global::Fall2020_CSC403_Project.Properties.Resources.player_3;
             }
         }
-    SoundPlayer explorationmusic = new SoundPlayer(Properties.Resources.Exploration_music_v2);
 
     private void FrmLevel_Load(object sender, EventArgs e) {
 
@@ -197,19 +199,15 @@ namespace Fall2020_CSC403_Project {
     if (charClass == 3)
     {
         player.GO_INC = 1; 
-        player.AlterHealth(-10); 
+        player.AlterHealth(-10);
         player.strength = 1;
     }
 
-    explorationmusic.PlayLooping();
+    axWindowsMediaPlayer1.URL = @"Exploration_music_v2.wav";
+    axWindowsMediaPlayer1.settings.playCount = 9999;
+    axWindowsMediaPlayer1.settings.volume = volume_level;
   }
 
-
-      
-    
-      axWindowsMediaPlayer1.URL = @"Exploration_music_v2.wav";
-      axWindowsMediaPlayer1.settings.playCount = 9999;
-    }
     private Vector2 CreatePosition(PictureBox pic) {
       return new Vector2(pic.Location.X, pic.Location.Y);
     }

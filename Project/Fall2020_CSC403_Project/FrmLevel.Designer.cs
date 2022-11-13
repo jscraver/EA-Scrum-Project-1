@@ -2205,6 +2205,7 @@
             // 
             // axWindowsMediaPlayer1
             // 
+            this.axWindowsMediaPlayer1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.axWindowsMediaPlayer1.Enabled = true;
             this.axWindowsMediaPlayer1.Location = new System.Drawing.Point(1677, 1015);
             this.axWindowsMediaPlayer1.Name = "axWindowsMediaPlayer1";
@@ -2770,7 +2771,7 @@
     private System.Windows.Forms.PictureBox picBossKoolAid;
     private System.Windows.Forms.Label lblPlayerHealthFull;
     private System.Windows.Forms.Label label1;
-        private AxWMPLib.AxWindowsMediaPlayer axWindowsMediaPlayer1;
+    private AxWMPLib.AxWindowsMediaPlayer axWindowsMediaPlayer1;
     }
 }
 

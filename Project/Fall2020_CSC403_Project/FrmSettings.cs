@@ -14,6 +14,7 @@ namespace Fall2020_CSC403_Project
     public partial class FrmSettings : Form
     {
         public static int mode = 0;
+        public static int volume_level = 50;
         public FrmSettings()
         {
             InitializeComponent();
@@ -51,7 +52,7 @@ namespace Fall2020_CSC403_Project
         }
         private void trackBar1_Scroll(object sender, EventArgs e)
         {
-
+            volume_level = trackBar1.Value * 10;
         }
         private void fullscreen(Form form)
         {

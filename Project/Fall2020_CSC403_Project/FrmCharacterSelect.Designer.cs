@@ -53,6 +53,9 @@
             this.trackBar1 = new System.Windows.Forms.TrackBar();
             this.trackBar2 = new System.Windows.Forms.TrackBar();
             this.trackBar3 = new System.Windows.Forms.TrackBar();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picPlayer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picPlayer_2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picPlayer_3)).BeginInit();
@@ -99,6 +102,7 @@
             // picPlayer_3
             // 
             this.picPlayer_3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.picPlayer_3.BackColor = System.Drawing.Color.Transparent;
             this.picPlayer_3.BackgroundImage = global::Fall2020_CSC403_Project.Properties.Resources.player_3;
             this.picPlayer_3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.picPlayer_3.Location = new System.Drawing.Point(962, 178);
@@ -309,6 +313,7 @@
             // 
             // trackBar1
             // 
+            this.trackBar1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.trackBar1.Location = new System.Drawing.Point(319, 351);
             this.trackBar1.Maximum = 1;
             this.trackBar1.Name = "trackBar1";
@@ -318,6 +323,7 @@
             // 
             // trackBar2
             // 
+            this.trackBar2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.trackBar2.Location = new System.Drawing.Point(735, 357);
             this.trackBar2.Maximum = 1;
             this.trackBar2.Name = "trackBar2";
@@ -327,6 +333,7 @@
             // 
             // trackBar3
             // 
+            this.trackBar3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.trackBar3.Location = new System.Drawing.Point(1111, 357);
             this.trackBar3.Maximum = 1;
             this.trackBar3.Name = "trackBar3";
@@ -334,12 +341,48 @@
             this.trackBar3.TabIndex = 25;
             this.trackBar3.Scroll += new System.EventHandler(this.trackBar3_Scroll);
             // 
+            // label15
+            // 
+            this.label15.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Playbill", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(313, 315);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(119, 33);
+            this.label15.TabIndex = 26;
+            this.label15.Text = "Change Skin";
+            // 
+            // label16
+            // 
+            this.label16.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Playbill", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(729, 321);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(119, 33);
+            this.label16.TabIndex = 27;
+            this.label16.Text = "Change Skin";
+            // 
+            // label17
+            // 
+            this.label17.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Playbill", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(1105, 321);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(119, 33);
+            this.label17.TabIndex = 28;
+            this.label17.Text = "Change Skin";
+            // 
             // FrmCharacterSelect
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Goldenrod;
             this.ClientSize = new System.Drawing.Size(1300, 832);
+            this.Controls.Add(this.label17);
+            this.Controls.Add(this.label16);
+            this.Controls.Add(this.label15);
             this.Controls.Add(this.trackBar3);
             this.Controls.Add(this.trackBar2);
             this.Controls.Add(this.trackBar1);
@@ -405,5 +448,8 @@
         private System.Windows.Forms.TrackBar trackBar1;
         private System.Windows.Forms.TrackBar trackBar2;
         private System.Windows.Forms.TrackBar trackBar3;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label17;
     }
 }

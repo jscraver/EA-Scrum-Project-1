@@ -18,6 +18,7 @@ namespace Fall2020_CSC403_Project {
     private Sword sword;
     private Inventory inventoryHeal;
     private Inventory inventorySword;
+    public static int volume_level = 0;
     public static int charClass = 1;
     public static int skin = 0;
 
@@ -30,6 +31,7 @@ namespace Fall2020_CSC403_Project {
       inventoryHeal = Game.inventoryHeal;
       inventorySword = Game.inventorySword;
       sword = Game.sword;
+      volume_level = FrmLevel.volume_level;
       charClass = FrmLevel.charClass;
       skin = FrmLevel.skin;
     }
@@ -91,6 +93,7 @@ namespace Fall2020_CSC403_Project {
     UpdateHealthBars();
     axWindowsMediaPlayer1.URL = @"Battle_music_v2.wav";
     axWindowsMediaPlayer1.settings.playCount = 9999;
+    axWindowsMediaPlayer1.settings.volume = volume_level;
   }
 
     public static FrmBattle GetInstance(Enemy enemy) {

@@ -13,6 +13,7 @@ namespace Fall2020_CSC403_Project
     public partial class FrmCharacterSelect : Form
     {
         public static int mode = 0;
+        public static int volume_level = 0;
         public static int charClass = 1;
         public static string username = "Player1";
         public static int skin = 0;
@@ -21,6 +22,7 @@ namespace Fall2020_CSC403_Project
         {
             InitializeComponent();
             mode = FrmMenu.mode;
+            volume_level = FrmMenu.volume_level;
             if (mode == 1)
             {
                 this.WindowState = FormWindowState.Normal;
@@ -58,7 +60,7 @@ namespace Fall2020_CSC403_Project
         private void button3_Click(object sender, EventArgs e)
         {
             charClass = 3;
-            if (trackBar2.Value == 1) skin = 1;
+            if (trackBar3.Value == 1) skin = 1;
             FrmLevel level = new FrmLevel();
             this.Hide();
             level.ShowDialog();

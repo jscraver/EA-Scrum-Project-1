@@ -14,11 +14,13 @@ namespace Fall2020_CSC403_Project
     public partial class FrmMenu : Form
     {
         public static int mode = 0;
+        public static int volume_level = 0;
 
         public FrmMenu()
         {
             InitializeComponent();
             mode = FrmSettings.mode;
+            volume_level = FrmSettings.volume_level;
             if (mode == 1)
             {
                 this.WindowState = FormWindowState.Normal;
