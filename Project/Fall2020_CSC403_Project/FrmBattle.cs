@@ -7,6 +7,7 @@ using System.Drawing.Text;
 using System.Media;
 using System.Windows.Forms;
 using System.Xml.Serialization;
+using WMPLib;
 
 namespace Fall2020_CSC403_Project {
   public partial class FrmBattle : Form {
@@ -18,7 +19,7 @@ namespace Fall2020_CSC403_Project {
     private Inventory inventoryHeal;
     private Inventory inventorySword;
 
-    private SoundPlayer battleMusic = new SoundPlayer(Properties.Resources.Battle_music_v2);
+    
 
     private FrmBattle() {
       InitializeComponent();
@@ -68,8 +69,9 @@ namespace Fall2020_CSC403_Project {
 
     // show health
     UpdateHealthBars();
-    battleMusic.PlayLooping();
-    }
+    axWindowsMediaPlayer1.URL = @"Battle_music_v2.wav";
+    axWindowsMediaPlayer1.settings.playCount = 9999;
+  }
 
     public static FrmBattle GetInstance(Enemy enemy) {
       if (instance == null) {
@@ -185,7 +187,6 @@ namespace Fall2020_CSC403_Project {
     }
 
     private void EndBattle() {
-      battleMusic.Stop();
       Close();
     }
   }

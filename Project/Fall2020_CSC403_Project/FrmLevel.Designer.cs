@@ -24,6 +24,7 @@
     /// </summary>
     private void InitializeComponent() {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmLevel));
             this.lblInGameTime = new System.Windows.Forms.Label();
             this.tmrUpdateInGameTime = new System.Windows.Forms.Timer(this.components);
             this.tmrPlayerMove = new System.Windows.Forms.Timer(this.components);
@@ -206,6 +207,7 @@
             this.picEnemyCheeto = new System.Windows.Forms.PictureBox();
             this.picEnemyPoisonPacket = new System.Windows.Forms.PictureBox();
             this.picBossKoolAid = new System.Windows.Forms.PictureBox();
+            this.axWindowsMediaPlayer1 = new AxWMPLib.AxWindowsMediaPlayer();
             ((System.ComponentModel.ISupportInitialize)(this.picPlayer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tile1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tile2)).BeginInit();
@@ -376,7 +378,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.tile167)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tile168)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tile169)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tile170)).BeginInit();   
+            ((System.ComponentModel.ISupportInitialize)(this.tile170)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picEnemyCheeto)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picEnemyPoisonPacket)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBossKoolAid)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblInGameTime
@@ -408,6 +414,40 @@
             this.tmrSpecialInteraction.Enabled = true;
             this.tmrSpecialInteraction.Interval = 2000;
             this.tmrSpecialInteraction.Tick += new System.EventHandler(this.tmrSpecialInteraction_Tick);
+            // 
+            // tmrEnemyMove
+            // 
+            this.tmrEnemyMove.Enabled = true;
+            this.tmrEnemyMove.Interval = 59;
+            this.tmrEnemyMove.Tick += new System.EventHandler(this.tmrEnemyMove_Tick);
+            // 
+            // tmrEnemyLook
+            // 
+            this.tmrEnemyLook.Enabled = true;
+            this.tmrEnemyLook.Interval = 1009;
+            this.tmrEnemyLook.Tick += new System.EventHandler(this.tmrEnemyLook_Tick);
+            // 
+            // lblPlayerHealthFull
+            // 
+            this.lblPlayerHealthFull.BackColor = System.Drawing.Color.Blue;
+            this.lblPlayerHealthFull.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPlayerHealthFull.ForeColor = System.Drawing.Color.White;
+            this.lblPlayerHealthFull.Location = new System.Drawing.Point(280, 17);
+            this.lblPlayerHealthFull.Name = "lblPlayerHealthFull";
+            this.lblPlayerHealthFull.Size = new System.Drawing.Size(226, 20);
+            this.lblPlayerHealthFull.TabIndex = 18;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Playbill", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Image = global::Fall2020_CSC403_Project.Properties.Resources.Brick_Texture;
+            this.label1.Location = new System.Drawing.Point(200, 11);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(78, 33);
+            this.label1.TabIndex = 19;
+            this.label1.Text = "HEALTH";
             // 
             // picPlayer
             // 
@@ -1950,17 +1990,6 @@
             this.tile170.Size = new System.Drawing.Size(100, 100);
             this.tile170.TabIndex = 172;
             this.tile170.TabStop = false;
-            // tmrEnemyMove
-            // 
-            this.tmrEnemyMove.Enabled = true;
-            this.tmrEnemyMove.Interval = 59;
-            this.tmrEnemyMove.Tick += new System.EventHandler(this.tmrEnemyMove_Tick);
-            // 
-            // tmrEnemyLook
-            // 
-            this.tmrEnemyLook.Enabled = true;
-            this.tmrEnemyLook.Interval = 1009;
-            this.tmrEnemyLook.Tick += new System.EventHandler(this.tmrEnemyLook_Tick);
             // 
             // picEnemyCheeto
             // 
@@ -1979,7 +2008,6 @@
             this.picEnemyPoisonPacket.BackColor = System.Drawing.Color.Transparent;
             this.picEnemyPoisonPacket.BackgroundImage = global::Fall2020_CSC403_Project.Properties.Resources.enemy_poisonpacket;
             this.picEnemyPoisonPacket.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-
             this.picEnemyPoisonPacket.Location = new System.Drawing.Point(717, 309);
             this.picEnemyPoisonPacket.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.picEnemyPoisonPacket.Name = "picEnemyPoisonPacket";
@@ -1999,27 +2027,15 @@
             this.picBossKoolAid.TabIndex = 174;
             this.picBossKoolAid.TabStop = false;
             // 
-            // label1
+            // axWindowsMediaPlayer1
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Playbill", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Image = global::Fall2020_CSC403_Project.Properties.Resources.Brick_Texture;
-            this.label1.Location = new System.Drawing.Point(200, 11);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(50, 21);
-            this.label1.TabIndex = 19;
-            this.label1.Text = "HEALTH";
-            // 
-            // lblPlayerHealthFull
-            // 
-            this.lblPlayerHealthFull.BackColor = System.Drawing.Color.Blue;
-            this.lblPlayerHealthFull.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPlayerHealthFull.ForeColor = System.Drawing.Color.White;
-            this.lblPlayerHealthFull.Location = new System.Drawing.Point(280, 17);
-            this.lblPlayerHealthFull.Name = "lblPlayerHealthFull";
-            this.lblPlayerHealthFull.Size = new System.Drawing.Size(226, 20);
-            this.lblPlayerHealthFull.TabIndex = 18;
+            this.axWindowsMediaPlayer1.Enabled = true;
+            this.axWindowsMediaPlayer1.Location = new System.Drawing.Point(1677, 1015);
+            this.axWindowsMediaPlayer1.Name = "axWindowsMediaPlayer1";
+            this.axWindowsMediaPlayer1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axWindowsMediaPlayer1.OcxState")));
+            this.axWindowsMediaPlayer1.Size = new System.Drawing.Size(75, 23);
+            this.axWindowsMediaPlayer1.TabIndex = 175;
+            this.axWindowsMediaPlayer1.Visible = false;
             // 
             // FrmLevel
             // 
@@ -2028,6 +2044,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1764, 1050);
+            this.Controls.Add(this.axWindowsMediaPlayer1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblPlayerHealthFull);
             this.Controls.Add(this.picBossKoolAid);
@@ -2387,6 +2404,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.picEnemyCheeto)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picEnemyPoisonPacket)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBossKoolAid)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2576,6 +2594,7 @@
     private System.Windows.Forms.PictureBox picBossKoolAid;
     private System.Windows.Forms.Label lblPlayerHealthFull;
     private System.Windows.Forms.Label label1;
-  }
+        private AxWMPLib.AxWindowsMediaPlayer axWindowsMediaPlayer1;
+    }
 }
 
