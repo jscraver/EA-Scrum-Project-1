@@ -102,11 +102,12 @@ namespace Fall2020_CSC403_Project {
     }
 
     private async void btnAttack_Click(object sender, EventArgs e) {
-        if (inventorySword.Quantity > 0)
+        if (inventorySword.Quantity > 0 && sword.Durability > 0)
         {
             sword.attackWithSwordLight(player);
             sword.subtractDurability(1);
-            label6.Text = "MR. PEANUT strikes for 4 damage";
+            label9.Text = "Durability:  " + sword.Durability;
+            label6.Text = "MR. PEANUT strikes for 6 damage";
             await Task.Delay(2000);
             label6.Text = "";
             }
@@ -114,7 +115,7 @@ namespace Fall2020_CSC403_Project {
         else
         {
             player.OnAttack(-2);
-            label6.Text = "MR. PEANUT strikes for 2 damage";
+            label6.Text = "MR. PEANUT strikes for 4 damage";
             await Task.Delay(2000);
             label6.Text = "";
 
@@ -130,15 +131,19 @@ namespace Fall2020_CSC403_Project {
         Close();
         }
         // remove sword image when sword breaks
-        if (sword.Durability <= 0)
-        {
+        if (sword.Durability <= 0 && picSword.Image != null)
+        {   
+            label9.Text = "";
+            label7.Text = "Your sword has broken!";
+            await Task.Delay(1000);
+            label7.Text = "";
             picSword.Image = null;
         }
 
             UpdateHealthBars();
     }
       
-    private void btnHeal_Click(object sender, EventArgs e) {
+    private async void btnHeal_Click(object sender, EventArgs e) {
        if (player.Health <= 15 & inventoryHeal.Quantity > 0) {
             healthPotion.useHealthPotion(player);
             inventoryHeal.DeleteFromQuantity(1);
@@ -149,22 +154,28 @@ namespace Fall2020_CSC403_Project {
        }
        // display potions on screen in inventory
        if (inventoryHeal.Quantity == 2) {
-            
+                label8.Text = "You have 2 potions left.";
+                await Task.Delay(1000);
+                label8.Text = "";
                 picHealthPot3.Image = null;
        }
        else if (inventoryHeal.Quantity == 1) {
-         
+                label8.Text = "You have 1 potion left.";
+                await Task.Delay(1000);
+                label8.Text = "";
                 picHealthPot2.Image = null;
        }
        else if (inventoryHeal.Quantity == 0) { 
-    
+                label8.Text = "You are out of potions!";
+                await Task.Delay(1000);
+                label8.Text = "";
                 picHealthPot1.Image = null;
        }
 
        UpdateHealthBars();
     }
 
-    private void buttonStrong_Click(object sender, EventArgs e)
+    private async void buttonStrong_Click(object sender, EventArgs e)
     {
         if (inventorySword.Quantity > 0 & sword.Durability == 3)
         {
@@ -183,6 +194,12 @@ namespace Fall2020_CSC403_Project {
                 Close();
             }
 
+        }
+        else 
+        {
+            label7.Text = "Sword doesn't have enough durability!";
+            await Task.Delay(800);
+            label7.Text = "";
         }
         
         UpdateHealthBars();
