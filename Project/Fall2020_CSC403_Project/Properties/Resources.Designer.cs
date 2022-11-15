@@ -142,6 +142,16 @@ namespace Fall2020_CSC403_Project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap GrassSwordTexture {
+            get {
+                object obj = ResourceManager.GetObject("GrassSwordTexture", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap health_potion {
             get {
                 object obj = ResourceManager.GetObject("health_potion", resourceCulture);
@@ -165,6 +175,16 @@ namespace Fall2020_CSC403_Project.Properties {
         internal static System.Drawing.Bitmap Lava_Texture {
             get {
                 object obj = ResourceManager.GetObject("Lava_Texture", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap npc_villager {
+            get {
+                object obj = ResourceManager.GetObject("npc_villager", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -212,11 +232,11 @@ namespace Fall2020_CSC403_Project.Properties {
         /// <summary>
         ///   Looks up a localized string similar to 1010101010101010101010101010101010
         ///1088404040404040404040404040404010
-        ///1040404040404040404040404040A24010
+        ///1040404040404040404040C24040A24010
         ///1040404040404040404040404040404010
         ///1040404040404040404040404040404010
         ///1040404040404040404040404040404010
-        ///10404040404040404040404040A2404010
+        ///105G4040404040404040404040A2404010
         ///10404040E1E1E1E1E1E140404040404010
         ///1040404064646464646440404040404010
         ///1010101010101010101010101010101010.

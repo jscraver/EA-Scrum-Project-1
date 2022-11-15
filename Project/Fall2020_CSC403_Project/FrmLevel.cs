@@ -7,19 +7,26 @@ using System.Windows.Forms;
 using System.CodeDom;
 using MyGameLibrary;
 using System.IO;
+using System.Runtime.InteropServices;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using System.Reflection.Emit;
+using System.Threading;
+using Timer = System.Windows.Forms.Timer;
 
 namespace Fall2020_CSC403_Project {
-  public partial class FrmLevel : Form{
+  public partial class FrmLevel : Form {
     private Player player;
 
     private Enemy enemyPoisonPacket;
     private Enemy bossKoolaid;
     private Enemy enemyCheeto;
+    private NPC npcVillager;
     private Tile[] walls;
     private Tile[] damagingtiles;
     private Tile[] slipperytiles;
     private Tile[] teleportingtiles;
     private Tile[] slowingtiles;
+    private Tile[] spawningtiles;
     private Boolean InteractionPossible;
     private int TeleportIndex = 0;
     private Boolean SlipperyFlag = false;
@@ -48,6 +55,8 @@ namespace Fall2020_CSC403_Project {
       const int PADDING = 7;
       InteractionPossible = true;
 
+      label2.Hide();
+
       int rownumber = 0;
       int columnnumber = 0;
       int numwalls = 0;
@@ -55,12 +64,13 @@ namespace Fall2020_CSC403_Project {
       int numslipperytiles = 0;
       int numteleportingtiles = 0;
       int numslowingtiles = 0;
+      int numspawningtiles = 0;
 
 
       healthPotion = new HealthPotion("Health Potion", player);
       sword = new Sword("Sword", player, 3); 
-      inventoryHeal = new Inventory(healthPotion, 3);
-      inventorySword = new Inventory(sword, 1);
+      inventoryHeal = new Inventory(healthPotion, 2);
+      inventorySword = new Inventory(sword, 0);
 
       char[,][] level = new char[LEVEL_ROW_SIZE, LEVEL_COLUMN_SIZE][];
       string s = Properties.Resources.TestMap1;
@@ -70,12 +80,13 @@ namespace Fall2020_CSC403_Project {
               char[] tilecode = mapdatabinary.ToCharArray();
               level[rownumber, hexindex/2] = tilecode;
               numwalls += tilecode[3] == '1' ? 1 : 0;
-              numdamagingtiles += tilecode[4] == '1' ? 1 : 0;
-              numslipperytiles += tilecode[5] == '1' ? 1 : 0;
-              numteleportingtiles += tilecode[6] == '1' ? 1 : 0;
-              numslowingtiles += tilecode[7] == '1' ? 1 : 0;
+              numspawningtiles += tilecode[4] == '1' ? 1 : 0;
+              numdamagingtiles += tilecode[5] == '1' ? 1 : 0;
+              numslipperytiles += tilecode[6] == '1' ? 1 : 0;
+              numteleportingtiles += tilecode[7] == '1' ? 1 : 0;
+              numslowingtiles += tilecode[8] == '1' ? 1 : 0;
               columnnumber++;
-          }
+          }   
           rownumber++;
       }
 
@@ -84,23 +95,29 @@ namespace Fall2020_CSC403_Project {
       slipperytiles = new Tile[numslipperytiles];
       teleportingtiles = new Tile[numteleportingtiles];
       slowingtiles = new Tile[numslowingtiles];
+      spawningtiles = new Tile[numspawningtiles];
 
       int wallcount = 0;
       int damagingcount = 0;
       int slipperycount = 0;
       int teleportingcount = 0;
       int slowingcount = 0;
+      int spawningcount = 0;
 
       Game.player = player;
       Game.healthPotion = healthPotion;
       Game.sword = sword;
       Game.inventoryHeal = inventoryHeal;
       Game.inventorySword = inventorySword;
+
       timeBegin = DateTime.Now;
+
       for (int index = 0; index < LEVEL_ROW_SIZE * LEVEL_COLUMN_SIZE; index++) {
           PictureBox tilepicture = Controls.Find("tile" + (index + 1).ToString(), true)[0] as PictureBox;
           char[] tilecode = level[index / LEVEL_COLUMN_SIZE, index % LEVEL_COLUMN_SIZE];
           string tiletexturecode = String.Join("",tilecode.Take(3).ToArray());
+          string tiletexturecode2 = String.Join("", tilecode.Skip(9).Take(1).ToArray());
+          
           switch (tiletexturecode) {
               case "000": tilepicture.BackgroundImage = Properties.Resources.Brick_Texture; break;
               case "001": tilepicture.BackgroundImage = Properties.Resources.Dirt_Texture; break;
@@ -111,7 +128,8 @@ namespace Fall2020_CSC403_Project {
               case "110": tilepicture.BackgroundImage = Properties.Resources.Stone_Texture; break;
               case "111": tilepicture.BackgroundImage = Properties.Resources.Water_Texture; break;
           }
-          char[] tileflagcode = tilecode.Skip(3).Take(5).ToArray();
+
+          char[] tileflagcode = tilecode.Skip(3).Take(7).ToArray();
 
           Tile tile = new Tile(CreatePosition(tilepicture), CreateCollider(tilepicture, PADDING), tileflagcode);
           if (tile.isSolid) {
@@ -129,6 +147,19 @@ namespace Fall2020_CSC403_Project {
           if (tile.isSlowing) {
               slowingtiles[slowingcount] = tile; slowingcount++;
           }
+          if (tile.isSpawning)
+          {
+            spawningtiles[spawningcount] = tile; spawningcount++;
+          }
+
+          switch (tiletexturecode2)
+          {
+            case "1": picSword.Location = tilepicture.Location;
+                      picSword.SizeMode = PictureBoxSizeMode.StretchImage;
+                      picSword.Image = Properties.Resources.GrassSwordTexture; 
+                      picSword.BringToFront();  
+                      break;
+          }
       }
 
       bossKoolaid = new Enemy(CreatePosition(picBossKoolAid), CreateCollider(picBossKoolAid, PADDING));
@@ -141,7 +172,9 @@ namespace Fall2020_CSC403_Project {
       enemyPoisonPacket.Color = Color.Green;
       enemyCheeto.Color = Color.FromArgb(255, 245, 161);
 
-      player = new Player(CreatePosition(picPlayer), CreateCollider(picPlayer, PADDING));
+      npcVillager = new NPC(CreatePosition(picNPCVillager), CreateCollider(picNPCVillager, PADDING));
+      picNPCVillager.BringToFront();
+
       player = new Player(CreatePosition(picPlayer), CreateCollider(picPlayer, PADDING));
       Game.player = player;
       picPlayer.BringToFront();
@@ -219,6 +252,12 @@ namespace Fall2020_CSC403_Project {
               TeleportIndex++;
               InteractionPossible = false;
           }
+          if (OnSpawnTile(player))
+          {
+            picSword.Dispose();
+            inventorySword.AddToQuantity(1);
+            InteractionPossible = false;
+          }
       }
     }
     
@@ -231,6 +270,29 @@ namespace Fall2020_CSC403_Project {
       player.MoveBack();
       frmBattle = FrmBattle.GetInstance(enemy);
       frmBattle.Show();
+    }
+
+    private void Talk()
+    {
+        player.ResetMoveSpeed();
+        player.MoveBack();
+        Dialog();
+        inventoryHeal.setQuantity(4);
+        picNPCVillager.Dispose();
+    }
+
+    private void Dialog()
+    {
+        label2.Text = "Hi [PLAYER]! Here is a refill of Health Potions for your troubles. Good luck!";
+        label2.Show();
+        var t = new Timer();
+        t.Interval = 4000; // it will Tick in 4 seconds
+        t.Tick += (s, e) =>
+        {
+            label2.Hide();
+            t.Stop();
+        };
+        t.Start();
     }
 
     private void tmrPlayerMove_Tick(object sender, EventArgs e) {
@@ -252,6 +314,9 @@ namespace Fall2020_CSC403_Project {
            Fight(enemyCheeto);
       if (HitAChar(player, bossKoolaid) && bossKoolaid.Health > 0)
            Fight(bossKoolaid);
+
+      if (CharWasSeen(player.Collider.rect, npcVillager.Collider.rect))
+            Talk();
 
       if (enemyPoisonPacket.Health <= 0)
            picEnemyPoisonPacket.Dispose();
@@ -344,8 +409,25 @@ namespace Fall2020_CSC403_Project {
           SlowFlag = true;
       return onslowingtile;
     }
+
+    private bool OnSpawnTile(Character c)
+    {
+        bool onspawntile = false;
+        for (int w = 0; w < spawningtiles.Length; w++)
+        {
+            if (c.Collider.Intersects(spawningtiles[w].Collider))
+            {
+                onspawntile = true;
+                break;
+            }
+        }
+        if (onspawntile)
+            InteractionPossible = false;
+        return onspawntile;
+    }
+
     private bool HitAChar(Character you, Character other) {
-      return you.Collider.Intersects(other.Collider);
+        return you.Collider.Intersects(other.Collider);
     }
 
     private void FrmLevel_KeyDown(object sender, KeyEventArgs e) {
@@ -374,23 +456,24 @@ namespace Fall2020_CSC403_Project {
 
     private String ConvertCharToBinary(char c){
       switch (c) {
-          case '0': return "0000";
-          case '1': return "0001";
-          case '2': return "0010";
-          case '3': return "0011";
-          case '4': return "0100";
-          case '5': return "0101";
-          case '6': return "0110";
-          case '7': return "0111";
-          case '8': return "1000";
-          case '9': return "1001";
-          case 'A': return "1010";
-          case 'B': return "1011";
-          case 'C': return "1100";
-          case 'D': return "1101";
-          case 'E': return "1110";
-          case 'F': return "1111";
-          default: return "0000";
+          case '0': return "00000";
+          case '1': return "00010";
+          case '2': return "00100";
+          case '3': return "00110";
+          case '4': return "01000"; 
+          case '5': return "01001"; // does not follow any binary method (spawn block for grass texture) 
+          case '6': return "01100";
+          case '7': return "01110";
+          case '8': return "10000";
+          case '9': return "10010";
+          case 'A': return "10100";
+          case 'B': return "10110";
+          case 'C': return "11000";
+          case 'D': return "11011";
+          case 'E': return "11100";
+          case 'F': return "11110";
+          case 'G': return "00001";
+          default: return "00000";
       }
     }
   }

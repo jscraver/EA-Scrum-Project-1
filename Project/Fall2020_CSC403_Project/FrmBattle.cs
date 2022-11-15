@@ -43,8 +43,16 @@ namespace Fall2020_CSC403_Project {
         inventorySword.setQuantity(0);
       }
 
-      if (sword.Durability > 0) {
+      if (sword.Durability > 0 & inventorySword.Quantity > 0) {
         picSword.Image = Properties.Resources.sword;
+      }
+
+      if (inventoryHeal.Quantity == 4)
+      {
+        picHealthPot1.Image = Properties.Resources.health_potion;
+        picHealthPot2.Image = Properties.Resources.health_potion;
+        picHealthPot3.Image = Properties.Resources.health_potion;
+        picHealthPot4.Image = Properties.Resources.health_potion;
       }
 
       if (inventoryHeal.Quantity == 3) {
@@ -139,7 +147,11 @@ namespace Fall2020_CSC403_Project {
             inventoryHeal.DeleteFromQuantity(1);
        }
        // display potions on screen in inventory
-       if (inventoryHeal.Quantity == 2) {
+       if (inventoryHeal.Quantity == 3)
+       { 
+                picHealthPot4.Image = null;
+       }
+       else if (inventoryHeal.Quantity == 2) {
             
                 picHealthPot3.Image = null;
        }

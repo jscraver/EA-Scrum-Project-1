@@ -165,5 +165,9 @@
   <ItemGroup>
     <None Include="Resources\sword.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\GrassSwordTexture.png" />
+    <Content Include="Resources\npc_villager.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

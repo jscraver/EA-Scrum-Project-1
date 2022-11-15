@@ -34,6 +34,7 @@
             this.buttonStrong = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.picSword = new System.Windows.Forms.PictureBox();
+            this.picHealthPot4 = new System.Windows.Forms.PictureBox();
             this.picHealthPot3 = new System.Windows.Forms.PictureBox();
             this.picHealthPot2 = new System.Windows.Forms.PictureBox();
             this.picHealthPot1 = new System.Windows.Forms.PictureBox();
@@ -41,6 +42,7 @@
             this.picEnemy = new System.Windows.Forms.PictureBox();
             this.picPlayer = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.picSword)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picHealthPot4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picHealthPot3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picHealthPot2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picHealthPot1)).BeginInit();
@@ -145,6 +147,14 @@
             this.picSword.TabIndex = 15;
             this.picSword.TabStop = false;
             // 
+            // picHealthPot4
+            // 
+            this.picHealthPot4.Location = new System.Drawing.Point(358, 421);
+            this.picHealthPot4.Name = "picHealthPot4";
+            this.picHealthPot4.Size = new System.Drawing.Size(38, 38);
+            this.picHealthPot4.TabIndex = 14;
+            this.picHealthPot4.TabStop = false;
+            // 
             // picHealthPot3
             // 
             this.picHealthPot3.Location = new System.Drawing.Point(314, 421);
@@ -213,6 +223,7 @@
             this.ClientSize = new System.Drawing.Size(822, 603);
             this.Controls.Add(this.picSword);
             this.Controls.Add(this.label4);
+            this.Controls.Add(this.picHealthPot4);
             this.Controls.Add(this.picHealthPot3);
             this.Controls.Add(this.picHealthPot2);
             this.Controls.Add(this.picHealthPot1);
@@ -231,6 +242,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Fight!";
             ((System.ComponentModel.ISupportInitialize)(this.picSword)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picHealthPot4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picHealthPot3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picHealthPot2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picHealthPot1)).EndInit();
@@ -253,12 +265,13 @@
     private System.Windows.Forms.Label lblEnemyHealthFull;
     private System.Windows.Forms.PictureBox picBossBattle;
     private System.Windows.Forms.Timer tmrFinalBattle;
-        private System.Windows.Forms.Button btnHeal;
-        private System.Windows.Forms.Button buttonStrong;
-        private System.Windows.Forms.PictureBox picHealthPot1;
-        private System.Windows.Forms.PictureBox picHealthPot2;
-        private System.Windows.Forms.PictureBox picHealthPot3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.PictureBox picSword;
+    private System.Windows.Forms.Button btnHeal;
+    private System.Windows.Forms.Button buttonStrong;
+    private System.Windows.Forms.PictureBox picHealthPot1;
+    private System.Windows.Forms.PictureBox picHealthPot2;
+    private System.Windows.Forms.PictureBox picHealthPot3;
+    private System.Windows.Forms.PictureBox picHealthPot4;
+    private System.Windows.Forms.Label label4;
+    private System.Windows.Forms.PictureBox picSword;
     }
 }
