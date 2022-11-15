@@ -1,17 +1,21 @@
 using Fall2020_CSC403_Project.code;
-using Fall2020_CSC403_Project.Properties;
 using System;
 using System.Linq;
 using System.Drawing;
 using System.Windows.Forms;
-using System.CodeDom;
 using MyGameLibrary;
 using System.IO;
 using System.Runtime.InteropServices;
+<<<<<<< HEAD
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using System.Reflection.Emit;
 using System.Threading;
 using Timer = System.Windows.Forms.Timer;
+=======
+using System.Media;
+using System.IO;
+using System.Collections.Generic;
+>>>>>>> 1bc7446ed032b478595a326c46bbbe0b9ea7737c
 
 namespace Fall2020_CSC403_Project {
   public partial class FrmLevel : Form {
@@ -44,12 +48,52 @@ namespace Fall2020_CSC403_Project {
 
     static int SWITCH1 = 1;
     static int SWITCH2 = 1;
+    static int mode = 0;
+    public static int charClass = 0;
+    public static int skin = 0;
+    public static string username = "";
+    public static int volume_level = 0;
 
-    public FrmLevel() {
-      InitializeComponent();
-    }
+        public FrmLevel()
+        {
+            InitializeComponent();
+            mode = FrmCharacterSelect.mode;
+            volume_level = FrmCharacterSelect.volume_level;
+            username = FrmCharacterSelect.username;
+            if (mode == 1)
+            {
+                this.WindowState = FormWindowState.Normal;
+                this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+                this.Bounds = Screen.PrimaryScreen.Bounds;
+                mode = 1;
+            }
+            if (mode == 2)
+            {
+                this.WindowState = FormWindowState.Normal;
+                this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Sizable;
+                this.Bounds = Screen.PrimaryScreen.Bounds;
+                mode = 2;
+            }
+            charClass = FrmCharacterSelect.charClass;
+            skin = FrmCharacterSelect.skin;
+            if (charClass == 1)
+            {
+                if (skin == 1) picPlayer.BackgroundImage = global::Fall2020_CSC403_Project.Properties.Resources.player_skin;
+            }
+            if (charClass == 2)
+            {
+                if (skin == 1) picPlayer.BackgroundImage = global::Fall2020_CSC403_Project.Properties.Resources.player_2_skin;
+                else picPlayer.BackgroundImage = global::Fall2020_CSC403_Project.Properties.Resources.player_2;
+            }
+            if (charClass == 3)
+            {
+                if (skin == 1) picPlayer.BackgroundImage = global::Fall2020_CSC403_Project.Properties.Resources.player_3_skin;
+                else picPlayer.BackgroundImage = global::Fall2020_CSC403_Project.Properties.Resources.player_3;
+            }
+        }
 
     private void FrmLevel_Load(object sender, EventArgs e) {
+
       const int LEVEL_ROW_SIZE = 10;
       const int LEVEL_COLUMN_SIZE = 17;
       const int PADDING = 7;
@@ -180,7 +224,24 @@ namespace Fall2020_CSC403_Project {
       picPlayer.BringToFront();
       this.lblInGameTime.BringToFront();
       timeBegin = DateTime.Now;
+
+    if (charClass == 2)
+    {
+        player.GO_INC = 8; 
+        player.AlterHealth(-5); 
+        player.strength = 4;
     }
+    if (charClass == 3)
+    {
+        player.GO_INC = 1; 
+        player.AlterHealth(-10);
+        player.strength = 1;
+    }
+
+    axWindowsMediaPlayer1.URL = @"Exploration_music_v2.wav";
+    axWindowsMediaPlayer1.settings.playCount = 9999;
+    axWindowsMediaPlayer1.settings.volume = volume_level;
+  }
 
     private Vector2 CreatePosition(PictureBox pic) {
       return new Vector2(pic.Location.X, pic.Location.Y);
@@ -268,8 +329,15 @@ namespace Fall2020_CSC403_Project {
     private void Fight(Enemy enemy) {
       player.ResetMoveSpeed();
       player.MoveBack();
+      axWindowsMediaPlayer1.Ctlcontrols.stop();
       frmBattle = FrmBattle.GetInstance(enemy);
+      frmBattle.FormClosed += new FormClosedEventHandler(this.FrmBattle_Closed);
       frmBattle.Show();
+    }
+    
+    private void FrmBattle_Closed(object sender, FormClosedEventArgs e)
+    {
+      axWindowsMediaPlayer1.Ctlcontrols.play();
     }
 
     private void Talk()

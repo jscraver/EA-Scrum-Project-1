@@ -6,6 +6,8 @@ using System.Drawing;
 using System.Drawing.Text;
 using System.Media;
 using System.Windows.Forms;
+using System.Xml.Serialization;
+using WMPLib;
 
 namespace Fall2020_CSC403_Project {
   public partial class FrmBattle : Form {
@@ -16,6 +18,11 @@ namespace Fall2020_CSC403_Project {
     private Sword sword;
     private Inventory inventoryHeal;
     private Inventory inventorySword;
+    public static int volume_level = 0;
+    public static int charClass = 1;
+    public static int skin = 0;
+
+    
 
     private FrmBattle() {
       InitializeComponent();
@@ -24,6 +31,9 @@ namespace Fall2020_CSC403_Project {
       inventoryHeal = Game.inventoryHeal;
       inventorySword = Game.inventorySword;
       sword = Game.sword;
+      volume_level = FrmLevel.volume_level;
+      charClass = FrmLevel.charClass;
+      skin = FrmLevel.skin;
     }
 
     public void Setup() {
@@ -32,6 +42,22 @@ namespace Fall2020_CSC403_Project {
       picEnemy.Refresh();
       BackColor = enemy.Color;
       picBossBattle.Visible = false;
+
+            // update player picture
+      if (charClass == 1)
+      {
+        if (skin == 1) picPlayer.BackgroundImage = global::Fall2020_CSC403_Project.Properties.Resources.player_skin;
+      }
+      if (charClass == 2)
+      {
+        if (skin == 1) picPlayer.BackgroundImage = global::Fall2020_CSC403_Project.Properties.Resources.player_2_skin;
+        else picPlayer.BackgroundImage = global::Fall2020_CSC403_Project.Properties.Resources.player_2;
+      }
+      if (charClass == 3)
+      {
+        if (skin == 1) picPlayer.BackgroundImage = global::Fall2020_CSC403_Project.Properties.Resources.player_3_skin;
+        else picPlayer.BackgroundImage = global::Fall2020_CSC403_Project.Properties.Resources.player_3;
+      }
 
       // Observer pattern
       enemy.AttackEvent += PlayerDamage;
@@ -73,18 +99,10 @@ namespace Fall2020_CSC403_Project {
 
     // show health
     UpdateHealthBars();
-    }
-
-    public void SetupForBossBattle() {
-      picBossBattle.Location = Point.Empty;
-      picBossBattle.Size = ClientSize;
-      picBossBattle.Visible = true;
-
-      SoundPlayer simpleSound = new SoundPlayer(Resources.final_battle);
-      simpleSound.Play();
-
-      tmrFinalBattle.Enabled = true;
-    }
+    axWindowsMediaPlayer1.URL = @"Battle_music_v2.wav";
+    axWindowsMediaPlayer1.settings.playCount = 9999;
+    axWindowsMediaPlayer1.settings.volume = volume_level;
+  }
 
     public static FrmBattle GetInstance(Enemy enemy) {
       if (instance == null) {
@@ -125,8 +143,8 @@ namespace Fall2020_CSC403_Project {
         }
        
         if (player.Health <= 0 || enemy.Health <= 0) {
-        instance = null;
-        Close();
+            instance = null;
+            EndBattle();
         }
         // remove sword image when sword breaks
         if (sword.Durability <= 0)
@@ -183,7 +201,7 @@ namespace Fall2020_CSC403_Project {
             if (player.Health <= 0 || enemy.Health <= 0)
             {
                 instance = null;
-                Close();
+                EndBattle();
             }
 
         }
@@ -203,5 +221,8 @@ namespace Fall2020_CSC403_Project {
       tmrFinalBattle.Enabled = false;
     }
 
+    private void EndBattle() {
+      Close();
     }
+  }
 }

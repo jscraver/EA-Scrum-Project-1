@@ -27,8 +27,12 @@ namespace Fall2020_CSC403_Project {
     /// </summary>
     private void InitializeComponent() {
             this.components = new System.ComponentModel.Container();
+<<<<<<< HEAD
             this.picSword = new System.Windows.Forms.PictureBox();
             this.picHealthPot = new System.Windows.Forms.PictureBox();
+=======
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmLevel));
+>>>>>>> 1bc7446ed032b478595a326c46bbbe0b9ea7737c
             this.lblInGameTime = new System.Windows.Forms.Label();
             this.tmrUpdateInGameTime = new System.Windows.Forms.Timer(this.components);
             this.tmrPlayerMove = new System.Windows.Forms.Timer(this.components);
@@ -211,10 +215,14 @@ namespace Fall2020_CSC403_Project {
             this.picEnemyCheeto = new System.Windows.Forms.PictureBox();
             this.picEnemyPoisonPacket = new System.Windows.Forms.PictureBox();
             this.picBossKoolAid = new System.Windows.Forms.PictureBox();
+<<<<<<< HEAD
             this.picNPCVillager = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picSword)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picHealthPot)).BeginInit();
+=======
+            this.axWindowsMediaPlayer1 = new AxWMPLib.AxWindowsMediaPlayer();
+>>>>>>> 1bc7446ed032b478595a326c46bbbe0b9ea7737c
             ((System.ComponentModel.ISupportInitialize)(this.picPlayer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tile1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tile2)).BeginInit();
@@ -389,7 +397,11 @@ namespace Fall2020_CSC403_Project {
             ((System.ComponentModel.ISupportInitialize)(this.picEnemyCheeto)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picEnemyPoisonPacket)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBossKoolAid)).BeginInit();
+<<<<<<< HEAD
             ((System.ComponentModel.ISupportInitialize)(this.picNPCVillager)).BeginInit();
+=======
+            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).BeginInit();
+>>>>>>> 1bc7446ed032b478595a326c46bbbe0b9ea7737c
             this.SuspendLayout();
             // 
             // picSword
@@ -454,28 +466,49 @@ namespace Fall2020_CSC403_Project {
             // 
             // lblPlayerHealthFull
             // 
+<<<<<<< HEAD
             this.lblPlayerHealthFull.BackColor = System.Drawing.Color.Blue;
             this.lblPlayerHealthFull.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPlayerHealthFull.ForeColor = System.Drawing.Color.White;
             this.lblPlayerHealthFull.Location = new System.Drawing.Point(249, 14);
             this.lblPlayerHealthFull.Name = "lblPlayerHealthFull";
             this.lblPlayerHealthFull.Size = new System.Drawing.Size(201, 16);
+=======
+            this.lblPlayerHealthFull.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblPlayerHealthFull.BackColor = System.Drawing.Color.Blue;
+            this.lblPlayerHealthFull.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPlayerHealthFull.ForeColor = System.Drawing.Color.White;
+            this.lblPlayerHealthFull.Location = new System.Drawing.Point(280, 17);
+            this.lblPlayerHealthFull.Name = "lblPlayerHealthFull";
+            this.lblPlayerHealthFull.Size = new System.Drawing.Size(226, 20);
+>>>>>>> 1bc7446ed032b478595a326c46bbbe0b9ea7737c
             this.lblPlayerHealthFull.TabIndex = 18;
             // 
             // label1
             // 
+<<<<<<< HEAD
+=======
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
+>>>>>>> 1bc7446ed032b478595a326c46bbbe0b9ea7737c
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Playbill", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Image = global::Fall2020_CSC403_Project.Properties.Resources.Brick_Texture;
+<<<<<<< HEAD
             this.label1.Location = new System.Drawing.Point(178, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(63, 27);
+=======
+            this.label1.Location = new System.Drawing.Point(200, 11);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(78, 33);
+>>>>>>> 1bc7446ed032b478595a326c46bbbe0b9ea7737c
             this.label1.TabIndex = 19;
             this.label1.Text = "HEALTH";
             // 
             // picPlayer
             // 
+            this.picPlayer.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.picPlayer.BackColor = System.Drawing.Color.Transparent;
             this.picPlayer.BackgroundImage = global::Fall2020_CSC403_Project.Properties.Resources.player;
             this.picPlayer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -488,6 +521,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile1
             // 
+            this.tile1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile1.Location = new System.Drawing.Point(1, 1);
             this.tile1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -498,6 +532,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile2
             // 
+            this.tile2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile2.Location = new System.Drawing.Point(90, 1);
             this.tile2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -508,6 +543,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile3
             // 
+            this.tile3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile3.Location = new System.Drawing.Point(179, 1);
             this.tile3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -518,6 +554,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile4
             // 
+            this.tile4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile4.Location = new System.Drawing.Point(268, 1);
             this.tile4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -528,6 +565,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile5
             // 
+            this.tile5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile5.Location = new System.Drawing.Point(356, 1);
             this.tile5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -538,6 +576,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile6
             // 
+            this.tile6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile6.Location = new System.Drawing.Point(445, 1);
             this.tile6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -548,6 +587,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile7
             // 
+            this.tile7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile7.Location = new System.Drawing.Point(534, 1);
             this.tile7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -558,6 +598,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile8
             // 
+            this.tile8.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile8.Location = new System.Drawing.Point(623, 1);
             this.tile8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -568,6 +609,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile9
             // 
+            this.tile9.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile9.Location = new System.Drawing.Point(712, 1);
             this.tile9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -578,6 +620,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile10
             // 
+            this.tile10.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile10.Location = new System.Drawing.Point(801, 1);
             this.tile10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -588,6 +631,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile11
             // 
+            this.tile11.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile11.Location = new System.Drawing.Point(890, 1);
             this.tile11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -598,6 +642,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile12
             // 
+            this.tile12.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile12.Location = new System.Drawing.Point(979, 1);
             this.tile12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -608,6 +653,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile13
             // 
+            this.tile13.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile13.Location = new System.Drawing.Point(1068, 1);
             this.tile13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -618,6 +664,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile14
             // 
+            this.tile14.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile14.Location = new System.Drawing.Point(1156, 1);
             this.tile14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -628,6 +675,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile15
             // 
+            this.tile15.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile15.Location = new System.Drawing.Point(1245, 1);
             this.tile15.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -638,6 +686,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile16
             // 
+            this.tile16.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile16.Location = new System.Drawing.Point(1334, 1);
             this.tile16.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -648,6 +697,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile17
             // 
+            this.tile17.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile17.Location = new System.Drawing.Point(1423, 1);
             this.tile17.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -658,6 +708,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile18
             // 
+            this.tile18.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile18.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile18.Location = new System.Drawing.Point(1, 81);
             this.tile18.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -668,6 +719,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile19
             // 
+            this.tile19.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile19.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile19.Location = new System.Drawing.Point(90, 81);
             this.tile19.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -678,6 +730,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile20
             // 
+            this.tile20.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile20.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile20.Location = new System.Drawing.Point(179, 81);
             this.tile20.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -688,6 +741,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile21
             // 
+            this.tile21.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile21.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile21.Location = new System.Drawing.Point(268, 82);
             this.tile21.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -698,6 +752,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile22
             // 
+            this.tile22.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile22.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile22.Location = new System.Drawing.Point(356, 81);
             this.tile22.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -708,6 +763,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile23
             // 
+            this.tile23.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile23.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile23.Location = new System.Drawing.Point(445, 82);
             this.tile23.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -718,6 +774,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile24
             // 
+            this.tile24.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile24.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile24.Location = new System.Drawing.Point(534, 81);
             this.tile24.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -728,6 +785,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile25
             // 
+            this.tile25.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile25.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile25.Location = new System.Drawing.Point(623, 81);
             this.tile25.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -738,6 +796,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile26
             // 
+            this.tile26.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile26.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile26.Location = new System.Drawing.Point(712, 81);
             this.tile26.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -748,6 +807,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile27
             // 
+            this.tile27.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile27.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile27.Location = new System.Drawing.Point(801, 81);
             this.tile27.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -758,6 +818,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile28
             // 
+            this.tile28.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile28.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile28.Location = new System.Drawing.Point(890, 82);
             this.tile28.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -768,6 +829,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile29
             // 
+            this.tile29.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile29.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile29.Location = new System.Drawing.Point(979, 81);
             this.tile29.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -778,6 +840,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile30
             // 
+            this.tile30.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile30.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile30.Location = new System.Drawing.Point(1068, 81);
             this.tile30.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -788,6 +851,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile31
             // 
+            this.tile31.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile31.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile31.Location = new System.Drawing.Point(1156, 81);
             this.tile31.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -798,6 +862,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile32
             // 
+            this.tile32.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile32.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile32.Location = new System.Drawing.Point(1245, 81);
             this.tile32.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -808,6 +873,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile33
             // 
+            this.tile33.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile33.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile33.Location = new System.Drawing.Point(1334, 81);
             this.tile33.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -818,6 +884,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile34
             // 
+            this.tile34.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile34.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile34.Location = new System.Drawing.Point(1423, 81);
             this.tile34.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -828,6 +895,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile35
             // 
+            this.tile35.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile35.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile35.Location = new System.Drawing.Point(1, 161);
             this.tile35.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -838,6 +906,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile36
             // 
+            this.tile36.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile36.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile36.Location = new System.Drawing.Point(90, 161);
             this.tile36.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -848,6 +917,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile37
             // 
+            this.tile37.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile37.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile37.Location = new System.Drawing.Point(179, 161);
             this.tile37.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -858,6 +928,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile38
             // 
+            this.tile38.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile38.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile38.Location = new System.Drawing.Point(268, 161);
             this.tile38.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -868,6 +939,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile39
             // 
+            this.tile39.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile39.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile39.Location = new System.Drawing.Point(356, 161);
             this.tile39.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -878,6 +950,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile40
             // 
+            this.tile40.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile40.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile40.Location = new System.Drawing.Point(445, 161);
             this.tile40.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -888,6 +961,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile41
             // 
+            this.tile41.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile41.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile41.Location = new System.Drawing.Point(534, 161);
             this.tile41.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -898,6 +972,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile42
             // 
+            this.tile42.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile42.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile42.Location = new System.Drawing.Point(623, 161);
             this.tile42.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -908,6 +983,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile43
             // 
+            this.tile43.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile43.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile43.Location = new System.Drawing.Point(712, 161);
             this.tile43.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -918,6 +994,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile44
             // 
+            this.tile44.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile44.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile44.Location = new System.Drawing.Point(801, 161);
             this.tile44.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -928,6 +1005,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile45
             // 
+            this.tile45.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile45.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile45.Location = new System.Drawing.Point(890, 161);
             this.tile45.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -938,6 +1016,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile46
             // 
+            this.tile46.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile46.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile46.Location = new System.Drawing.Point(979, 161);
             this.tile46.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -948,6 +1027,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile47
             // 
+            this.tile47.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile47.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile47.Location = new System.Drawing.Point(1068, 161);
             this.tile47.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -958,6 +1038,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile48
             // 
+            this.tile48.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile48.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile48.Location = new System.Drawing.Point(1156, 161);
             this.tile48.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -968,6 +1049,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile49
             // 
+            this.tile49.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile49.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile49.Location = new System.Drawing.Point(1245, 161);
             this.tile49.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -978,6 +1060,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile50
             // 
+            this.tile50.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile50.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile50.Location = new System.Drawing.Point(1334, 161);
             this.tile50.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -988,6 +1071,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile51
             // 
+            this.tile51.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile51.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile51.Location = new System.Drawing.Point(1423, 161);
             this.tile51.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -998,6 +1082,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile52
             // 
+            this.tile52.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile52.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile52.Location = new System.Drawing.Point(1, 241);
             this.tile52.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1008,6 +1093,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile53
             // 
+            this.tile53.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile53.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile53.Location = new System.Drawing.Point(90, 241);
             this.tile53.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1018,6 +1104,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile54
             // 
+            this.tile54.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile54.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile54.Location = new System.Drawing.Point(179, 241);
             this.tile54.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1028,6 +1115,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile55
             // 
+            this.tile55.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile55.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile55.Location = new System.Drawing.Point(268, 241);
             this.tile55.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1038,6 +1126,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile56
             // 
+            this.tile56.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile56.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile56.Location = new System.Drawing.Point(356, 241);
             this.tile56.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1048,6 +1137,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile57
             // 
+            this.tile57.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile57.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile57.Location = new System.Drawing.Point(445, 241);
             this.tile57.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1058,6 +1148,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile58
             // 
+            this.tile58.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile58.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile58.Location = new System.Drawing.Point(534, 241);
             this.tile58.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1068,6 +1159,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile59
             // 
+            this.tile59.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile59.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile59.Location = new System.Drawing.Point(623, 241);
             this.tile59.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1078,6 +1170,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile60
             // 
+            this.tile60.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile60.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile60.Location = new System.Drawing.Point(712, 241);
             this.tile60.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1088,6 +1181,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile61
             // 
+            this.tile61.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile61.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile61.Location = new System.Drawing.Point(801, 241);
             this.tile61.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1098,6 +1192,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile62
             // 
+            this.tile62.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile62.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile62.Location = new System.Drawing.Point(890, 241);
             this.tile62.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1108,6 +1203,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile63
             // 
+            this.tile63.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile63.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile63.Location = new System.Drawing.Point(979, 241);
             this.tile63.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1118,6 +1214,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile64
             // 
+            this.tile64.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile64.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile64.Location = new System.Drawing.Point(1068, 241);
             this.tile64.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1128,6 +1225,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile65
             // 
+            this.tile65.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile65.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile65.Location = new System.Drawing.Point(1156, 241);
             this.tile65.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1138,6 +1236,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile66
             // 
+            this.tile66.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile66.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile66.Location = new System.Drawing.Point(1245, 241);
             this.tile66.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1148,6 +1247,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile67
             // 
+            this.tile67.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile67.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile67.Location = new System.Drawing.Point(1334, 241);
             this.tile67.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1158,6 +1258,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile68
             // 
+            this.tile68.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile68.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile68.Location = new System.Drawing.Point(1423, 241);
             this.tile68.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1168,6 +1269,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile69
             // 
+            this.tile69.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile69.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile69.Location = new System.Drawing.Point(1, 321);
             this.tile69.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1178,6 +1280,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile70
             // 
+            this.tile70.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile70.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile70.Location = new System.Drawing.Point(90, 321);
             this.tile70.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1188,6 +1291,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile71
             // 
+            this.tile71.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile71.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile71.Location = new System.Drawing.Point(179, 321);
             this.tile71.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1198,6 +1302,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile72
             // 
+            this.tile72.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile72.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile72.Location = new System.Drawing.Point(268, 321);
             this.tile72.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1208,6 +1313,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile73
             // 
+            this.tile73.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile73.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile73.Location = new System.Drawing.Point(356, 321);
             this.tile73.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1218,6 +1324,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile74
             // 
+            this.tile74.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile74.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile74.Location = new System.Drawing.Point(445, 321);
             this.tile74.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1228,6 +1335,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile75
             // 
+            this.tile75.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile75.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile75.Location = new System.Drawing.Point(534, 321);
             this.tile75.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1238,6 +1346,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile76
             // 
+            this.tile76.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile76.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile76.Location = new System.Drawing.Point(623, 321);
             this.tile76.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1248,6 +1357,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile77
             // 
+            this.tile77.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile77.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile77.Location = new System.Drawing.Point(712, 321);
             this.tile77.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1258,6 +1368,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile78
             // 
+            this.tile78.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile78.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile78.Location = new System.Drawing.Point(801, 321);
             this.tile78.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1268,6 +1379,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile79
             // 
+            this.tile79.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile79.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile79.Location = new System.Drawing.Point(890, 321);
             this.tile79.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1278,6 +1390,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile80
             // 
+            this.tile80.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile80.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile80.Location = new System.Drawing.Point(979, 321);
             this.tile80.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1288,6 +1401,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile81
             // 
+            this.tile81.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile81.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile81.Location = new System.Drawing.Point(1068, 321);
             this.tile81.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1298,6 +1412,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile82
             // 
+            this.tile82.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile82.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile82.Location = new System.Drawing.Point(1156, 321);
             this.tile82.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1308,6 +1423,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile83
             // 
+            this.tile83.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile83.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile83.Location = new System.Drawing.Point(1245, 321);
             this.tile83.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1318,6 +1434,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile84
             // 
+            this.tile84.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile84.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile84.Location = new System.Drawing.Point(1334, 321);
             this.tile84.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1328,6 +1445,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile85
             // 
+            this.tile85.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile85.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile85.Location = new System.Drawing.Point(1423, 321);
             this.tile85.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1338,6 +1456,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile86
             // 
+            this.tile86.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile86.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile86.Location = new System.Drawing.Point(1, 401);
             this.tile86.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1348,6 +1467,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile87
             // 
+            this.tile87.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile87.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile87.Location = new System.Drawing.Point(90, 401);
             this.tile87.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1358,6 +1478,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile88
             // 
+            this.tile88.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile88.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile88.Location = new System.Drawing.Point(179, 401);
             this.tile88.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1368,6 +1489,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile89
             // 
+            this.tile89.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile89.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile89.Location = new System.Drawing.Point(268, 401);
             this.tile89.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1378,6 +1500,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile90
             // 
+            this.tile90.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile90.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile90.Location = new System.Drawing.Point(356, 401);
             this.tile90.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1388,6 +1511,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile91
             // 
+            this.tile91.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile91.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile91.Location = new System.Drawing.Point(445, 401);
             this.tile91.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1398,6 +1522,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile92
             // 
+            this.tile92.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile92.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile92.Location = new System.Drawing.Point(534, 401);
             this.tile92.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1408,6 +1533,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile93
             // 
+            this.tile93.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile93.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile93.Location = new System.Drawing.Point(623, 401);
             this.tile93.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1418,6 +1544,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile94
             // 
+            this.tile94.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile94.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile94.Location = new System.Drawing.Point(712, 401);
             this.tile94.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1428,6 +1555,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile95
             // 
+            this.tile95.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile95.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile95.Location = new System.Drawing.Point(801, 401);
             this.tile95.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1438,6 +1566,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile96
             // 
+            this.tile96.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile96.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile96.Location = new System.Drawing.Point(890, 401);
             this.tile96.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1448,6 +1577,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile97
             // 
+            this.tile97.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile97.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile97.Location = new System.Drawing.Point(979, 401);
             this.tile97.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1458,6 +1588,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile98
             // 
+            this.tile98.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile98.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile98.Location = new System.Drawing.Point(1068, 401);
             this.tile98.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1468,6 +1599,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile99
             // 
+            this.tile99.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile99.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile99.Location = new System.Drawing.Point(1156, 401);
             this.tile99.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1478,6 +1610,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile100
             // 
+            this.tile100.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile100.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile100.Location = new System.Drawing.Point(1245, 401);
             this.tile100.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1488,6 +1621,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile101
             // 
+            this.tile101.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile101.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile101.Location = new System.Drawing.Point(1334, 401);
             this.tile101.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1498,6 +1632,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile102
             // 
+            this.tile102.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile102.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile102.Location = new System.Drawing.Point(1423, 401);
             this.tile102.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1508,6 +1643,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile103
             // 
+            this.tile103.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile103.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile103.Location = new System.Drawing.Point(1, 481);
             this.tile103.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1518,6 +1654,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile104
             // 
+            this.tile104.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile104.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile104.Location = new System.Drawing.Point(90, 481);
             this.tile104.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1528,6 +1665,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile105
             // 
+            this.tile105.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile105.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile105.Location = new System.Drawing.Point(179, 481);
             this.tile105.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1538,6 +1676,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile106
             // 
+            this.tile106.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile106.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile106.Location = new System.Drawing.Point(268, 481);
             this.tile106.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1548,6 +1687,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile107
             // 
+            this.tile107.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile107.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile107.Location = new System.Drawing.Point(356, 481);
             this.tile107.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1558,6 +1698,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile108
             // 
+            this.tile108.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile108.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile108.Location = new System.Drawing.Point(445, 481);
             this.tile108.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1568,6 +1709,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile109
             // 
+            this.tile109.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile109.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile109.Location = new System.Drawing.Point(534, 481);
             this.tile109.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1578,6 +1720,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile110
             // 
+            this.tile110.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile110.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile110.Location = new System.Drawing.Point(623, 481);
             this.tile110.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1588,6 +1731,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile111
             // 
+            this.tile111.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile111.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile111.Location = new System.Drawing.Point(712, 481);
             this.tile111.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1598,6 +1742,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile112
             // 
+            this.tile112.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile112.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile112.Location = new System.Drawing.Point(801, 481);
             this.tile112.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1608,6 +1753,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile113
             // 
+            this.tile113.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile113.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile113.Location = new System.Drawing.Point(890, 481);
             this.tile113.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1618,6 +1764,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile114
             // 
+            this.tile114.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile114.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile114.Location = new System.Drawing.Point(979, 481);
             this.tile114.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1628,6 +1775,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile115
             // 
+            this.tile115.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile115.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile115.Location = new System.Drawing.Point(1068, 481);
             this.tile115.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1638,6 +1786,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile116
             // 
+            this.tile116.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile116.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile116.Location = new System.Drawing.Point(1156, 481);
             this.tile116.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1648,6 +1797,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile117
             // 
+            this.tile117.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile117.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile117.Location = new System.Drawing.Point(1245, 481);
             this.tile117.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1658,6 +1808,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile118
             // 
+            this.tile118.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile118.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile118.Location = new System.Drawing.Point(1334, 481);
             this.tile118.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1668,6 +1819,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile119
             // 
+            this.tile119.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile119.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile119.Location = new System.Drawing.Point(1423, 481);
             this.tile119.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1678,6 +1830,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile120
             // 
+            this.tile120.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile120.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile120.Location = new System.Drawing.Point(1, 561);
             this.tile120.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1688,6 +1841,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile121
             // 
+            this.tile121.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile121.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile121.Location = new System.Drawing.Point(90, 561);
             this.tile121.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1698,6 +1852,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile122
             // 
+            this.tile122.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile122.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile122.Location = new System.Drawing.Point(179, 561);
             this.tile122.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1708,6 +1863,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile123
             // 
+            this.tile123.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile123.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile123.Location = new System.Drawing.Point(268, 561);
             this.tile123.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1718,6 +1874,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile124
             // 
+            this.tile124.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile124.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile124.Location = new System.Drawing.Point(356, 561);
             this.tile124.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1728,6 +1885,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile125
             // 
+            this.tile125.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile125.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile125.Location = new System.Drawing.Point(445, 561);
             this.tile125.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1738,6 +1896,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile126
             // 
+            this.tile126.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile126.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile126.Location = new System.Drawing.Point(534, 561);
             this.tile126.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1748,6 +1907,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile127
             // 
+            this.tile127.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile127.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile127.Location = new System.Drawing.Point(623, 561);
             this.tile127.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1758,6 +1918,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile128
             // 
+            this.tile128.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile128.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile128.Location = new System.Drawing.Point(712, 561);
             this.tile128.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1768,6 +1929,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile129
             // 
+            this.tile129.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile129.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile129.Location = new System.Drawing.Point(801, 561);
             this.tile129.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1778,6 +1940,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile130
             // 
+            this.tile130.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile130.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile130.Location = new System.Drawing.Point(890, 561);
             this.tile130.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1788,6 +1951,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile131
             // 
+            this.tile131.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile131.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile131.Location = new System.Drawing.Point(979, 561);
             this.tile131.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1798,6 +1962,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile132
             // 
+            this.tile132.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile132.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile132.Location = new System.Drawing.Point(1068, 561);
             this.tile132.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1808,6 +1973,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile133
             // 
+            this.tile133.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile133.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile133.Location = new System.Drawing.Point(1156, 561);
             this.tile133.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1818,6 +1984,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile134
             // 
+            this.tile134.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile134.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile134.Location = new System.Drawing.Point(1245, 561);
             this.tile134.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1828,6 +1995,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile135
             // 
+            this.tile135.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile135.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile135.Location = new System.Drawing.Point(1334, 561);
             this.tile135.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1838,6 +2006,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile136
             // 
+            this.tile136.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile136.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile136.Location = new System.Drawing.Point(1423, 561);
             this.tile136.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1848,6 +2017,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile137
             // 
+            this.tile137.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile137.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile137.Location = new System.Drawing.Point(1, 641);
             this.tile137.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1858,6 +2028,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile138
             // 
+            this.tile138.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile138.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile138.Location = new System.Drawing.Point(90, 641);
             this.tile138.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1868,6 +2039,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile139
             // 
+            this.tile139.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile139.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile139.Location = new System.Drawing.Point(179, 641);
             this.tile139.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1878,6 +2050,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile140
             // 
+            this.tile140.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile140.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile140.Location = new System.Drawing.Point(268, 641);
             this.tile140.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1888,6 +2061,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile141
             // 
+            this.tile141.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile141.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile141.Location = new System.Drawing.Point(356, 641);
             this.tile141.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1898,6 +2072,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile142
             // 
+            this.tile142.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile142.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile142.Location = new System.Drawing.Point(445, 641);
             this.tile142.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1908,6 +2083,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile143
             // 
+            this.tile143.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile143.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile143.Location = new System.Drawing.Point(534, 641);
             this.tile143.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1918,6 +2094,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile144
             // 
+            this.tile144.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile144.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile144.Location = new System.Drawing.Point(623, 641);
             this.tile144.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1928,6 +2105,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile145
             // 
+            this.tile145.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile145.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile145.Location = new System.Drawing.Point(712, 641);
             this.tile145.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1938,6 +2116,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile146
             // 
+            this.tile146.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile146.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile146.Location = new System.Drawing.Point(801, 641);
             this.tile146.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1948,6 +2127,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile147
             // 
+            this.tile147.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile147.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile147.Location = new System.Drawing.Point(890, 641);
             this.tile147.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1958,6 +2138,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile148
             // 
+            this.tile148.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile148.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile148.Location = new System.Drawing.Point(979, 641);
             this.tile148.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1968,6 +2149,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile149
             // 
+            this.tile149.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile149.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile149.Location = new System.Drawing.Point(1068, 641);
             this.tile149.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1978,6 +2160,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile150
             // 
+            this.tile150.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile150.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile150.Location = new System.Drawing.Point(1156, 641);
             this.tile150.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1988,6 +2171,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile151
             // 
+            this.tile151.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile151.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile151.Location = new System.Drawing.Point(1245, 641);
             this.tile151.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1998,6 +2182,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile152
             // 
+            this.tile152.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile152.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile152.Location = new System.Drawing.Point(1334, 641);
             this.tile152.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -2008,6 +2193,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile153
             // 
+            this.tile153.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile153.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile153.Location = new System.Drawing.Point(1423, 641);
             this.tile153.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -2018,6 +2204,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile154
             // 
+            this.tile154.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile154.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile154.Location = new System.Drawing.Point(1, 721);
             this.tile154.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -2028,6 +2215,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile155
             // 
+            this.tile155.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile155.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile155.Location = new System.Drawing.Point(90, 721);
             this.tile155.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -2038,6 +2226,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile156
             // 
+            this.tile156.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile156.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile156.Location = new System.Drawing.Point(179, 721);
             this.tile156.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -2048,6 +2237,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile157
             // 
+            this.tile157.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile157.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile157.Location = new System.Drawing.Point(268, 721);
             this.tile157.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -2058,6 +2248,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile158
             // 
+            this.tile158.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile158.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile158.Location = new System.Drawing.Point(356, 721);
             this.tile158.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -2068,6 +2259,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile159
             // 
+            this.tile159.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile159.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile159.Location = new System.Drawing.Point(445, 721);
             this.tile159.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -2078,6 +2270,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile160
             // 
+            this.tile160.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile160.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile160.Location = new System.Drawing.Point(534, 721);
             this.tile160.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -2088,6 +2281,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile161
             // 
+            this.tile161.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile161.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile161.Location = new System.Drawing.Point(623, 721);
             this.tile161.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -2098,6 +2292,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile162
             // 
+            this.tile162.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile162.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile162.Location = new System.Drawing.Point(712, 721);
             this.tile162.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -2108,6 +2303,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile163
             // 
+            this.tile163.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile163.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile163.Location = new System.Drawing.Point(801, 721);
             this.tile163.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -2118,6 +2314,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile164
             // 
+            this.tile164.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile164.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile164.Location = new System.Drawing.Point(890, 721);
             this.tile164.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -2128,6 +2325,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile165
             // 
+            this.tile165.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile165.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile165.Location = new System.Drawing.Point(979, 721);
             this.tile165.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -2138,6 +2336,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile166
             // 
+            this.tile166.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile166.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile166.Location = new System.Drawing.Point(1068, 721);
             this.tile166.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -2148,6 +2347,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile167
             // 
+            this.tile167.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile167.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile167.Location = new System.Drawing.Point(1156, 721);
             this.tile167.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -2158,6 +2358,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile168
             // 
+            this.tile168.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile168.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile168.Location = new System.Drawing.Point(1245, 721);
             this.tile168.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -2168,6 +2369,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile169
             // 
+            this.tile169.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile169.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile169.Location = new System.Drawing.Point(1334, 721);
             this.tile169.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -2178,6 +2380,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // tile170
             // 
+            this.tile170.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile170.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile170.Location = new System.Drawing.Point(1423, 721);
             this.tile170.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -2188,6 +2391,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // picEnemyCheeto
             // 
+            this.picEnemyCheeto.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.picEnemyCheeto.BackColor = System.Drawing.Color.Transparent;
             this.picEnemyCheeto.BackgroundImage = global::Fall2020_CSC403_Project.Properties.Resources.enemy_cheetos;
             this.picEnemyCheeto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -2200,11 +2404,17 @@ namespace Fall2020_CSC403_Project {
             // 
             // picEnemyPoisonPacket
             // 
+            this.picEnemyPoisonPacket.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.picEnemyPoisonPacket.BackColor = System.Drawing.Color.Transparent;
             this.picEnemyPoisonPacket.BackgroundImage = global::Fall2020_CSC403_Project.Properties.Resources.enemy_poisonpacket;
             this.picEnemyPoisonPacket.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+<<<<<<< HEAD
             this.picEnemyPoisonPacket.Location = new System.Drawing.Point(637, 247);
             this.picEnemyPoisonPacket.Margin = new System.Windows.Forms.Padding(4);
+=======
+            this.picEnemyPoisonPacket.Location = new System.Drawing.Point(717, 309);
+            this.picEnemyPoisonPacket.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+>>>>>>> 1bc7446ed032b478595a326c46bbbe0b9ea7737c
             this.picEnemyPoisonPacket.Name = "picEnemyPoisonPacket";
             this.picEnemyPoisonPacket.Size = new System.Drawing.Size(68, 70);
             this.picEnemyPoisonPacket.TabIndex = 173;
@@ -2212,6 +2422,7 @@ namespace Fall2020_CSC403_Project {
             // 
             // picBossKoolAid
             // 
+            this.picBossKoolAid.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.picBossKoolAid.BackColor = System.Drawing.Color.Transparent;
             this.picBossKoolAid.BackgroundImage = global::Fall2020_CSC403_Project.Properties.Resources.enemy_koolaid;
             this.picBossKoolAid.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -2222,6 +2433,7 @@ namespace Fall2020_CSC403_Project {
             this.picBossKoolAid.TabIndex = 174;
             this.picBossKoolAid.TabStop = false;
             // 
+<<<<<<< HEAD
             // picNPCVillager
             // 
             this.picNPCVillager.BackColor = System.Drawing.Color.Transparent;
@@ -2245,6 +2457,18 @@ namespace Fall2020_CSC403_Project {
             this.label2.TabIndex = 175;
             this.label2.Text = "label2";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+=======
+            // axWindowsMediaPlayer1
+            // 
+            this.axWindowsMediaPlayer1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.axWindowsMediaPlayer1.Enabled = true;
+            this.axWindowsMediaPlayer1.Location = new System.Drawing.Point(1677, 1015);
+            this.axWindowsMediaPlayer1.Name = "axWindowsMediaPlayer1";
+            this.axWindowsMediaPlayer1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axWindowsMediaPlayer1.OcxState")));
+            this.axWindowsMediaPlayer1.Size = new System.Drawing.Size(75, 23);
+            this.axWindowsMediaPlayer1.TabIndex = 175;
+            this.axWindowsMediaPlayer1.Visible = false;
+>>>>>>> 1bc7446ed032b478595a326c46bbbe0b9ea7737c
             // 
             // FrmLevel
             // 
@@ -2252,8 +2476,13 @@ namespace Fall2020_CSC403_Project {
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+<<<<<<< HEAD
             this.ClientSize = new System.Drawing.Size(1568, 840);
             this.Controls.Add(this.label2);
+=======
+            this.ClientSize = new System.Drawing.Size(1764, 1050);
+            this.Controls.Add(this.axWindowsMediaPlayer1);
+>>>>>>> 1bc7446ed032b478595a326c46bbbe0b9ea7737c
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblPlayerHealthFull);
             this.Controls.Add(this.picNPCVillager);
@@ -2618,7 +2847,11 @@ namespace Fall2020_CSC403_Project {
             ((System.ComponentModel.ISupportInitialize)(this.picEnemyCheeto)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picEnemyPoisonPacket)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBossKoolAid)).EndInit();
+<<<<<<< HEAD
             ((System.ComponentModel.ISupportInitialize)(this.picNPCVillager)).EndInit();
+=======
+            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).EndInit();
+>>>>>>> 1bc7446ed032b478595a326c46bbbe0b9ea7737c
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2809,10 +3042,14 @@ namespace Fall2020_CSC403_Project {
     private System.Windows.Forms.PictureBox picNPCVillager;
     private System.Windows.Forms.Label lblPlayerHealthFull;
     private System.Windows.Forms.Label label1;
+<<<<<<< HEAD
     private System.Windows.Forms.PictureBox picSword;
     private System.Windows.Forms.PictureBox picHealthPot;
     private System.Windows.Forms.Label label2;
      
+=======
+    private AxWMPLib.AxWindowsMediaPlayer axWindowsMediaPlayer1;
+>>>>>>> 1bc7446ed032b478595a326c46bbbe0b9ea7737c
     }
 }
 
