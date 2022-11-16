@@ -37,9 +37,11 @@ namespace Fall2020_CSC403_Project {
 
     static int SWITCH1 = 1;
     static int SWITCH2 = 1;
+    private string levelstring;
 
-    public FrmLevel() {
+    public FrmLevel(string levelstring) {
       InitializeComponent();
+      this.levelstring = levelstring;
     }
 
     private void FrmLevel_Load(object sender, EventArgs e) {
@@ -64,8 +66,7 @@ namespace Fall2020_CSC403_Project {
       inventorySword = new Inventory(sword, 1);
 
       char[,][] level = new char[LEVEL_ROW_SIZE, LEVEL_COLUMN_SIZE][];
-      string s = Properties.Resources.TestMap1;
-      foreach (string row in s.Split('\n')) {
+      foreach (string row in levelstring.Split('\n')) {
           for(int hexindex = 0; hexindex < row.Length - 1; hexindex+=2) {
               string mapdatabinary = ConvertCharToBinary(row[hexindex]) + ConvertCharToBinary(row[hexindex + 1]);
               char[] tilecode = mapdatabinary.ToCharArray();

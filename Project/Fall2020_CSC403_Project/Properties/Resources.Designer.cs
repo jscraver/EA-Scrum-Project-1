@@ -90,6 +90,42 @@ namespace Fall2020_CSC403_Project.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to 1010101010101010101010101010101010
+        ///1020202020202020202020202020202010
+        ///1020202020202020202020202020202010
+        ///1020202020202020202020202020202010
+        ///1020202020202020202020202020202010
+        ///1020202020202020202020202020202010
+        ///1020202020202020202020202020202010
+        ///1020202020202020202020202020202010
+        ///1020202020202020202020202020202010
+        ///1010101010101010101010101010101010.
+        /// </summary>
+        internal static string CustomLevel {
+            get {
+                return ResourceManager.GetString("CustomLevel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 1010101010101010101010101010101010
+        ///10C0C0C088888888C0C0A288888888A210
+        ///10C088C088888888C0C0C088888888C010
+        ///10C088C08888888888888888888888C010
+        ///10C088C088C0C0C088C0C0C088C0C0C010
+        ///10C088C088C088C088C088C088C0888810
+        ///10C088C088C088C088C088C088C0888810
+        ///10C088C088C088C088C088C088C0888810
+        ///10C088C0C0C088C0C0C088C0C0C0888810
+        ///1010101010101010101010101010101010.
+        /// </summary>
+        internal static string DeepMine {
+            get {
+                return ResourceManager.GetString("DeepMine", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap Dirt_Texture {
@@ -158,6 +194,24 @@ namespace Fall2020_CSC403_Project.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to 1010101010101010101010101010101010
+        ///10E1E1E140404040404040404040404010
+        ///10E1E1E1E1E14040404040404040404010
+        ///10404040E1E1E1E1E1E1E1E1E1E1404010
+        ///104040404040E1E1E1E1404040E1E1E110
+        ///1040404040404040E1E140404040404010
+        ///10E1E1404040404040E1E1404040404010
+        ///10E1E1404040404040E1E1E1E140404010
+        ///1040E1404040404040E14040E1E1404010
+        ///1010101010101010101010101010101010.
+        /// </summary>
+        internal static string GrassyField {
+            get {
+                return ResourceManager.GetString("GrassyField", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap health_potion {
@@ -210,6 +264,16 @@ namespace Fall2020_CSC403_Project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap SaveIconPicture {
+            get {
+                object obj = ResourceManager.GetObject("SaveIconPicture", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Stone_Texture {
             get {
                 object obj = ResourceManager.GetObject("Stone_Texture", resourceCulture);
@@ -229,19 +293,19 @@ namespace Fall2020_CSC403_Project.Properties {
         
         /// <summary>
         ///   Looks up a localized string similar to 1010101010101010101010101010101010
-        ///1088404040404040404040404040404010
-        ///1040404040404040404040404040A24010
-        ///1040404040404040404040404040404010
-        ///1040404040404040404040404040404010
-        ///1040404040404040404040404040404010
-        ///10404040404040404040404040A2404010
-        ///10404040E1E1E1E1E1E140404040404010
-        ///1040404064646464646440404040404010
+        ///10E1214021E1E1E1E12164646464E16410
+        ///106440214021644040404021642140E110
+        ///104021E140646421214021646440216410
+        ///1064406421E1E140E12164644064216410
+        ///106440E121216464646440644064216410
+        ///10642164644021E1402164402164402110
+        ///1040214064E14064E1642164216440E110
+        ///10216440642164646421E140212121E110
         ///1010101010101010101010101010101010.
         /// </summary>
-        internal static string TestMap1 {
+        internal static string Tundra {
             get {
-                return ResourceManager.GetString("TestMap1", resourceCulture);
+                return ResourceManager.GetString("Tundra", resourceCulture);
             }
         }
         

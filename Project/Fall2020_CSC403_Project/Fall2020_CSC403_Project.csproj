@@ -139,9 +139,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Properties\Maps\TestMap1.txt" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\Grass Texture.png" />
   </ItemGroup>
   <ItemGroup>
@@ -198,6 +195,21 @@
       <Isolated>False</Isolated>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Maps\GrassyField.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Maps\DeepMine.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Maps\Tundra.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Maps\CustomLevel.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\output-onlinepngtools %281%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
