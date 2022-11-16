@@ -319,9 +319,9 @@ namespace Fall2020_CSC403_Project {
           }
           if (OnSpawnTile(player))
           {
-            picSword.Dispose();
-            inventorySword.AddToQuantity(1);
-            InteractionPossible = false;
+              picSword.Dispose();
+              inventorySword.AddToQuantity(1);
+              InteractionPossible = false;
           }
       }
     }
@@ -380,6 +380,12 @@ namespace Fall2020_CSC403_Project {
 
       player.Move();
 
+       if (HitAChar(player, npcVillager) && talked == false)
+       {
+           talked = true;
+           Talk();
+       }
+      
       if (HitAChar(player, enemyPoisonPacket) && enemyPoisonPacket.Health > 0)
            Fight(enemyPoisonPacket);
       if (HitAChar(player, enemyCheeto) && enemyCheeto.Health > 0)
@@ -390,9 +396,6 @@ namespace Fall2020_CSC403_Project {
       if (enemyPoisonPacket.Health <= 0 && !poisonPacketDeath){
            poisonPacketDeath = true;
            enemycount -= 1;
-      if (!talked && CharWasSeen(player.Collider.rect, npcVillager.Collider.rect))
-            talked = true;
-            Talk();
 
       if (enemyPoisonPacket.Health <= 0)
            picEnemyPoisonPacket.Dispose();
@@ -554,22 +557,37 @@ namespace Fall2020_CSC403_Project {
     private String ConvertCharToBinary(char c){
       switch (c) {
           case '0': return "00000";
-          case '1': return "00010";
-          case '2': return "00100";
-          case '3': return "00110";
-          case '4': return "01000"; 
-          case '5': return "01001"; // does not follow any binary method (spawn block for grass texture) 
-          case '6': return "01100";
-          case '7': return "01110";
-          case '8': return "10000";
-          case '9': return "10010";
-          case 'A': return "10100";
-          case 'B': return "10110";
-          case 'C': return "11000";
-          case 'D': return "11011";
-          case 'E': return "11100";
-          case 'F': return "11110";
-          case 'G': return "00001";
+          case '1': return "00001";
+          case '2': return "00010";
+          case '3': return "00011";
+          case '4': return "00100"; 
+          case '5': return "00101";
+          case '6': return "00110";
+          case '7': return "00111";
+          case '8': return "01000";
+          case '9': return "01001";
+          case 'A': return "01010";
+          case 'B': return "01011";
+          case 'C': return "01100";
+          case 'D': return "01101";
+          case 'E': return "01110";
+          case 'F': return "01111";
+          case 'G': return "10000";
+          case 'H': return "10001";
+          case 'I': return "10010";
+          case 'J': return "10011";
+          case 'K': return "10100";
+          case 'L': return "10101";
+          case 'M': return "10110"; 
+          case 'N': return "10111";
+          case 'O': return "11000";
+          case 'P': return "11001";
+          case 'Q': return "11010";
+          case 'R': return "11011";
+          case 'S': return "11100";
+          case 'T': return "11101";
+          case 'U': return "11110";
+          case 'V': return "11111";
           default: return "00000";
       }
     }
