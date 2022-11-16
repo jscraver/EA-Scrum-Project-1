@@ -186,7 +186,7 @@ namespace Fall2020_CSC403_Project {
                 inventoryHeal.DeleteFromQuantity(1);
             }
             // display potions on screen in inventory
-            if (inventoryHeal.Quantity == 3)
+            if (inventoryHeal.Quantity == 3 && player.Health < 20)
             {
                 label8.Text = "You have 3 potions left.";
                 btnHeal.Hide();
@@ -195,7 +195,7 @@ namespace Fall2020_CSC403_Project {
                 label8.Text = "";
                 picHealthPot4.Image = null;
             }
-            else if (inventoryHeal.Quantity == 2)
+            else if (inventoryHeal.Quantity == 2 && player.Health < 20)
             {
                 label8.Text = "You have 2 potions left.";
                 btnHeal.Hide();
@@ -205,7 +205,7 @@ namespace Fall2020_CSC403_Project {
                 picHealthPot3.Image = null;
             }
 
-            else if (inventoryHeal.Quantity == 1) {
+            else if (inventoryHeal.Quantity == 1 && player.Health < 20) {
                 label8.Text = "You have 1 potion left.";
                 btnHeal.Hide();
                 await Task.Delay(1000);
@@ -214,7 +214,7 @@ namespace Fall2020_CSC403_Project {
                 picHealthPot2.Image = null;
             }
 
-            else if (inventoryHeal.Quantity == 0) {
+            else if (inventoryHeal.Quantity == 0 && player.Health < 20) {
                 label8.Text = "You are out of potions!";
                 btnHeal.Hide();
                 await Task.Delay(1000);

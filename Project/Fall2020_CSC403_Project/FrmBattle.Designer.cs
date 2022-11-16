@@ -117,7 +117,7 @@
             // 
             this.btnHeal.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHeal.Location = new System.Drawing.Point(52, 472);
-            this.btnHeal.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.btnHeal.Margin = new System.Windows.Forms.Padding(1);
             this.btnHeal.Name = "btnHeal";
             this.btnHeal.Size = new System.Drawing.Size(128, 41);
             this.btnHeal.TabIndex = 8;
@@ -129,7 +129,7 @@
             // 
             this.buttonStrong.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonStrong.Location = new System.Drawing.Point(52, 418);
-            this.buttonStrong.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.buttonStrong.Margin = new System.Windows.Forms.Padding(1);
             this.buttonStrong.Name = "buttonStrong";
             this.buttonStrong.Size = new System.Drawing.Size(128, 43);
             this.buttonStrong.TabIndex = 10;
@@ -151,7 +151,7 @@
             // picSword
             // 
             this.picSword.Location = new System.Drawing.Point(202, 418);
-            this.picSword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picSword.Margin = new System.Windows.Forms.Padding(2);
             this.picSword.Name = "picSword";
             this.picSword.Size = new System.Drawing.Size(38, 38);
             this.picSword.TabIndex = 15;
@@ -160,7 +160,7 @@
             // picHealthPot4
             // 
             this.picHealthPot4.Location = new System.Drawing.Point(328, 376);
-            this.picHealthPot4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picHealthPot4.Margin = new System.Windows.Forms.Padding(2);
             this.picHealthPot4.Name = "picHealthPot4";
             this.picHealthPot4.Size = new System.Drawing.Size(38, 38);
             this.picHealthPot4.TabIndex = 14;
@@ -169,7 +169,7 @@
             // picHealthPot3
             // 
             this.picHealthPot3.Location = new System.Drawing.Point(286, 376);
-            this.picHealthPot3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picHealthPot3.Margin = new System.Windows.Forms.Padding(2);
             this.picHealthPot3.Name = "picHealthPot3";
             this.picHealthPot3.Size = new System.Drawing.Size(38, 38);
             this.picHealthPot3.TabIndex = 13;
@@ -178,7 +178,7 @@
             // picHealthPot2
             // 
             this.picHealthPot2.Location = new System.Drawing.Point(244, 376);
-            this.picHealthPot2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picHealthPot2.Margin = new System.Windows.Forms.Padding(2);
             this.picHealthPot2.Name = "picHealthPot2";
             this.picHealthPot2.Size = new System.Drawing.Size(38, 38);
             this.picHealthPot2.TabIndex = 12;
@@ -187,7 +187,7 @@
             // picHealthPot1
             // 
             this.picHealthPot1.Location = new System.Drawing.Point(202, 376);
-            this.picHealthPot1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picHealthPot1.Margin = new System.Windows.Forms.Padding(2);
             this.picHealthPot1.Name = "picHealthPot1";
             this.picHealthPot1.Size = new System.Drawing.Size(38, 38);
             this.picHealthPot1.TabIndex = 11;
@@ -210,7 +210,7 @@
             this.picEnemy.BackgroundImage = global::Fall2020_CSC403_Project.Properties.Resources.enemy_koolaid;
             this.picEnemy.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.picEnemy.Location = new System.Drawing.Point(608, 147);
-            this.picEnemy.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picEnemy.Margin = new System.Windows.Forms.Padding(2);
             this.picEnemy.Name = "picEnemy";
             this.picEnemy.Size = new System.Drawing.Size(129, 154);
             this.picEnemy.TabIndex = 1;
@@ -222,7 +222,7 @@
             this.picPlayer.BackgroundImage = global::Fall2020_CSC403_Project.Properties.Resources.player;
             this.picPlayer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.picPlayer.Location = new System.Drawing.Point(60, 147);
-            this.picPlayer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picPlayer.Margin = new System.Windows.Forms.Padding(2);
             this.picPlayer.Name = "picPlayer";
             this.picPlayer.Size = new System.Drawing.Size(129, 154);
             this.picPlayer.TabIndex = 0;
@@ -242,7 +242,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(198, 6);
+            this.label6.Location = new System.Drawing.Point(298, 70);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(0, 21);
@@ -252,7 +252,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(282, 28);
+            this.label7.Location = new System.Drawing.Point(207, 458);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(0, 21);
@@ -262,7 +262,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(282, 60);
+            this.label8.Location = new System.Drawing.Point(207, 492);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(0, 21);
@@ -282,7 +282,7 @@
             // 
             this.axWindowsMediaPlayer1.Enabled = true;
             this.axWindowsMediaPlayer1.Location = new System.Drawing.Point(0, 0);
-            this.axWindowsMediaPlayer1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.axWindowsMediaPlayer1.Margin = new System.Windows.Forms.Padding(2);
             this.axWindowsMediaPlayer1.Name = "axWindowsMediaPlayer1";
             this.axWindowsMediaPlayer1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axWindowsMediaPlayer1.OcxState")));
             this.axWindowsMediaPlayer1.Size = new System.Drawing.Size(75, 23);
