@@ -57,6 +57,7 @@ namespace Fall2020_CSC403_Project {
     public static int skin = 0;
     public static string username = "";
     public static int volume_level = 0;
+    private bool talked = false;
 
     public FrmLevel(string levelstring){
       InitializeComponent();
@@ -389,7 +390,8 @@ namespace Fall2020_CSC403_Project {
       if (enemyPoisonPacket.Health <= 0 && !poisonPacketDeath){
            poisonPacketDeath = true;
            enemycount -= 1;
-      if (CharWasSeen(player.Collider.rect, npcVillager.Collider.rect))
+      if (!talked && CharWasSeen(player.Collider.rect, npcVillager.Collider.rect))
+            talked = true;
             Talk();
 
       if (enemyPoisonPacket.Health <= 0)
