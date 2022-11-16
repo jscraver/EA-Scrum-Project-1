@@ -95,6 +95,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmLevel.resx">
       <DependentUpon>FrmLevel.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmLevelEditor.resx">
       <DependentUpon>FrmLevelEditor.cs</DependentUpon>
@@ -163,7 +164,7 @@
     <None Include="Resources\Grass Texture.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\output-onlinepngtools.png" />
+    <None Include="Resources\player.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Ice Texture.png" />
@@ -193,10 +194,8 @@
     <None Include="Resources\sword.png" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
     <Content Include="Resources\GrassSwordTexture.png" />
     <Content Include="Resources\npc_villager.png" />
-=======
     <None Include="Resources\player_2.png" />
   </ItemGroup>
   <ItemGroup>
@@ -235,7 +234,6 @@
       <Isolated>False</Isolated>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
->>>>>>> 1bc7446ed032b478595a326c46bbbe0b9ea7737c
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\Maps\GrassyField.txt" />
@@ -250,7 +248,7 @@
     <None Include="Properties\Maps\CustomLevel.txt" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\output-onlinepngtools %281%29.png" />
+    <None Include="Resources\SaveIconPicture.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -292,24 +292,14 @@
     private System.Windows.Forms.Label lblEnemyHealthFull;
     private System.Windows.Forms.PictureBox picBossBattle;
     private System.Windows.Forms.Timer tmrFinalBattle;
-<<<<<<< HEAD
+    private System.Windows.Forms.PictureBox picHealthPot4;
     private System.Windows.Forms.Button btnHeal;
     private System.Windows.Forms.Button buttonStrong;
     private System.Windows.Forms.PictureBox picHealthPot1;
     private System.Windows.Forms.PictureBox picHealthPot2;
     private System.Windows.Forms.PictureBox picHealthPot3;
-    private System.Windows.Forms.PictureBox picHealthPot4;
     private System.Windows.Forms.Label label4;
     private System.Windows.Forms.PictureBox picSword;
-=======
-        private System.Windows.Forms.Button btnHeal;
-        private System.Windows.Forms.Button buttonStrong;
-        private System.Windows.Forms.PictureBox picHealthPot1;
-        private System.Windows.Forms.PictureBox picHealthPot2;
-        private System.Windows.Forms.PictureBox picHealthPot3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.PictureBox picSword;
-        private AxWMPLib.AxWindowsMediaPlayer axWindowsMediaPlayer1;
->>>>>>> 1bc7446ed032b478595a326c46bbbe0b9ea7737c
-    }
+    private AxWMPLib.AxWindowsMediaPlayer axWindowsMediaPlayer1;
+  }
 }

@@ -21,9 +21,7 @@ namespace Fall2020_CSC403_Project
         public FrmMenu()
         {
             InitializeComponent();
-<<<<<<< HEAD
             comboBox1.SelectedIndex = 0;
-=======
             mode = FrmSettings.mode;
             volume_level = FrmSettings.volume_level;
             if (mode == 1)
@@ -39,20 +37,12 @@ namespace Fall2020_CSC403_Project
                 this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Sizable;
                 mode = 2;
             }
-
-
->>>>>>> 35db04980f4796e146402d742408ec568ab46140
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-<<<<<<< HEAD
             string levelstring = GetLevelString(comboBox1.SelectedIndex);
-
-            FrmLevel level = new FrmLevel(levelstring);
-=======
-            FrmCharacterSelect menu = new FrmCharacterSelect();
->>>>>>> 35db04980f4796e146402d742408ec568ab46140
+            FrmCharacterSelect menu = new FrmCharacterSelect(levelstring);
             this.Hide();
             menu.ShowDialog();
             this.Close();
@@ -64,7 +54,6 @@ namespace Fall2020_CSC403_Project
             this.Hide();
             settings.ShowDialog();
             this.Close();
-
         }
         private string GetLevelString(int selected)
         {
@@ -84,14 +73,14 @@ namespace Fall2020_CSC403_Project
         private void Level_Updated(object sender, EventArgs e)
         {
             if (comboBox1.SelectedIndex == 3)
-                button2.Visible = true;
+                button4.Visible = true;
             else
-                button2.Visible = false;
+                button4.Visible = false;
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void Button4_Click(object sender, EventArgs e)
         {
-            if (button2.Visible == true)
+            if (button4.Visible == true)
             {
                 string levelstring = GetLevelString(comboBox1.SelectedIndex);
 

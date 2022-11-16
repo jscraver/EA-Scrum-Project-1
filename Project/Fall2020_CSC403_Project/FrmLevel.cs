@@ -6,16 +6,12 @@ using System.Windows.Forms;
 using MyGameLibrary;
 using System.IO;
 using System.Runtime.InteropServices;
-<<<<<<< HEAD
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using System.Reflection.Emit;
 using System.Threading;
 using Timer = System.Windows.Forms.Timer;
-=======
 using System.Media;
-using System.IO;
 using System.Collections.Generic;
->>>>>>> 1bc7446ed032b478595a326c46bbbe0b9ea7737c
 
 namespace Fall2020_CSC403_Project {
   public partial class FrmLevel : Form {
@@ -48,23 +44,18 @@ namespace Fall2020_CSC403_Project {
 
     static int SWITCH1 = 1;
     static int SWITCH2 = 1;
-<<<<<<< HEAD
+
     private string levelstring;
 
-    public FrmLevel(string levelstring) {
-      InitializeComponent();
-      this.levelstring = levelstring;
-    }
-=======
     static int mode = 0;
     public static int charClass = 0;
     public static int skin = 0;
     public static string username = "";
     public static int volume_level = 0;
 
-        public FrmLevel()
-        {
-            InitializeComponent();
+    public FrmLevel(string levelstring){
+      InitializeComponent();
+            this.levelstring = levelstring;
             mode = FrmCharacterSelect.mode;
             volume_level = FrmCharacterSelect.volume_level;
             username = FrmCharacterSelect.username;
@@ -84,22 +75,21 @@ namespace Fall2020_CSC403_Project {
             }
             charClass = FrmCharacterSelect.charClass;
             skin = FrmCharacterSelect.skin;
-            if (charClass == 1)
-            {
-                if (skin == 1) picPlayer.BackgroundImage = global::Fall2020_CSC403_Project.Properties.Resources.player_skin;
-            }
-            if (charClass == 2)
-            {
-                if (skin == 1) picPlayer.BackgroundImage = global::Fall2020_CSC403_Project.Properties.Resources.player_2_skin;
-                else picPlayer.BackgroundImage = global::Fall2020_CSC403_Project.Properties.Resources.player_2;
-            }
-            if (charClass == 3)
-            {
-                if (skin == 1) picPlayer.BackgroundImage = global::Fall2020_CSC403_Project.Properties.Resources.player_3_skin;
-                else picPlayer.BackgroundImage = global::Fall2020_CSC403_Project.Properties.Resources.player_3;
-            }
-        }
->>>>>>> 35db04980f4796e146402d742408ec568ab46140
+      if (charClass == 1)
+      {
+        if (skin == 1) picPlayer.BackgroundImage = global::Fall2020_CSC403_Project.Properties.Resources.player_skin;
+      }
+      if (charClass == 2)
+      {
+        if (skin == 1) picPlayer.BackgroundImage = global::Fall2020_CSC403_Project.Properties.Resources.player_2_skin;
+        else picPlayer.BackgroundImage = global::Fall2020_CSC403_Project.Properties.Resources.player_2;
+      }
+      if (charClass == 3)
+      {
+        if (skin == 1) picPlayer.BackgroundImage = global::Fall2020_CSC403_Project.Properties.Resources.player_3_skin;
+        else picPlayer.BackgroundImage = global::Fall2020_CSC403_Project.Properties.Resources.player_3;
+      }
+    }
 
     private void FrmLevel_Load(object sender, EventArgs e) {
 
@@ -359,7 +349,7 @@ namespace Fall2020_CSC403_Project {
 
     private void Dialog()
     {
-        label2.Text = "Hi [PLAYER]! Here is a refill of Health Potions for your troubles. Good luck!";
+        label2.Text = $"Hi {username}! Here is a refill of Health Potions for your troubles. Good luck!";
         label2.Show();
         var t = new Timer();
         t.Interval = 4000; // it will Tick in 4 seconds

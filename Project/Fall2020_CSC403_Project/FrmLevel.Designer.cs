@@ -27,12 +27,9 @@ namespace Fall2020_CSC403_Project {
     /// </summary>
     private void InitializeComponent() {
             this.components = new System.ComponentModel.Container();
-<<<<<<< HEAD
             this.picSword = new System.Windows.Forms.PictureBox();
             this.picHealthPot = new System.Windows.Forms.PictureBox();
-=======
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmLevel));
->>>>>>> 1bc7446ed032b478595a326c46bbbe0b9ea7737c
             this.lblInGameTime = new System.Windows.Forms.Label();
             this.tmrUpdateInGameTime = new System.Windows.Forms.Timer(this.components);
             this.tmrPlayerMove = new System.Windows.Forms.Timer(this.components);
@@ -215,14 +212,11 @@ namespace Fall2020_CSC403_Project {
             this.picEnemyCheeto = new System.Windows.Forms.PictureBox();
             this.picEnemyPoisonPacket = new System.Windows.Forms.PictureBox();
             this.picBossKoolAid = new System.Windows.Forms.PictureBox();
-<<<<<<< HEAD
             this.picNPCVillager = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picSword)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picHealthPot)).BeginInit();
-=======
             this.axWindowsMediaPlayer1 = new AxWMPLib.AxWindowsMediaPlayer();
->>>>>>> 1bc7446ed032b478595a326c46bbbe0b9ea7737c
             ((System.ComponentModel.ISupportInitialize)(this.picPlayer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tile1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tile2)).BeginInit();
@@ -397,11 +391,8 @@ namespace Fall2020_CSC403_Project {
             ((System.ComponentModel.ISupportInitialize)(this.picEnemyCheeto)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picEnemyPoisonPacket)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBossKoolAid)).BeginInit();
-<<<<<<< HEAD
             ((System.ComponentModel.ISupportInitialize)(this.picNPCVillager)).BeginInit();
-=======
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).BeginInit();
->>>>>>> 1bc7446ed032b478595a326c46bbbe0b9ea7737c
             this.SuspendLayout();
             // 
             // picSword
@@ -466,14 +457,6 @@ namespace Fall2020_CSC403_Project {
             // 
             // lblPlayerHealthFull
             // 
-<<<<<<< HEAD
-            this.lblPlayerHealthFull.BackColor = System.Drawing.Color.Blue;
-            this.lblPlayerHealthFull.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPlayerHealthFull.ForeColor = System.Drawing.Color.White;
-            this.lblPlayerHealthFull.Location = new System.Drawing.Point(249, 14);
-            this.lblPlayerHealthFull.Name = "lblPlayerHealthFull";
-            this.lblPlayerHealthFull.Size = new System.Drawing.Size(201, 16);
-=======
             this.lblPlayerHealthFull.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblPlayerHealthFull.BackColor = System.Drawing.Color.Blue;
             this.lblPlayerHealthFull.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -481,28 +464,18 @@ namespace Fall2020_CSC403_Project {
             this.lblPlayerHealthFull.Location = new System.Drawing.Point(280, 17);
             this.lblPlayerHealthFull.Name = "lblPlayerHealthFull";
             this.lblPlayerHealthFull.Size = new System.Drawing.Size(226, 20);
->>>>>>> 1bc7446ed032b478595a326c46bbbe0b9ea7737c
             this.lblPlayerHealthFull.TabIndex = 18;
             // 
             // label1
             // 
-<<<<<<< HEAD
-=======
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
->>>>>>> 1bc7446ed032b478595a326c46bbbe0b9ea7737c
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Playbill", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Image = global::Fall2020_CSC403_Project.Properties.Resources.Brick_Texture;
-<<<<<<< HEAD
-            this.label1.Location = new System.Drawing.Point(178, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(63, 27);
-=======
             this.label1.Location = new System.Drawing.Point(200, 11);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(78, 33);
->>>>>>> 1bc7446ed032b478595a326c46bbbe0b9ea7737c
             this.label1.TabIndex = 19;
             this.label1.Text = "HEALTH";
             // 
@@ -2408,13 +2381,8 @@ namespace Fall2020_CSC403_Project {
             this.picEnemyPoisonPacket.BackColor = System.Drawing.Color.Transparent;
             this.picEnemyPoisonPacket.BackgroundImage = global::Fall2020_CSC403_Project.Properties.Resources.enemy_poisonpacket;
             this.picEnemyPoisonPacket.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-<<<<<<< HEAD
-            this.picEnemyPoisonPacket.Location = new System.Drawing.Point(637, 247);
-            this.picEnemyPoisonPacket.Margin = new System.Windows.Forms.Padding(4);
-=======
             this.picEnemyPoisonPacket.Location = new System.Drawing.Point(717, 309);
             this.picEnemyPoisonPacket.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
->>>>>>> 1bc7446ed032b478595a326c46bbbe0b9ea7737c
             this.picEnemyPoisonPacket.Name = "picEnemyPoisonPacket";
             this.picEnemyPoisonPacket.Size = new System.Drawing.Size(68, 70);
             this.picEnemyPoisonPacket.TabIndex = 173;
@@ -2433,7 +2401,6 @@ namespace Fall2020_CSC403_Project {
             this.picBossKoolAid.TabIndex = 174;
             this.picBossKoolAid.TabStop = false;
             // 
-<<<<<<< HEAD
             // picNPCVillager
             // 
             this.picNPCVillager.BackColor = System.Drawing.Color.Transparent;
@@ -2457,7 +2424,6 @@ namespace Fall2020_CSC403_Project {
             this.label2.TabIndex = 175;
             this.label2.Text = "label2";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-=======
             // axWindowsMediaPlayer1
             // 
             this.axWindowsMediaPlayer1.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -2468,7 +2434,6 @@ namespace Fall2020_CSC403_Project {
             this.axWindowsMediaPlayer1.Size = new System.Drawing.Size(75, 23);
             this.axWindowsMediaPlayer1.TabIndex = 175;
             this.axWindowsMediaPlayer1.Visible = false;
->>>>>>> 1bc7446ed032b478595a326c46bbbe0b9ea7737c
             // 
             // FrmLevel
             // 
@@ -2476,13 +2441,10 @@ namespace Fall2020_CSC403_Project {
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-<<<<<<< HEAD
             this.ClientSize = new System.Drawing.Size(1568, 840);
             this.Controls.Add(this.label2);
-=======
             this.ClientSize = new System.Drawing.Size(1764, 1050);
             this.Controls.Add(this.axWindowsMediaPlayer1);
->>>>>>> 1bc7446ed032b478595a326c46bbbe0b9ea7737c
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblPlayerHealthFull);
             this.Controls.Add(this.picNPCVillager);
@@ -2847,11 +2809,8 @@ namespace Fall2020_CSC403_Project {
             ((System.ComponentModel.ISupportInitialize)(this.picEnemyCheeto)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picEnemyPoisonPacket)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBossKoolAid)).EndInit();
-<<<<<<< HEAD
             ((System.ComponentModel.ISupportInitialize)(this.picNPCVillager)).EndInit();
-=======
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).EndInit();
->>>>>>> 1bc7446ed032b478595a326c46bbbe0b9ea7737c
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -3042,14 +3001,10 @@ namespace Fall2020_CSC403_Project {
     private System.Windows.Forms.PictureBox picNPCVillager;
     private System.Windows.Forms.Label lblPlayerHealthFull;
     private System.Windows.Forms.Label label1;
-<<<<<<< HEAD
     private System.Windows.Forms.PictureBox picSword;
     private System.Windows.Forms.PictureBox picHealthPot;
     private System.Windows.Forms.Label label2;
-     
-=======
     private AxWMPLib.AxWindowsMediaPlayer axWindowsMediaPlayer1;
->>>>>>> 1bc7446ed032b478595a326c46bbbe0b9ea7737c
     }
 }
 

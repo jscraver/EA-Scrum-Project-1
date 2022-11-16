@@ -17,8 +17,9 @@ namespace Fall2020_CSC403_Project
         public static int charClass = 1;
         public static string username = "Player1";
         public static int skin = 0;
+        private string levelstring;
 
-        public FrmCharacterSelect()
+        public FrmCharacterSelect(string levelstring)
         {
             InitializeComponent();
             mode = FrmMenu.mode;
@@ -36,12 +37,14 @@ namespace Fall2020_CSC403_Project
                 this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Sizable;
                 mode = 2;
             }
+
+            this.levelstring = levelstring; 
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             if (trackBar1.Value == 1) skin = 1;
-            FrmLevel level = new FrmLevel();
+            FrmLevel level = new FrmLevel(levelstring);
             this.Hide();
             level.ShowDialog();
             this.Close();
@@ -51,7 +54,7 @@ namespace Fall2020_CSC403_Project
         {
             charClass = 2;
             if (trackBar2.Value == 1) skin = 1;
-            FrmLevel level = new FrmLevel();
+            FrmLevel level = new FrmLevel(levelstring);
             this.Hide();
             level.ShowDialog();
             this.Close();
@@ -61,7 +64,7 @@ namespace Fall2020_CSC403_Project
         {
             charClass = 3;
             if (trackBar3.Value == 1) skin = 1;
-            FrmLevel level = new FrmLevel();
+            FrmLevel level = new FrmLevel(levelstring);
             this.Hide();
             level.ShowDialog();
             this.Close();
