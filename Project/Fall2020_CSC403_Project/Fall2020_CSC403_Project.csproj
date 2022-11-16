@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -46,6 +49,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmLevelEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLevelEditor.Designer.cs">
+      <DependentUpon>FrmLevelEditor.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmBattle.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -57,6 +66,11 @@
     </Compile>
     <Compile Include="FrmDeath.Designer.cs">
       <DependentUpon>FrmDeath.cs</DependentUpon>
+    <Compile Include="FrmCharacterSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCharacterSelect.Designer.cs">
+      <DependentUpon>FrmCharacterSelect.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmLevel.cs">
       <SubType>Form</SubType>
@@ -78,14 +92,26 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="FrmSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSettings.Designer.cs">
+      <DependentUpon>FrmSettings.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="FrmBattle.resx">
       <DependentUpon>FrmBattle.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmDeath.resx">
       <DependentUpon>FrmDeath.cs</DependentUpon>
+    <EmbeddedResource Include="FrmCharacterSelect.resx">
+      <DependentUpon>FrmCharacterSelect.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmLevel.resx">
       <DependentUpon>FrmLevel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLevelEditor.resx">
+      <DependentUpon>FrmLevelEditor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMenu.resx">
       <DependentUpon>FrmMenu.cs</DependentUpon>
@@ -97,6 +123,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSettings.resx">
+      <DependentUpon>FrmSettings.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="ClassDiagram1.cd" />
     <None Include="Properties\Settings.settings">
@@ -148,13 +177,10 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Properties\Maps\TestMap1.txt" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\Grass Texture.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\output-onlinepngtools.png" />
+    <None Include="Resources\player.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Ice Texture.png" />
@@ -182,6 +208,63 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\sword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\GrassSwordTexture.png" />
+    <Content Include="Resources\npc_villager.png" />
+    <None Include="Resources\player_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player_skin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player_2_skin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player_3_skin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Exploration_music_v2.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Battle_music_v2.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Maps\GrassyField.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Maps\DeepMine.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Maps\Tundra.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Maps\CustomLevel.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SaveIconPicture.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
