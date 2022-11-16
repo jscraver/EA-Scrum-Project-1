@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Fall2020_CSC403_Project.code {
   public class Character {
-    private int GO_INC = 4;
+    public int GO_INC = 4;
 
     public Vector2 MoveSpeed { get; private set; }
     public Vector2 LastPosition { get; private set; }

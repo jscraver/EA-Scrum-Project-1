@@ -31,14 +31,17 @@
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.picPlayer = new System.Windows.Forms.PictureBox();
+<<<<<<< HEAD
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+=======
+>>>>>>> 35db04980f4796e146402d742408ec568ab46140
             this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picPlayer)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Playbill", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -52,6 +55,7 @@
             // button1
             // 
             this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button1.AutoSize = true;
             this.button1.BackColor = System.Drawing.Color.Transparent;
             this.button1.Font = new System.Drawing.Font("Playbill", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(438, 366);
@@ -75,6 +79,7 @@
             this.picPlayer.TabIndex = 3;
             this.picPlayer.TabStop = false;
             // 
+<<<<<<< HEAD
             // comboBox1
             // 
             this.comboBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -107,6 +112,20 @@
             this.button2.Text = "EDIT LEVEL";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Visible = false;
+=======
+            // button2
+            // 
+            this.button2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button2.AutoSize = true;
+            this.button2.BackColor = System.Drawing.Color.Transparent;
+            this.button2.Font = new System.Drawing.Font("Playbill", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(438, 528);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(302, 122);
+            this.button2.TabIndex = 4;
+            this.button2.Text = "SETTINGS";
+            this.button2.UseVisualStyleBackColor = false;
+>>>>>>> 35db04980f4796e146402d742408ec568ab46140
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // FrmMenu
@@ -116,7 +135,10 @@
             this.BackColor = System.Drawing.Color.Goldenrod;
             this.ClientSize = new System.Drawing.Size(1204, 849);
             this.Controls.Add(this.button2);
+<<<<<<< HEAD
             this.Controls.Add(this.comboBox1);
+=======
+>>>>>>> 35db04980f4796e146402d742408ec568ab46140
             this.Controls.Add(this.picPlayer);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
@@ -133,7 +155,10 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox picPlayer;
+<<<<<<< HEAD
         private System.Windows.Forms.ComboBox comboBox1;
+=======
+>>>>>>> 35db04980f4796e146402d742408ec568ab46140
         private System.Windows.Forms.Button button2;
     }
 }

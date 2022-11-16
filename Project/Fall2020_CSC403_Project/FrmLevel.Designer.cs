@@ -1,4 +1,7 @@
-﻿namespace Fall2020_CSC403_Project {
+﻿using Fall2020_CSC403_Project.code;
+using System.Drawing;
+
+namespace Fall2020_CSC403_Project {
   partial class FrmLevel {
     /// <summary>
     /// Required designer variable.
@@ -24,7 +27,12 @@
     /// </summary>
     private void InitializeComponent() {
             this.components = new System.ComponentModel.Container();
+<<<<<<< HEAD
+            this.picSword = new System.Windows.Forms.PictureBox();
+            this.picHealthPot = new System.Windows.Forms.PictureBox();
+=======
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmLevel));
+>>>>>>> 1bc7446ed032b478595a326c46bbbe0b9ea7737c
             this.lblInGameTime = new System.Windows.Forms.Label();
             this.tmrUpdateInGameTime = new System.Windows.Forms.Timer(this.components);
             this.tmrPlayerMove = new System.Windows.Forms.Timer(this.components);
@@ -207,7 +215,14 @@
             this.picEnemyCheeto = new System.Windows.Forms.PictureBox();
             this.picEnemyPoisonPacket = new System.Windows.Forms.PictureBox();
             this.picBossKoolAid = new System.Windows.Forms.PictureBox();
+<<<<<<< HEAD
+            this.picNPCVillager = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.picSword)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picHealthPot)).BeginInit();
+=======
             this.axWindowsMediaPlayer1 = new AxWMPLib.AxWindowsMediaPlayer();
+>>>>>>> 1bc7446ed032b478595a326c46bbbe0b9ea7737c
             ((System.ComponentModel.ISupportInitialize)(this.picPlayer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tile1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tile2)).BeginInit();
@@ -382,8 +397,30 @@
             ((System.ComponentModel.ISupportInitialize)(this.picEnemyCheeto)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picEnemyPoisonPacket)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBossKoolAid)).BeginInit();
+<<<<<<< HEAD
+            ((System.ComponentModel.ISupportInitialize)(this.picNPCVillager)).BeginInit();
+=======
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).BeginInit();
+>>>>>>> 1bc7446ed032b478595a326c46bbbe0b9ea7737c
             this.SuspendLayout();
+            // 
+            // picSword
+            // 
+            this.picSword.Location = new System.Drawing.Point(0, 0);
+            this.picSword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.picSword.Name = "picSword";
+            this.picSword.Size = new System.Drawing.Size(89, 80);
+            this.picSword.TabIndex = 15;
+            this.picSword.TabStop = false;
+            // 
+            // picHealthPot
+            // 
+            this.picHealthPot.Location = new System.Drawing.Point(0, 0);
+            this.picHealthPot.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.picHealthPot.Name = "picHealthPot";
+            this.picHealthPot.Size = new System.Drawing.Size(89, 80);
+            this.picHealthPot.TabIndex = 15;
+            this.picHealthPot.TabStop = false;
             // 
             // lblInGameTime
             // 
@@ -391,10 +428,10 @@
             this.lblInGameTime.BackColor = System.Drawing.Color.Black;
             this.lblInGameTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblInGameTime.ForeColor = System.Drawing.Color.White;
-            this.lblInGameTime.Location = new System.Drawing.Point(18, 14);
+            this.lblInGameTime.Location = new System.Drawing.Point(16, 11);
             this.lblInGameTime.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblInGameTime.Name = "lblInGameTime";
-            this.lblInGameTime.Size = new System.Drawing.Size(79, 29);
+            this.lblInGameTime.Size = new System.Drawing.Size(60, 24);
             this.lblInGameTime.TabIndex = 2;
             this.lblInGameTime.Text = "label1";
             // 
@@ -429,1606 +466,2001 @@
             // 
             // lblPlayerHealthFull
             // 
+<<<<<<< HEAD
+            this.lblPlayerHealthFull.BackColor = System.Drawing.Color.Blue;
+            this.lblPlayerHealthFull.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPlayerHealthFull.ForeColor = System.Drawing.Color.White;
+            this.lblPlayerHealthFull.Location = new System.Drawing.Point(249, 14);
+            this.lblPlayerHealthFull.Name = "lblPlayerHealthFull";
+            this.lblPlayerHealthFull.Size = new System.Drawing.Size(201, 16);
+=======
+            this.lblPlayerHealthFull.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblPlayerHealthFull.BackColor = System.Drawing.Color.Blue;
             this.lblPlayerHealthFull.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPlayerHealthFull.ForeColor = System.Drawing.Color.White;
             this.lblPlayerHealthFull.Location = new System.Drawing.Point(280, 17);
             this.lblPlayerHealthFull.Name = "lblPlayerHealthFull";
             this.lblPlayerHealthFull.Size = new System.Drawing.Size(226, 20);
+>>>>>>> 1bc7446ed032b478595a326c46bbbe0b9ea7737c
             this.lblPlayerHealthFull.TabIndex = 18;
             // 
             // label1
             // 
+<<<<<<< HEAD
+=======
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
+>>>>>>> 1bc7446ed032b478595a326c46bbbe0b9ea7737c
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Playbill", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Image = global::Fall2020_CSC403_Project.Properties.Resources.Brick_Texture;
+<<<<<<< HEAD
+            this.label1.Location = new System.Drawing.Point(178, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(63, 27);
+=======
             this.label1.Location = new System.Drawing.Point(200, 11);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(78, 33);
+>>>>>>> 1bc7446ed032b478595a326c46bbbe0b9ea7737c
             this.label1.TabIndex = 19;
             this.label1.Text = "HEALTH";
             // 
             // picPlayer
             // 
+            this.picPlayer.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.picPlayer.BackColor = System.Drawing.Color.Transparent;
             this.picPlayer.BackgroundImage = global::Fall2020_CSC403_Project.Properties.Resources.player;
             this.picPlayer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.picPlayer.Location = new System.Drawing.Point(128, 809);
-            this.picPlayer.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.picPlayer.Location = new System.Drawing.Point(114, 647);
+            this.picPlayer.Margin = new System.Windows.Forms.Padding(4);
             this.picPlayer.Name = "picPlayer";
-            this.picPlayer.Size = new System.Drawing.Size(50, 80);
+            this.picPlayer.Size = new System.Drawing.Size(44, 64);
             this.picPlayer.TabIndex = 0;
             this.picPlayer.TabStop = false;
             // 
             // tile1
             // 
+            this.tile1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tile1.Location = new System.Drawing.Point(1, 1);
+            this.tile1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile1.Name = "tile1";
-            this.tile1.Size = new System.Drawing.Size(100, 100);
+            this.tile1.Size = new System.Drawing.Size(89, 80);
             this.tile1.TabIndex = 3;
             this.tile1.TabStop = false;
             // 
             // tile2
             // 
+            this.tile2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile2.Location = new System.Drawing.Point(101, 1);
+            this.tile2.Location = new System.Drawing.Point(90, 1);
+            this.tile2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile2.Name = "tile2";
-            this.tile2.Size = new System.Drawing.Size(100, 100);
+            this.tile2.Size = new System.Drawing.Size(89, 80);
             this.tile2.TabIndex = 4;
             this.tile2.TabStop = false;
             // 
             // tile3
             // 
+            this.tile3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile3.Location = new System.Drawing.Point(201, 1);
+            this.tile3.Location = new System.Drawing.Point(179, 1);
+            this.tile3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile3.Name = "tile3";
-            this.tile3.Size = new System.Drawing.Size(100, 100);
+            this.tile3.Size = new System.Drawing.Size(89, 80);
             this.tile3.TabIndex = 5;
             this.tile3.TabStop = false;
             // 
             // tile4
             // 
+            this.tile4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile4.Location = new System.Drawing.Point(301, 1);
+            this.tile4.Location = new System.Drawing.Point(268, 1);
+            this.tile4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile4.Name = "tile4";
-            this.tile4.Size = new System.Drawing.Size(100, 100);
+            this.tile4.Size = new System.Drawing.Size(89, 80);
             this.tile4.TabIndex = 6;
             this.tile4.TabStop = false;
             // 
             // tile5
             // 
+            this.tile5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile5.Location = new System.Drawing.Point(401, 1);
+            this.tile5.Location = new System.Drawing.Point(356, 1);
+            this.tile5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile5.Name = "tile5";
-            this.tile5.Size = new System.Drawing.Size(100, 100);
+            this.tile5.Size = new System.Drawing.Size(89, 80);
             this.tile5.TabIndex = 7;
             this.tile5.TabStop = false;
             // 
             // tile6
             // 
+            this.tile6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile6.Location = new System.Drawing.Point(501, 1);
+            this.tile6.Location = new System.Drawing.Point(445, 1);
+            this.tile6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile6.Name = "tile6";
-            this.tile6.Size = new System.Drawing.Size(100, 100);
+            this.tile6.Size = new System.Drawing.Size(89, 80);
             this.tile6.TabIndex = 8;
             this.tile6.TabStop = false;
             // 
             // tile7
             // 
+            this.tile7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile7.Location = new System.Drawing.Point(601, 1);
+            this.tile7.Location = new System.Drawing.Point(534, 1);
+            this.tile7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile7.Name = "tile7";
-            this.tile7.Size = new System.Drawing.Size(100, 100);
+            this.tile7.Size = new System.Drawing.Size(89, 80);
             this.tile7.TabIndex = 9;
             this.tile7.TabStop = false;
             // 
             // tile8
             // 
+            this.tile8.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile8.Location = new System.Drawing.Point(701, 1);
+            this.tile8.Location = new System.Drawing.Point(623, 1);
+            this.tile8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile8.Name = "tile8";
-            this.tile8.Size = new System.Drawing.Size(100, 100);
+            this.tile8.Size = new System.Drawing.Size(89, 80);
             this.tile8.TabIndex = 10;
             this.tile8.TabStop = false;
             // 
             // tile9
             // 
+            this.tile9.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile9.Location = new System.Drawing.Point(801, 1);
+            this.tile9.Location = new System.Drawing.Point(712, 1);
+            this.tile9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile9.Name = "tile9";
-            this.tile9.Size = new System.Drawing.Size(100, 100);
+            this.tile9.Size = new System.Drawing.Size(89, 80);
             this.tile9.TabIndex = 11;
             this.tile9.TabStop = false;
             // 
             // tile10
             // 
+            this.tile10.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile10.Location = new System.Drawing.Point(901, 1);
+            this.tile10.Location = new System.Drawing.Point(801, 1);
+            this.tile10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile10.Name = "tile10";
-            this.tile10.Size = new System.Drawing.Size(100, 100);
+            this.tile10.Size = new System.Drawing.Size(89, 80);
             this.tile10.TabIndex = 12;
             this.tile10.TabStop = false;
             // 
             // tile11
             // 
+            this.tile11.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile11.Location = new System.Drawing.Point(1001, 1);
+            this.tile11.Location = new System.Drawing.Point(890, 1);
+            this.tile11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile11.Name = "tile11";
-            this.tile11.Size = new System.Drawing.Size(100, 100);
+            this.tile11.Size = new System.Drawing.Size(89, 80);
             this.tile11.TabIndex = 13;
             this.tile11.TabStop = false;
             // 
             // tile12
             // 
+            this.tile12.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile12.Location = new System.Drawing.Point(1101, 1);
+            this.tile12.Location = new System.Drawing.Point(979, 1);
+            this.tile12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile12.Name = "tile12";
-            this.tile12.Size = new System.Drawing.Size(100, 100);
+            this.tile12.Size = new System.Drawing.Size(89, 80);
             this.tile12.TabIndex = 14;
             this.tile12.TabStop = false;
             // 
             // tile13
             // 
+            this.tile13.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile13.Location = new System.Drawing.Point(1201, 1);
+            this.tile13.Location = new System.Drawing.Point(1068, 1);
+            this.tile13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile13.Name = "tile13";
-            this.tile13.Size = new System.Drawing.Size(100, 100);
+            this.tile13.Size = new System.Drawing.Size(89, 80);
             this.tile13.TabIndex = 15;
             this.tile13.TabStop = false;
             // 
             // tile14
             // 
+            this.tile14.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile14.Location = new System.Drawing.Point(1301, 1);
+            this.tile14.Location = new System.Drawing.Point(1156, 1);
+            this.tile14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile14.Name = "tile14";
-            this.tile14.Size = new System.Drawing.Size(100, 100);
+            this.tile14.Size = new System.Drawing.Size(89, 80);
             this.tile14.TabIndex = 16;
             this.tile14.TabStop = false;
             // 
             // tile15
             // 
+            this.tile15.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile15.Location = new System.Drawing.Point(1401, 1);
+            this.tile15.Location = new System.Drawing.Point(1245, 1);
+            this.tile15.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile15.Name = "tile15";
-            this.tile15.Size = new System.Drawing.Size(100, 100);
+            this.tile15.Size = new System.Drawing.Size(89, 80);
             this.tile15.TabIndex = 17;
             this.tile15.TabStop = false;
             // 
             // tile16
             // 
+            this.tile16.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile16.Location = new System.Drawing.Point(1501, 1);
+            this.tile16.Location = new System.Drawing.Point(1334, 1);
+            this.tile16.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile16.Name = "tile16";
-            this.tile16.Size = new System.Drawing.Size(100, 100);
+            this.tile16.Size = new System.Drawing.Size(89, 80);
             this.tile16.TabIndex = 18;
             this.tile16.TabStop = false;
             // 
             // tile17
             // 
+            this.tile17.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile17.Location = new System.Drawing.Point(1601, 1);
+            this.tile17.Location = new System.Drawing.Point(1423, 1);
+            this.tile17.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile17.Name = "tile17";
-            this.tile17.Size = new System.Drawing.Size(100, 100);
+            this.tile17.Size = new System.Drawing.Size(89, 80);
             this.tile17.TabIndex = 19;
             this.tile17.TabStop = false;
             // 
             // tile18
             // 
+            this.tile18.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile18.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile18.Location = new System.Drawing.Point(1, 101);
+            this.tile18.Location = new System.Drawing.Point(1, 81);
+            this.tile18.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile18.Name = "tile18";
-            this.tile18.Size = new System.Drawing.Size(100, 100);
+            this.tile18.Size = new System.Drawing.Size(89, 80);
             this.tile18.TabIndex = 20;
             this.tile18.TabStop = false;
             // 
             // tile19
             // 
+            this.tile19.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile19.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile19.Location = new System.Drawing.Point(101, 101);
+            this.tile19.Location = new System.Drawing.Point(90, 81);
+            this.tile19.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile19.Name = "tile19";
-            this.tile19.Size = new System.Drawing.Size(100, 100);
+            this.tile19.Size = new System.Drawing.Size(89, 80);
             this.tile19.TabIndex = 21;
             this.tile19.TabStop = false;
             // 
             // tile20
             // 
+            this.tile20.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile20.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile20.Location = new System.Drawing.Point(201, 101);
+            this.tile20.Location = new System.Drawing.Point(179, 81);
+            this.tile20.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile20.Name = "tile20";
-            this.tile20.Size = new System.Drawing.Size(100, 100);
+            this.tile20.Size = new System.Drawing.Size(89, 80);
             this.tile20.TabIndex = 22;
             this.tile20.TabStop = false;
             // 
             // tile21
             // 
+            this.tile21.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile21.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile21.Location = new System.Drawing.Point(301, 102);
+            this.tile21.Location = new System.Drawing.Point(268, 82);
+            this.tile21.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile21.Name = "tile21";
-            this.tile21.Size = new System.Drawing.Size(100, 100);
+            this.tile21.Size = new System.Drawing.Size(89, 80);
             this.tile21.TabIndex = 23;
             this.tile21.TabStop = false;
             // 
             // tile22
             // 
+            this.tile22.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile22.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile22.Location = new System.Drawing.Point(401, 101);
+            this.tile22.Location = new System.Drawing.Point(356, 81);
+            this.tile22.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile22.Name = "tile22";
-            this.tile22.Size = new System.Drawing.Size(100, 100);
+            this.tile22.Size = new System.Drawing.Size(89, 80);
             this.tile22.TabIndex = 24;
             this.tile22.TabStop = false;
             // 
             // tile23
             // 
+            this.tile23.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile23.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile23.Location = new System.Drawing.Point(501, 102);
+            this.tile23.Location = new System.Drawing.Point(445, 82);
+            this.tile23.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile23.Name = "tile23";
-            this.tile23.Size = new System.Drawing.Size(100, 100);
+            this.tile23.Size = new System.Drawing.Size(89, 80);
             this.tile23.TabIndex = 25;
             this.tile23.TabStop = false;
             // 
             // tile24
             // 
+            this.tile24.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile24.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile24.Location = new System.Drawing.Point(601, 101);
+            this.tile24.Location = new System.Drawing.Point(534, 81);
+            this.tile24.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile24.Name = "tile24";
-            this.tile24.Size = new System.Drawing.Size(100, 100);
+            this.tile24.Size = new System.Drawing.Size(89, 80);
             this.tile24.TabIndex = 26;
             this.tile24.TabStop = false;
             // 
             // tile25
             // 
+            this.tile25.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile25.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile25.Location = new System.Drawing.Point(701, 101);
+            this.tile25.Location = new System.Drawing.Point(623, 81);
+            this.tile25.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile25.Name = "tile25";
-            this.tile25.Size = new System.Drawing.Size(100, 100);
+            this.tile25.Size = new System.Drawing.Size(89, 80);
             this.tile25.TabIndex = 27;
             this.tile25.TabStop = false;
             // 
             // tile26
             // 
+            this.tile26.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile26.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile26.Location = new System.Drawing.Point(801, 101);
+            this.tile26.Location = new System.Drawing.Point(712, 81);
+            this.tile26.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile26.Name = "tile26";
-            this.tile26.Size = new System.Drawing.Size(100, 100);
+            this.tile26.Size = new System.Drawing.Size(89, 80);
             this.tile26.TabIndex = 28;
             this.tile26.TabStop = false;
             // 
             // tile27
             // 
+            this.tile27.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile27.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile27.Location = new System.Drawing.Point(901, 101);
+            this.tile27.Location = new System.Drawing.Point(801, 81);
+            this.tile27.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile27.Name = "tile27";
-            this.tile27.Size = new System.Drawing.Size(100, 100);
+            this.tile27.Size = new System.Drawing.Size(89, 80);
             this.tile27.TabIndex = 29;
             this.tile27.TabStop = false;
             // 
             // tile28
             // 
+            this.tile28.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile28.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile28.Location = new System.Drawing.Point(1001, 102);
+            this.tile28.Location = new System.Drawing.Point(890, 82);
+            this.tile28.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile28.Name = "tile28";
-            this.tile28.Size = new System.Drawing.Size(100, 100);
+            this.tile28.Size = new System.Drawing.Size(89, 80);
             this.tile28.TabIndex = 30;
             this.tile28.TabStop = false;
             // 
             // tile29
             // 
+            this.tile29.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile29.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile29.Location = new System.Drawing.Point(1101, 101);
+            this.tile29.Location = new System.Drawing.Point(979, 81);
+            this.tile29.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile29.Name = "tile29";
-            this.tile29.Size = new System.Drawing.Size(100, 100);
+            this.tile29.Size = new System.Drawing.Size(89, 80);
             this.tile29.TabIndex = 31;
             this.tile29.TabStop = false;
             // 
             // tile30
             // 
+            this.tile30.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile30.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile30.Location = new System.Drawing.Point(1201, 101);
+            this.tile30.Location = new System.Drawing.Point(1068, 81);
+            this.tile30.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile30.Name = "tile30";
-            this.tile30.Size = new System.Drawing.Size(100, 100);
+            this.tile30.Size = new System.Drawing.Size(89, 80);
             this.tile30.TabIndex = 32;
             this.tile30.TabStop = false;
             // 
             // tile31
             // 
+            this.tile31.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile31.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile31.Location = new System.Drawing.Point(1301, 101);
+            this.tile31.Location = new System.Drawing.Point(1156, 81);
+            this.tile31.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile31.Name = "tile31";
-            this.tile31.Size = new System.Drawing.Size(100, 100);
+            this.tile31.Size = new System.Drawing.Size(89, 80);
             this.tile31.TabIndex = 33;
             this.tile31.TabStop = false;
             // 
             // tile32
             // 
+            this.tile32.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile32.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile32.Location = new System.Drawing.Point(1401, 101);
+            this.tile32.Location = new System.Drawing.Point(1245, 81);
+            this.tile32.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile32.Name = "tile32";
-            this.tile32.Size = new System.Drawing.Size(100, 100);
+            this.tile32.Size = new System.Drawing.Size(89, 80);
             this.tile32.TabIndex = 34;
             this.tile32.TabStop = false;
             // 
             // tile33
             // 
+            this.tile33.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile33.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile33.Location = new System.Drawing.Point(1501, 101);
+            this.tile33.Location = new System.Drawing.Point(1334, 81);
+            this.tile33.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile33.Name = "tile33";
-            this.tile33.Size = new System.Drawing.Size(100, 100);
+            this.tile33.Size = new System.Drawing.Size(89, 80);
             this.tile33.TabIndex = 35;
             this.tile33.TabStop = false;
             // 
             // tile34
             // 
+            this.tile34.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile34.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile34.Location = new System.Drawing.Point(1601, 101);
+            this.tile34.Location = new System.Drawing.Point(1423, 81);
+            this.tile34.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile34.Name = "tile34";
-            this.tile34.Size = new System.Drawing.Size(100, 100);
+            this.tile34.Size = new System.Drawing.Size(89, 80);
             this.tile34.TabIndex = 36;
             this.tile34.TabStop = false;
             // 
             // tile35
             // 
+            this.tile35.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile35.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile35.Location = new System.Drawing.Point(1, 201);
+            this.tile35.Location = new System.Drawing.Point(1, 161);
+            this.tile35.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile35.Name = "tile35";
-            this.tile35.Size = new System.Drawing.Size(100, 100);
+            this.tile35.Size = new System.Drawing.Size(89, 80);
             this.tile35.TabIndex = 37;
             this.tile35.TabStop = false;
             // 
             // tile36
             // 
+            this.tile36.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile36.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile36.Location = new System.Drawing.Point(101, 201);
+            this.tile36.Location = new System.Drawing.Point(90, 161);
+            this.tile36.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile36.Name = "tile36";
-            this.tile36.Size = new System.Drawing.Size(100, 100);
+            this.tile36.Size = new System.Drawing.Size(89, 80);
             this.tile36.TabIndex = 38;
             this.tile36.TabStop = false;
             // 
             // tile37
             // 
+            this.tile37.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile37.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile37.Location = new System.Drawing.Point(201, 201);
+            this.tile37.Location = new System.Drawing.Point(179, 161);
+            this.tile37.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile37.Name = "tile37";
-            this.tile37.Size = new System.Drawing.Size(100, 100);
+            this.tile37.Size = new System.Drawing.Size(89, 80);
             this.tile37.TabIndex = 39;
             this.tile37.TabStop = false;
             // 
             // tile38
             // 
+            this.tile38.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile38.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile38.Location = new System.Drawing.Point(301, 201);
+            this.tile38.Location = new System.Drawing.Point(268, 161);
+            this.tile38.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile38.Name = "tile38";
-            this.tile38.Size = new System.Drawing.Size(100, 100);
+            this.tile38.Size = new System.Drawing.Size(89, 80);
             this.tile38.TabIndex = 40;
             this.tile38.TabStop = false;
             // 
             // tile39
             // 
+            this.tile39.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile39.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile39.Location = new System.Drawing.Point(401, 201);
+            this.tile39.Location = new System.Drawing.Point(356, 161);
+            this.tile39.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile39.Name = "tile39";
-            this.tile39.Size = new System.Drawing.Size(100, 100);
+            this.tile39.Size = new System.Drawing.Size(89, 80);
             this.tile39.TabIndex = 41;
             this.tile39.TabStop = false;
             // 
             // tile40
             // 
+            this.tile40.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile40.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile40.Location = new System.Drawing.Point(501, 201);
+            this.tile40.Location = new System.Drawing.Point(445, 161);
+            this.tile40.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile40.Name = "tile40";
-            this.tile40.Size = new System.Drawing.Size(100, 100);
+            this.tile40.Size = new System.Drawing.Size(89, 80);
             this.tile40.TabIndex = 42;
             this.tile40.TabStop = false;
             // 
             // tile41
             // 
+            this.tile41.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile41.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile41.Location = new System.Drawing.Point(601, 201);
+            this.tile41.Location = new System.Drawing.Point(534, 161);
+            this.tile41.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile41.Name = "tile41";
-            this.tile41.Size = new System.Drawing.Size(100, 100);
+            this.tile41.Size = new System.Drawing.Size(89, 80);
             this.tile41.TabIndex = 43;
             this.tile41.TabStop = false;
             // 
             // tile42
             // 
+            this.tile42.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile42.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile42.Location = new System.Drawing.Point(701, 201);
+            this.tile42.Location = new System.Drawing.Point(623, 161);
+            this.tile42.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile42.Name = "tile42";
-            this.tile42.Size = new System.Drawing.Size(100, 100);
+            this.tile42.Size = new System.Drawing.Size(89, 80);
             this.tile42.TabIndex = 44;
             this.tile42.TabStop = false;
             // 
             // tile43
             // 
+            this.tile43.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile43.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile43.Location = new System.Drawing.Point(801, 201);
+            this.tile43.Location = new System.Drawing.Point(712, 161);
+            this.tile43.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile43.Name = "tile43";
-            this.tile43.Size = new System.Drawing.Size(100, 100);
+            this.tile43.Size = new System.Drawing.Size(89, 80);
             this.tile43.TabIndex = 45;
             this.tile43.TabStop = false;
             // 
             // tile44
             // 
+            this.tile44.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile44.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile44.Location = new System.Drawing.Point(901, 201);
+            this.tile44.Location = new System.Drawing.Point(801, 161);
+            this.tile44.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile44.Name = "tile44";
-            this.tile44.Size = new System.Drawing.Size(100, 100);
+            this.tile44.Size = new System.Drawing.Size(89, 80);
             this.tile44.TabIndex = 46;
             this.tile44.TabStop = false;
             // 
             // tile45
             // 
+            this.tile45.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile45.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile45.Location = new System.Drawing.Point(1001, 201);
+            this.tile45.Location = new System.Drawing.Point(890, 161);
+            this.tile45.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile45.Name = "tile45";
-            this.tile45.Size = new System.Drawing.Size(100, 100);
+            this.tile45.Size = new System.Drawing.Size(89, 80);
             this.tile45.TabIndex = 47;
             this.tile45.TabStop = false;
             // 
             // tile46
             // 
+            this.tile46.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile46.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile46.Location = new System.Drawing.Point(1101, 201);
+            this.tile46.Location = new System.Drawing.Point(979, 161);
+            this.tile46.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile46.Name = "tile46";
-            this.tile46.Size = new System.Drawing.Size(100, 100);
+            this.tile46.Size = new System.Drawing.Size(89, 80);
             this.tile46.TabIndex = 48;
             this.tile46.TabStop = false;
             // 
             // tile47
             // 
+            this.tile47.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile47.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile47.Location = new System.Drawing.Point(1201, 201);
+            this.tile47.Location = new System.Drawing.Point(1068, 161);
+            this.tile47.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile47.Name = "tile47";
-            this.tile47.Size = new System.Drawing.Size(100, 100);
+            this.tile47.Size = new System.Drawing.Size(89, 80);
             this.tile47.TabIndex = 49;
             this.tile47.TabStop = false;
             // 
             // tile48
             // 
+            this.tile48.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile48.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile48.Location = new System.Drawing.Point(1301, 201);
+            this.tile48.Location = new System.Drawing.Point(1156, 161);
+            this.tile48.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile48.Name = "tile48";
-            this.tile48.Size = new System.Drawing.Size(100, 100);
+            this.tile48.Size = new System.Drawing.Size(89, 80);
             this.tile48.TabIndex = 50;
             this.tile48.TabStop = false;
             // 
             // tile49
             // 
+            this.tile49.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile49.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile49.Location = new System.Drawing.Point(1401, 201);
+            this.tile49.Location = new System.Drawing.Point(1245, 161);
+            this.tile49.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile49.Name = "tile49";
-            this.tile49.Size = new System.Drawing.Size(100, 100);
+            this.tile49.Size = new System.Drawing.Size(89, 80);
             this.tile49.TabIndex = 51;
             this.tile49.TabStop = false;
             // 
             // tile50
             // 
+            this.tile50.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile50.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile50.Location = new System.Drawing.Point(1501, 201);
+            this.tile50.Location = new System.Drawing.Point(1334, 161);
+            this.tile50.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile50.Name = "tile50";
-            this.tile50.Size = new System.Drawing.Size(100, 100);
+            this.tile50.Size = new System.Drawing.Size(89, 80);
             this.tile50.TabIndex = 52;
             this.tile50.TabStop = false;
             // 
             // tile51
             // 
+            this.tile51.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile51.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile51.Location = new System.Drawing.Point(1601, 201);
+            this.tile51.Location = new System.Drawing.Point(1423, 161);
+            this.tile51.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile51.Name = "tile51";
-            this.tile51.Size = new System.Drawing.Size(100, 100);
+            this.tile51.Size = new System.Drawing.Size(89, 80);
             this.tile51.TabIndex = 53;
             this.tile51.TabStop = false;
             // 
             // tile52
             // 
+            this.tile52.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile52.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile52.Location = new System.Drawing.Point(1, 301);
+            this.tile52.Location = new System.Drawing.Point(1, 241);
+            this.tile52.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile52.Name = "tile52";
-            this.tile52.Size = new System.Drawing.Size(100, 100);
+            this.tile52.Size = new System.Drawing.Size(89, 80);
             this.tile52.TabIndex = 54;
             this.tile52.TabStop = false;
             // 
             // tile53
             // 
+            this.tile53.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile53.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile53.Location = new System.Drawing.Point(101, 301);
+            this.tile53.Location = new System.Drawing.Point(90, 241);
+            this.tile53.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile53.Name = "tile53";
-            this.tile53.Size = new System.Drawing.Size(100, 100);
+            this.tile53.Size = new System.Drawing.Size(89, 80);
             this.tile53.TabIndex = 55;
             this.tile53.TabStop = false;
             // 
             // tile54
             // 
+            this.tile54.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile54.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile54.Location = new System.Drawing.Point(201, 301);
+            this.tile54.Location = new System.Drawing.Point(179, 241);
+            this.tile54.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile54.Name = "tile54";
-            this.tile54.Size = new System.Drawing.Size(100, 100);
+            this.tile54.Size = new System.Drawing.Size(89, 80);
             this.tile54.TabIndex = 56;
             this.tile54.TabStop = false;
             // 
             // tile55
             // 
+            this.tile55.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile55.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile55.Location = new System.Drawing.Point(301, 301);
+            this.tile55.Location = new System.Drawing.Point(268, 241);
+            this.tile55.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile55.Name = "tile55";
-            this.tile55.Size = new System.Drawing.Size(100, 100);
+            this.tile55.Size = new System.Drawing.Size(89, 80);
             this.tile55.TabIndex = 57;
             this.tile55.TabStop = false;
             // 
             // tile56
             // 
+            this.tile56.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile56.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile56.Location = new System.Drawing.Point(401, 301);
+            this.tile56.Location = new System.Drawing.Point(356, 241);
+            this.tile56.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile56.Name = "tile56";
-            this.tile56.Size = new System.Drawing.Size(100, 100);
+            this.tile56.Size = new System.Drawing.Size(89, 80);
             this.tile56.TabIndex = 58;
             this.tile56.TabStop = false;
             // 
             // tile57
             // 
+            this.tile57.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile57.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile57.Location = new System.Drawing.Point(501, 301);
+            this.tile57.Location = new System.Drawing.Point(445, 241);
+            this.tile57.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile57.Name = "tile57";
-            this.tile57.Size = new System.Drawing.Size(100, 100);
+            this.tile57.Size = new System.Drawing.Size(89, 80);
             this.tile57.TabIndex = 59;
             this.tile57.TabStop = false;
             // 
             // tile58
             // 
+            this.tile58.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile58.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile58.Location = new System.Drawing.Point(601, 301);
+            this.tile58.Location = new System.Drawing.Point(534, 241);
+            this.tile58.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile58.Name = "tile58";
-            this.tile58.Size = new System.Drawing.Size(100, 100);
+            this.tile58.Size = new System.Drawing.Size(89, 80);
             this.tile58.TabIndex = 60;
             this.tile58.TabStop = false;
             // 
             // tile59
             // 
+            this.tile59.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile59.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile59.Location = new System.Drawing.Point(701, 301);
+            this.tile59.Location = new System.Drawing.Point(623, 241);
+            this.tile59.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile59.Name = "tile59";
-            this.tile59.Size = new System.Drawing.Size(100, 100);
+            this.tile59.Size = new System.Drawing.Size(89, 80);
             this.tile59.TabIndex = 61;
             this.tile59.TabStop = false;
             // 
             // tile60
             // 
+            this.tile60.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile60.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile60.Location = new System.Drawing.Point(801, 301);
+            this.tile60.Location = new System.Drawing.Point(712, 241);
+            this.tile60.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile60.Name = "tile60";
-            this.tile60.Size = new System.Drawing.Size(100, 100);
+            this.tile60.Size = new System.Drawing.Size(89, 80);
             this.tile60.TabIndex = 62;
             this.tile60.TabStop = false;
             // 
             // tile61
             // 
+            this.tile61.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile61.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile61.Location = new System.Drawing.Point(901, 301);
+            this.tile61.Location = new System.Drawing.Point(801, 241);
+            this.tile61.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile61.Name = "tile61";
-            this.tile61.Size = new System.Drawing.Size(100, 100);
+            this.tile61.Size = new System.Drawing.Size(89, 80);
             this.tile61.TabIndex = 63;
             this.tile61.TabStop = false;
             // 
             // tile62
             // 
+            this.tile62.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile62.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile62.Location = new System.Drawing.Point(1001, 301);
+            this.tile62.Location = new System.Drawing.Point(890, 241);
+            this.tile62.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile62.Name = "tile62";
-            this.tile62.Size = new System.Drawing.Size(100, 100);
+            this.tile62.Size = new System.Drawing.Size(89, 80);
             this.tile62.TabIndex = 64;
             this.tile62.TabStop = false;
             // 
             // tile63
             // 
+            this.tile63.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile63.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile63.Location = new System.Drawing.Point(1101, 301);
+            this.tile63.Location = new System.Drawing.Point(979, 241);
+            this.tile63.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile63.Name = "tile63";
-            this.tile63.Size = new System.Drawing.Size(100, 100);
+            this.tile63.Size = new System.Drawing.Size(89, 80);
             this.tile63.TabIndex = 65;
             this.tile63.TabStop = false;
             // 
             // tile64
             // 
+            this.tile64.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile64.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile64.Location = new System.Drawing.Point(1201, 301);
+            this.tile64.Location = new System.Drawing.Point(1068, 241);
+            this.tile64.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile64.Name = "tile64";
-            this.tile64.Size = new System.Drawing.Size(100, 100);
+            this.tile64.Size = new System.Drawing.Size(89, 80);
             this.tile64.TabIndex = 66;
             this.tile64.TabStop = false;
             // 
             // tile65
             // 
+            this.tile65.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile65.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile65.Location = new System.Drawing.Point(1301, 301);
+            this.tile65.Location = new System.Drawing.Point(1156, 241);
+            this.tile65.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile65.Name = "tile65";
-            this.tile65.Size = new System.Drawing.Size(100, 100);
+            this.tile65.Size = new System.Drawing.Size(89, 80);
             this.tile65.TabIndex = 67;
             this.tile65.TabStop = false;
             // 
             // tile66
             // 
+            this.tile66.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile66.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile66.Location = new System.Drawing.Point(1401, 301);
+            this.tile66.Location = new System.Drawing.Point(1245, 241);
+            this.tile66.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile66.Name = "tile66";
-            this.tile66.Size = new System.Drawing.Size(100, 100);
+            this.tile66.Size = new System.Drawing.Size(89, 80);
             this.tile66.TabIndex = 68;
             this.tile66.TabStop = false;
             // 
             // tile67
             // 
+            this.tile67.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile67.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile67.Location = new System.Drawing.Point(1501, 301);
+            this.tile67.Location = new System.Drawing.Point(1334, 241);
+            this.tile67.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile67.Name = "tile67";
-            this.tile67.Size = new System.Drawing.Size(100, 100);
+            this.tile67.Size = new System.Drawing.Size(89, 80);
             this.tile67.TabIndex = 69;
             this.tile67.TabStop = false;
             // 
             // tile68
             // 
+            this.tile68.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile68.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile68.Location = new System.Drawing.Point(1601, 301);
+            this.tile68.Location = new System.Drawing.Point(1423, 241);
+            this.tile68.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile68.Name = "tile68";
-            this.tile68.Size = new System.Drawing.Size(100, 100);
+            this.tile68.Size = new System.Drawing.Size(89, 80);
             this.tile68.TabIndex = 70;
             this.tile68.TabStop = false;
             // 
             // tile69
             // 
+            this.tile69.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile69.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile69.Location = new System.Drawing.Point(1, 401);
+            this.tile69.Location = new System.Drawing.Point(1, 321);
+            this.tile69.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile69.Name = "tile69";
-            this.tile69.Size = new System.Drawing.Size(100, 100);
+            this.tile69.Size = new System.Drawing.Size(89, 80);
             this.tile69.TabIndex = 71;
             this.tile69.TabStop = false;
             // 
             // tile70
             // 
+            this.tile70.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile70.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile70.Location = new System.Drawing.Point(101, 401);
+            this.tile70.Location = new System.Drawing.Point(90, 321);
+            this.tile70.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile70.Name = "tile70";
-            this.tile70.Size = new System.Drawing.Size(100, 100);
+            this.tile70.Size = new System.Drawing.Size(89, 80);
             this.tile70.TabIndex = 72;
             this.tile70.TabStop = false;
             // 
             // tile71
             // 
+            this.tile71.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile71.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile71.Location = new System.Drawing.Point(201, 401);
+            this.tile71.Location = new System.Drawing.Point(179, 321);
+            this.tile71.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile71.Name = "tile71";
-            this.tile71.Size = new System.Drawing.Size(100, 100);
+            this.tile71.Size = new System.Drawing.Size(89, 80);
             this.tile71.TabIndex = 73;
             this.tile71.TabStop = false;
             // 
             // tile72
             // 
+            this.tile72.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile72.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile72.Location = new System.Drawing.Point(301, 401);
+            this.tile72.Location = new System.Drawing.Point(268, 321);
+            this.tile72.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile72.Name = "tile72";
-            this.tile72.Size = new System.Drawing.Size(100, 100);
+            this.tile72.Size = new System.Drawing.Size(89, 80);
             this.tile72.TabIndex = 74;
             this.tile72.TabStop = false;
             // 
             // tile73
             // 
+            this.tile73.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile73.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile73.Location = new System.Drawing.Point(401, 401);
+            this.tile73.Location = new System.Drawing.Point(356, 321);
+            this.tile73.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile73.Name = "tile73";
-            this.tile73.Size = new System.Drawing.Size(100, 100);
+            this.tile73.Size = new System.Drawing.Size(89, 80);
             this.tile73.TabIndex = 75;
             this.tile73.TabStop = false;
             // 
             // tile74
             // 
+            this.tile74.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile74.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile74.Location = new System.Drawing.Point(501, 401);
+            this.tile74.Location = new System.Drawing.Point(445, 321);
+            this.tile74.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile74.Name = "tile74";
-            this.tile74.Size = new System.Drawing.Size(100, 100);
+            this.tile74.Size = new System.Drawing.Size(89, 80);
             this.tile74.TabIndex = 76;
             this.tile74.TabStop = false;
             // 
             // tile75
             // 
+            this.tile75.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile75.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile75.Location = new System.Drawing.Point(601, 401);
+            this.tile75.Location = new System.Drawing.Point(534, 321);
+            this.tile75.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile75.Name = "tile75";
-            this.tile75.Size = new System.Drawing.Size(100, 100);
+            this.tile75.Size = new System.Drawing.Size(89, 80);
             this.tile75.TabIndex = 77;
             this.tile75.TabStop = false;
             // 
             // tile76
             // 
+            this.tile76.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile76.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile76.Location = new System.Drawing.Point(701, 401);
+            this.tile76.Location = new System.Drawing.Point(623, 321);
+            this.tile76.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile76.Name = "tile76";
-            this.tile76.Size = new System.Drawing.Size(100, 100);
+            this.tile76.Size = new System.Drawing.Size(89, 80);
             this.tile76.TabIndex = 78;
             this.tile76.TabStop = false;
             // 
             // tile77
             // 
+            this.tile77.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile77.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile77.Location = new System.Drawing.Point(801, 401);
+            this.tile77.Location = new System.Drawing.Point(712, 321);
+            this.tile77.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile77.Name = "tile77";
-            this.tile77.Size = new System.Drawing.Size(100, 100);
+            this.tile77.Size = new System.Drawing.Size(89, 80);
             this.tile77.TabIndex = 79;
             this.tile77.TabStop = false;
             // 
             // tile78
             // 
+            this.tile78.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile78.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile78.Location = new System.Drawing.Point(901, 401);
+            this.tile78.Location = new System.Drawing.Point(801, 321);
+            this.tile78.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile78.Name = "tile78";
-            this.tile78.Size = new System.Drawing.Size(100, 100);
+            this.tile78.Size = new System.Drawing.Size(89, 80);
             this.tile78.TabIndex = 80;
             this.tile78.TabStop = false;
             // 
             // tile79
             // 
+            this.tile79.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile79.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile79.Location = new System.Drawing.Point(1001, 401);
+            this.tile79.Location = new System.Drawing.Point(890, 321);
+            this.tile79.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile79.Name = "tile79";
-            this.tile79.Size = new System.Drawing.Size(100, 100);
+            this.tile79.Size = new System.Drawing.Size(89, 80);
             this.tile79.TabIndex = 81;
             this.tile79.TabStop = false;
             // 
             // tile80
             // 
+            this.tile80.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile80.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile80.Location = new System.Drawing.Point(1101, 401);
+            this.tile80.Location = new System.Drawing.Point(979, 321);
+            this.tile80.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile80.Name = "tile80";
-            this.tile80.Size = new System.Drawing.Size(100, 100);
+            this.tile80.Size = new System.Drawing.Size(89, 80);
             this.tile80.TabIndex = 82;
             this.tile80.TabStop = false;
             // 
             // tile81
             // 
+            this.tile81.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile81.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile81.Location = new System.Drawing.Point(1201, 401);
+            this.tile81.Location = new System.Drawing.Point(1068, 321);
+            this.tile81.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile81.Name = "tile81";
-            this.tile81.Size = new System.Drawing.Size(100, 100);
+            this.tile81.Size = new System.Drawing.Size(89, 80);
             this.tile81.TabIndex = 83;
             this.tile81.TabStop = false;
             // 
             // tile82
             // 
+            this.tile82.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile82.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile82.Location = new System.Drawing.Point(1301, 401);
+            this.tile82.Location = new System.Drawing.Point(1156, 321);
+            this.tile82.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile82.Name = "tile82";
-            this.tile82.Size = new System.Drawing.Size(100, 100);
+            this.tile82.Size = new System.Drawing.Size(89, 80);
             this.tile82.TabIndex = 84;
             this.tile82.TabStop = false;
             // 
             // tile83
             // 
+            this.tile83.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile83.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile83.Location = new System.Drawing.Point(1401, 401);
+            this.tile83.Location = new System.Drawing.Point(1245, 321);
+            this.tile83.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile83.Name = "tile83";
-            this.tile83.Size = new System.Drawing.Size(100, 100);
+            this.tile83.Size = new System.Drawing.Size(89, 80);
             this.tile83.TabIndex = 85;
             this.tile83.TabStop = false;
             // 
             // tile84
             // 
+            this.tile84.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile84.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile84.Location = new System.Drawing.Point(1501, 401);
+            this.tile84.Location = new System.Drawing.Point(1334, 321);
+            this.tile84.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile84.Name = "tile84";
-            this.tile84.Size = new System.Drawing.Size(100, 100);
+            this.tile84.Size = new System.Drawing.Size(89, 80);
             this.tile84.TabIndex = 86;
             this.tile84.TabStop = false;
             // 
             // tile85
             // 
+            this.tile85.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile85.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile85.Location = new System.Drawing.Point(1601, 401);
+            this.tile85.Location = new System.Drawing.Point(1423, 321);
+            this.tile85.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile85.Name = "tile85";
-            this.tile85.Size = new System.Drawing.Size(100, 100);
+            this.tile85.Size = new System.Drawing.Size(89, 80);
             this.tile85.TabIndex = 87;
             this.tile85.TabStop = false;
             // 
             // tile86
             // 
+            this.tile86.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile86.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile86.Location = new System.Drawing.Point(1, 501);
+            this.tile86.Location = new System.Drawing.Point(1, 401);
+            this.tile86.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile86.Name = "tile86";
-            this.tile86.Size = new System.Drawing.Size(100, 100);
+            this.tile86.Size = new System.Drawing.Size(89, 80);
             this.tile86.TabIndex = 88;
             this.tile86.TabStop = false;
             // 
             // tile87
             // 
+            this.tile87.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile87.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile87.Location = new System.Drawing.Point(101, 501);
+            this.tile87.Location = new System.Drawing.Point(90, 401);
+            this.tile87.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile87.Name = "tile87";
-            this.tile87.Size = new System.Drawing.Size(100, 100);
+            this.tile87.Size = new System.Drawing.Size(89, 80);
             this.tile87.TabIndex = 89;
             this.tile87.TabStop = false;
             // 
             // tile88
             // 
+            this.tile88.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile88.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile88.Location = new System.Drawing.Point(201, 501);
+            this.tile88.Location = new System.Drawing.Point(179, 401);
+            this.tile88.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile88.Name = "tile88";
-            this.tile88.Size = new System.Drawing.Size(100, 100);
+            this.tile88.Size = new System.Drawing.Size(89, 80);
             this.tile88.TabIndex = 90;
             this.tile88.TabStop = false;
             // 
             // tile89
             // 
+            this.tile89.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile89.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile89.Location = new System.Drawing.Point(301, 501);
+            this.tile89.Location = new System.Drawing.Point(268, 401);
+            this.tile89.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile89.Name = "tile89";
-            this.tile89.Size = new System.Drawing.Size(100, 100);
+            this.tile89.Size = new System.Drawing.Size(89, 80);
             this.tile89.TabIndex = 91;
             this.tile89.TabStop = false;
             // 
             // tile90
             // 
+            this.tile90.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile90.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile90.Location = new System.Drawing.Point(401, 501);
+            this.tile90.Location = new System.Drawing.Point(356, 401);
+            this.tile90.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile90.Name = "tile90";
-            this.tile90.Size = new System.Drawing.Size(100, 100);
+            this.tile90.Size = new System.Drawing.Size(89, 80);
             this.tile90.TabIndex = 92;
             this.tile90.TabStop = false;
             // 
             // tile91
             // 
+            this.tile91.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile91.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile91.Location = new System.Drawing.Point(501, 501);
+            this.tile91.Location = new System.Drawing.Point(445, 401);
+            this.tile91.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile91.Name = "tile91";
-            this.tile91.Size = new System.Drawing.Size(100, 100);
+            this.tile91.Size = new System.Drawing.Size(89, 80);
             this.tile91.TabIndex = 93;
             this.tile91.TabStop = false;
             // 
             // tile92
             // 
+            this.tile92.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile92.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile92.Location = new System.Drawing.Point(601, 501);
+            this.tile92.Location = new System.Drawing.Point(534, 401);
+            this.tile92.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile92.Name = "tile92";
-            this.tile92.Size = new System.Drawing.Size(100, 100);
+            this.tile92.Size = new System.Drawing.Size(89, 80);
             this.tile92.TabIndex = 94;
             this.tile92.TabStop = false;
             // 
             // tile93
             // 
+            this.tile93.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile93.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile93.Location = new System.Drawing.Point(701, 501);
+            this.tile93.Location = new System.Drawing.Point(623, 401);
+            this.tile93.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile93.Name = "tile93";
-            this.tile93.Size = new System.Drawing.Size(100, 100);
+            this.tile93.Size = new System.Drawing.Size(89, 80);
             this.tile93.TabIndex = 95;
             this.tile93.TabStop = false;
             // 
             // tile94
             // 
+            this.tile94.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile94.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile94.Location = new System.Drawing.Point(801, 501);
+            this.tile94.Location = new System.Drawing.Point(712, 401);
+            this.tile94.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile94.Name = "tile94";
-            this.tile94.Size = new System.Drawing.Size(100, 100);
+            this.tile94.Size = new System.Drawing.Size(89, 80);
             this.tile94.TabIndex = 96;
             this.tile94.TabStop = false;
             // 
             // tile95
             // 
+            this.tile95.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile95.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile95.Location = new System.Drawing.Point(901, 501);
+            this.tile95.Location = new System.Drawing.Point(801, 401);
+            this.tile95.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile95.Name = "tile95";
-            this.tile95.Size = new System.Drawing.Size(100, 100);
+            this.tile95.Size = new System.Drawing.Size(89, 80);
             this.tile95.TabIndex = 97;
             this.tile95.TabStop = false;
             // 
             // tile96
             // 
+            this.tile96.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile96.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile96.Location = new System.Drawing.Point(1001, 501);
+            this.tile96.Location = new System.Drawing.Point(890, 401);
+            this.tile96.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile96.Name = "tile96";
-            this.tile96.Size = new System.Drawing.Size(100, 100);
+            this.tile96.Size = new System.Drawing.Size(89, 80);
             this.tile96.TabIndex = 98;
             this.tile96.TabStop = false;
             // 
             // tile97
             // 
+            this.tile97.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile97.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile97.Location = new System.Drawing.Point(1101, 501);
+            this.tile97.Location = new System.Drawing.Point(979, 401);
+            this.tile97.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile97.Name = "tile97";
-            this.tile97.Size = new System.Drawing.Size(100, 100);
+            this.tile97.Size = new System.Drawing.Size(89, 80);
             this.tile97.TabIndex = 99;
             this.tile97.TabStop = false;
             // 
             // tile98
             // 
+            this.tile98.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile98.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile98.Location = new System.Drawing.Point(1201, 501);
+            this.tile98.Location = new System.Drawing.Point(1068, 401);
+            this.tile98.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile98.Name = "tile98";
-            this.tile98.Size = new System.Drawing.Size(100, 100);
+            this.tile98.Size = new System.Drawing.Size(89, 80);
             this.tile98.TabIndex = 100;
             this.tile98.TabStop = false;
             // 
             // tile99
             // 
+            this.tile99.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile99.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile99.Location = new System.Drawing.Point(1301, 501);
+            this.tile99.Location = new System.Drawing.Point(1156, 401);
+            this.tile99.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile99.Name = "tile99";
-            this.tile99.Size = new System.Drawing.Size(100, 100);
+            this.tile99.Size = new System.Drawing.Size(89, 80);
             this.tile99.TabIndex = 101;
             this.tile99.TabStop = false;
             // 
             // tile100
             // 
+            this.tile100.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile100.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile100.Location = new System.Drawing.Point(1401, 501);
+            this.tile100.Location = new System.Drawing.Point(1245, 401);
+            this.tile100.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile100.Name = "tile100";
-            this.tile100.Size = new System.Drawing.Size(100, 100);
+            this.tile100.Size = new System.Drawing.Size(89, 80);
             this.tile100.TabIndex = 102;
             this.tile100.TabStop = false;
             // 
             // tile101
             // 
+            this.tile101.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile101.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile101.Location = new System.Drawing.Point(1501, 501);
+            this.tile101.Location = new System.Drawing.Point(1334, 401);
+            this.tile101.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile101.Name = "tile101";
-            this.tile101.Size = new System.Drawing.Size(100, 100);
+            this.tile101.Size = new System.Drawing.Size(89, 80);
             this.tile101.TabIndex = 103;
             this.tile101.TabStop = false;
             // 
             // tile102
             // 
+            this.tile102.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile102.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile102.Location = new System.Drawing.Point(1601, 501);
+            this.tile102.Location = new System.Drawing.Point(1423, 401);
+            this.tile102.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile102.Name = "tile102";
-            this.tile102.Size = new System.Drawing.Size(100, 100);
+            this.tile102.Size = new System.Drawing.Size(89, 80);
             this.tile102.TabIndex = 104;
             this.tile102.TabStop = false;
             // 
             // tile103
             // 
+            this.tile103.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile103.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile103.Location = new System.Drawing.Point(1, 601);
+            this.tile103.Location = new System.Drawing.Point(1, 481);
+            this.tile103.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile103.Name = "tile103";
-            this.tile103.Size = new System.Drawing.Size(100, 100);
+            this.tile103.Size = new System.Drawing.Size(89, 80);
             this.tile103.TabIndex = 105;
             this.tile103.TabStop = false;
             // 
             // tile104
             // 
+            this.tile104.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile104.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile104.Location = new System.Drawing.Point(101, 601);
+            this.tile104.Location = new System.Drawing.Point(90, 481);
+            this.tile104.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile104.Name = "tile104";
-            this.tile104.Size = new System.Drawing.Size(100, 100);
+            this.tile104.Size = new System.Drawing.Size(89, 80);
             this.tile104.TabIndex = 106;
             this.tile104.TabStop = false;
             // 
             // tile105
             // 
+            this.tile105.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile105.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile105.Location = new System.Drawing.Point(201, 601);
+            this.tile105.Location = new System.Drawing.Point(179, 481);
+            this.tile105.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile105.Name = "tile105";
-            this.tile105.Size = new System.Drawing.Size(100, 100);
+            this.tile105.Size = new System.Drawing.Size(89, 80);
             this.tile105.TabIndex = 107;
             this.tile105.TabStop = false;
             // 
             // tile106
             // 
+            this.tile106.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile106.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile106.Location = new System.Drawing.Point(301, 601);
+            this.tile106.Location = new System.Drawing.Point(268, 481);
+            this.tile106.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile106.Name = "tile106";
-            this.tile106.Size = new System.Drawing.Size(100, 100);
+            this.tile106.Size = new System.Drawing.Size(89, 80);
             this.tile106.TabIndex = 108;
             this.tile106.TabStop = false;
             // 
             // tile107
             // 
+            this.tile107.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile107.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile107.Location = new System.Drawing.Point(401, 601);
+            this.tile107.Location = new System.Drawing.Point(356, 481);
+            this.tile107.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile107.Name = "tile107";
-            this.tile107.Size = new System.Drawing.Size(100, 100);
+            this.tile107.Size = new System.Drawing.Size(89, 80);
             this.tile107.TabIndex = 109;
             this.tile107.TabStop = false;
             // 
             // tile108
             // 
+            this.tile108.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile108.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile108.Location = new System.Drawing.Point(501, 601);
+            this.tile108.Location = new System.Drawing.Point(445, 481);
+            this.tile108.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile108.Name = "tile108";
-            this.tile108.Size = new System.Drawing.Size(100, 100);
+            this.tile108.Size = new System.Drawing.Size(89, 80);
             this.tile108.TabIndex = 110;
             this.tile108.TabStop = false;
             // 
             // tile109
             // 
+            this.tile109.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile109.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile109.Location = new System.Drawing.Point(601, 601);
+            this.tile109.Location = new System.Drawing.Point(534, 481);
+            this.tile109.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile109.Name = "tile109";
-            this.tile109.Size = new System.Drawing.Size(100, 100);
+            this.tile109.Size = new System.Drawing.Size(89, 80);
             this.tile109.TabIndex = 111;
             this.tile109.TabStop = false;
             // 
             // tile110
             // 
+            this.tile110.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile110.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile110.Location = new System.Drawing.Point(701, 601);
+            this.tile110.Location = new System.Drawing.Point(623, 481);
+            this.tile110.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile110.Name = "tile110";
-            this.tile110.Size = new System.Drawing.Size(100, 100);
+            this.tile110.Size = new System.Drawing.Size(89, 80);
             this.tile110.TabIndex = 112;
             this.tile110.TabStop = false;
             // 
             // tile111
             // 
+            this.tile111.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile111.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile111.Location = new System.Drawing.Point(801, 601);
+            this.tile111.Location = new System.Drawing.Point(712, 481);
+            this.tile111.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile111.Name = "tile111";
-            this.tile111.Size = new System.Drawing.Size(100, 100);
+            this.tile111.Size = new System.Drawing.Size(89, 80);
             this.tile111.TabIndex = 113;
             this.tile111.TabStop = false;
             // 
             // tile112
             // 
+            this.tile112.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile112.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile112.Location = new System.Drawing.Point(901, 601);
+            this.tile112.Location = new System.Drawing.Point(801, 481);
+            this.tile112.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile112.Name = "tile112";
-            this.tile112.Size = new System.Drawing.Size(100, 100);
+            this.tile112.Size = new System.Drawing.Size(89, 80);
             this.tile112.TabIndex = 114;
             this.tile112.TabStop = false;
             // 
             // tile113
             // 
+            this.tile113.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile113.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile113.Location = new System.Drawing.Point(1001, 601);
+            this.tile113.Location = new System.Drawing.Point(890, 481);
+            this.tile113.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile113.Name = "tile113";
-            this.tile113.Size = new System.Drawing.Size(100, 100);
+            this.tile113.Size = new System.Drawing.Size(89, 80);
             this.tile113.TabIndex = 115;
             this.tile113.TabStop = false;
             // 
             // tile114
             // 
+            this.tile114.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile114.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile114.Location = new System.Drawing.Point(1101, 601);
+            this.tile114.Location = new System.Drawing.Point(979, 481);
+            this.tile114.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile114.Name = "tile114";
-            this.tile114.Size = new System.Drawing.Size(100, 100);
+            this.tile114.Size = new System.Drawing.Size(89, 80);
             this.tile114.TabIndex = 116;
             this.tile114.TabStop = false;
             // 
             // tile115
             // 
+            this.tile115.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile115.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile115.Location = new System.Drawing.Point(1201, 601);
+            this.tile115.Location = new System.Drawing.Point(1068, 481);
+            this.tile115.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile115.Name = "tile115";
-            this.tile115.Size = new System.Drawing.Size(100, 100);
+            this.tile115.Size = new System.Drawing.Size(89, 80);
             this.tile115.TabIndex = 117;
             this.tile115.TabStop = false;
             // 
             // tile116
             // 
+            this.tile116.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile116.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile116.Location = new System.Drawing.Point(1301, 601);
+            this.tile116.Location = new System.Drawing.Point(1156, 481);
+            this.tile116.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile116.Name = "tile116";
-            this.tile116.Size = new System.Drawing.Size(100, 100);
+            this.tile116.Size = new System.Drawing.Size(89, 80);
             this.tile116.TabIndex = 118;
             this.tile116.TabStop = false;
             // 
             // tile117
             // 
+            this.tile117.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile117.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile117.Location = new System.Drawing.Point(1401, 601);
+            this.tile117.Location = new System.Drawing.Point(1245, 481);
+            this.tile117.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile117.Name = "tile117";
-            this.tile117.Size = new System.Drawing.Size(100, 100);
+            this.tile117.Size = new System.Drawing.Size(89, 80);
             this.tile117.TabIndex = 119;
             this.tile117.TabStop = false;
             // 
             // tile118
             // 
+            this.tile118.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile118.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile118.Location = new System.Drawing.Point(1501, 601);
+            this.tile118.Location = new System.Drawing.Point(1334, 481);
+            this.tile118.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile118.Name = "tile118";
-            this.tile118.Size = new System.Drawing.Size(100, 100);
+            this.tile118.Size = new System.Drawing.Size(89, 80);
             this.tile118.TabIndex = 120;
             this.tile118.TabStop = false;
             // 
             // tile119
             // 
+            this.tile119.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile119.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile119.Location = new System.Drawing.Point(1601, 601);
+            this.tile119.Location = new System.Drawing.Point(1423, 481);
+            this.tile119.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile119.Name = "tile119";
-            this.tile119.Size = new System.Drawing.Size(100, 100);
+            this.tile119.Size = new System.Drawing.Size(89, 80);
             this.tile119.TabIndex = 121;
             this.tile119.TabStop = false;
             // 
             // tile120
             // 
+            this.tile120.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile120.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile120.Location = new System.Drawing.Point(1, 701);
+            this.tile120.Location = new System.Drawing.Point(1, 561);
+            this.tile120.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile120.Name = "tile120";
-            this.tile120.Size = new System.Drawing.Size(100, 100);
+            this.tile120.Size = new System.Drawing.Size(89, 80);
             this.tile120.TabIndex = 122;
             this.tile120.TabStop = false;
             // 
             // tile121
             // 
+            this.tile121.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile121.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile121.Location = new System.Drawing.Point(101, 701);
+            this.tile121.Location = new System.Drawing.Point(90, 561);
+            this.tile121.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile121.Name = "tile121";
-            this.tile121.Size = new System.Drawing.Size(100, 100);
+            this.tile121.Size = new System.Drawing.Size(89, 80);
             this.tile121.TabIndex = 123;
             this.tile121.TabStop = false;
             // 
             // tile122
             // 
+            this.tile122.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile122.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile122.Location = new System.Drawing.Point(201, 701);
+            this.tile122.Location = new System.Drawing.Point(179, 561);
+            this.tile122.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile122.Name = "tile122";
-            this.tile122.Size = new System.Drawing.Size(100, 100);
+            this.tile122.Size = new System.Drawing.Size(89, 80);
             this.tile122.TabIndex = 124;
             this.tile122.TabStop = false;
             // 
             // tile123
             // 
+            this.tile123.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile123.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile123.Location = new System.Drawing.Point(301, 701);
+            this.tile123.Location = new System.Drawing.Point(268, 561);
+            this.tile123.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile123.Name = "tile123";
-            this.tile123.Size = new System.Drawing.Size(100, 100);
+            this.tile123.Size = new System.Drawing.Size(89, 80);
             this.tile123.TabIndex = 125;
             this.tile123.TabStop = false;
             // 
             // tile124
             // 
+            this.tile124.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile124.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile124.Location = new System.Drawing.Point(401, 701);
+            this.tile124.Location = new System.Drawing.Point(356, 561);
+            this.tile124.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile124.Name = "tile124";
-            this.tile124.Size = new System.Drawing.Size(100, 100);
+            this.tile124.Size = new System.Drawing.Size(89, 80);
             this.tile124.TabIndex = 126;
             this.tile124.TabStop = false;
             // 
             // tile125
             // 
+            this.tile125.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile125.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile125.Location = new System.Drawing.Point(501, 701);
+            this.tile125.Location = new System.Drawing.Point(445, 561);
+            this.tile125.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile125.Name = "tile125";
-            this.tile125.Size = new System.Drawing.Size(100, 100);
+            this.tile125.Size = new System.Drawing.Size(89, 80);
             this.tile125.TabIndex = 127;
             this.tile125.TabStop = false;
             // 
             // tile126
             // 
+            this.tile126.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile126.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile126.Location = new System.Drawing.Point(601, 701);
+            this.tile126.Location = new System.Drawing.Point(534, 561);
+            this.tile126.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile126.Name = "tile126";
-            this.tile126.Size = new System.Drawing.Size(100, 100);
+            this.tile126.Size = new System.Drawing.Size(89, 80);
             this.tile126.TabIndex = 128;
             this.tile126.TabStop = false;
             // 
             // tile127
             // 
+            this.tile127.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile127.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile127.Location = new System.Drawing.Point(701, 701);
+            this.tile127.Location = new System.Drawing.Point(623, 561);
+            this.tile127.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile127.Name = "tile127";
-            this.tile127.Size = new System.Drawing.Size(100, 100);
+            this.tile127.Size = new System.Drawing.Size(89, 80);
             this.tile127.TabIndex = 129;
             this.tile127.TabStop = false;
             // 
             // tile128
             // 
+            this.tile128.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile128.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile128.Location = new System.Drawing.Point(801, 701);
+            this.tile128.Location = new System.Drawing.Point(712, 561);
+            this.tile128.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile128.Name = "tile128";
-            this.tile128.Size = new System.Drawing.Size(100, 100);
+            this.tile128.Size = new System.Drawing.Size(89, 80);
             this.tile128.TabIndex = 130;
             this.tile128.TabStop = false;
             // 
             // tile129
             // 
+            this.tile129.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile129.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile129.Location = new System.Drawing.Point(901, 701);
+            this.tile129.Location = new System.Drawing.Point(801, 561);
+            this.tile129.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile129.Name = "tile129";
-            this.tile129.Size = new System.Drawing.Size(100, 100);
+            this.tile129.Size = new System.Drawing.Size(89, 80);
             this.tile129.TabIndex = 131;
             this.tile129.TabStop = false;
             // 
             // tile130
             // 
+            this.tile130.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile130.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile130.Location = new System.Drawing.Point(1001, 701);
+            this.tile130.Location = new System.Drawing.Point(890, 561);
+            this.tile130.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile130.Name = "tile130";
-            this.tile130.Size = new System.Drawing.Size(100, 100);
+            this.tile130.Size = new System.Drawing.Size(89, 80);
             this.tile130.TabIndex = 132;
             this.tile130.TabStop = false;
             // 
             // tile131
             // 
+            this.tile131.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile131.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile131.Location = new System.Drawing.Point(1101, 701);
+            this.tile131.Location = new System.Drawing.Point(979, 561);
+            this.tile131.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile131.Name = "tile131";
-            this.tile131.Size = new System.Drawing.Size(100, 100);
+            this.tile131.Size = new System.Drawing.Size(89, 80);
             this.tile131.TabIndex = 133;
             this.tile131.TabStop = false;
             // 
             // tile132
             // 
+            this.tile132.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile132.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile132.Location = new System.Drawing.Point(1201, 701);
+            this.tile132.Location = new System.Drawing.Point(1068, 561);
+            this.tile132.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile132.Name = "tile132";
-            this.tile132.Size = new System.Drawing.Size(100, 100);
+            this.tile132.Size = new System.Drawing.Size(89, 80);
             this.tile132.TabIndex = 134;
             this.tile132.TabStop = false;
             // 
             // tile133
             // 
+            this.tile133.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile133.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile133.Location = new System.Drawing.Point(1301, 701);
+            this.tile133.Location = new System.Drawing.Point(1156, 561);
+            this.tile133.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile133.Name = "tile133";
-            this.tile133.Size = new System.Drawing.Size(100, 100);
+            this.tile133.Size = new System.Drawing.Size(89, 80);
             this.tile133.TabIndex = 135;
             this.tile133.TabStop = false;
             // 
             // tile134
             // 
+            this.tile134.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile134.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile134.Location = new System.Drawing.Point(1401, 701);
+            this.tile134.Location = new System.Drawing.Point(1245, 561);
+            this.tile134.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile134.Name = "tile134";
-            this.tile134.Size = new System.Drawing.Size(100, 100);
+            this.tile134.Size = new System.Drawing.Size(89, 80);
             this.tile134.TabIndex = 136;
             this.tile134.TabStop = false;
             // 
             // tile135
             // 
+            this.tile135.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile135.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile135.Location = new System.Drawing.Point(1501, 701);
+            this.tile135.Location = new System.Drawing.Point(1334, 561);
+            this.tile135.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile135.Name = "tile135";
-            this.tile135.Size = new System.Drawing.Size(100, 100);
+            this.tile135.Size = new System.Drawing.Size(89, 80);
             this.tile135.TabIndex = 137;
             this.tile135.TabStop = false;
             // 
             // tile136
             // 
+            this.tile136.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile136.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile136.Location = new System.Drawing.Point(1601, 701);
+            this.tile136.Location = new System.Drawing.Point(1423, 561);
+            this.tile136.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile136.Name = "tile136";
-            this.tile136.Size = new System.Drawing.Size(100, 100);
+            this.tile136.Size = new System.Drawing.Size(89, 80);
             this.tile136.TabIndex = 138;
             this.tile136.TabStop = false;
             // 
             // tile137
             // 
+            this.tile137.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile137.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile137.Location = new System.Drawing.Point(1, 801);
+            this.tile137.Location = new System.Drawing.Point(1, 641);
+            this.tile137.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile137.Name = "tile137";
-            this.tile137.Size = new System.Drawing.Size(100, 100);
+            this.tile137.Size = new System.Drawing.Size(89, 80);
             this.tile137.TabIndex = 139;
             this.tile137.TabStop = false;
             // 
             // tile138
             // 
+            this.tile138.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile138.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile138.Location = new System.Drawing.Point(101, 801);
+            this.tile138.Location = new System.Drawing.Point(90, 641);
+            this.tile138.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile138.Name = "tile138";
-            this.tile138.Size = new System.Drawing.Size(100, 100);
+            this.tile138.Size = new System.Drawing.Size(89, 80);
             this.tile138.TabIndex = 140;
             this.tile138.TabStop = false;
             // 
             // tile139
             // 
+            this.tile139.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile139.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile139.Location = new System.Drawing.Point(201, 801);
+            this.tile139.Location = new System.Drawing.Point(179, 641);
+            this.tile139.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile139.Name = "tile139";
-            this.tile139.Size = new System.Drawing.Size(100, 100);
+            this.tile139.Size = new System.Drawing.Size(89, 80);
             this.tile139.TabIndex = 141;
             this.tile139.TabStop = false;
             // 
             // tile140
             // 
+            this.tile140.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile140.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile140.Location = new System.Drawing.Point(301, 801);
+            this.tile140.Location = new System.Drawing.Point(268, 641);
+            this.tile140.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile140.Name = "tile140";
-            this.tile140.Size = new System.Drawing.Size(100, 100);
+            this.tile140.Size = new System.Drawing.Size(89, 80);
             this.tile140.TabIndex = 142;
             this.tile140.TabStop = false;
             // 
             // tile141
             // 
+            this.tile141.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile141.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile141.Location = new System.Drawing.Point(401, 801);
+            this.tile141.Location = new System.Drawing.Point(356, 641);
+            this.tile141.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile141.Name = "tile141";
-            this.tile141.Size = new System.Drawing.Size(100, 100);
+            this.tile141.Size = new System.Drawing.Size(89, 80);
             this.tile141.TabIndex = 143;
             this.tile141.TabStop = false;
             // 
             // tile142
             // 
+            this.tile142.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile142.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile142.Location = new System.Drawing.Point(501, 801);
+            this.tile142.Location = new System.Drawing.Point(445, 641);
+            this.tile142.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile142.Name = "tile142";
-            this.tile142.Size = new System.Drawing.Size(100, 100);
+            this.tile142.Size = new System.Drawing.Size(89, 80);
             this.tile142.TabIndex = 144;
             this.tile142.TabStop = false;
             // 
             // tile143
             // 
+            this.tile143.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile143.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile143.Location = new System.Drawing.Point(601, 801);
+            this.tile143.Location = new System.Drawing.Point(534, 641);
+            this.tile143.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile143.Name = "tile143";
-            this.tile143.Size = new System.Drawing.Size(100, 100);
+            this.tile143.Size = new System.Drawing.Size(89, 80);
             this.tile143.TabIndex = 145;
             this.tile143.TabStop = false;
             // 
             // tile144
             // 
+            this.tile144.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile144.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile144.Location = new System.Drawing.Point(701, 801);
+            this.tile144.Location = new System.Drawing.Point(623, 641);
+            this.tile144.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile144.Name = "tile144";
-            this.tile144.Size = new System.Drawing.Size(100, 100);
+            this.tile144.Size = new System.Drawing.Size(89, 80);
             this.tile144.TabIndex = 146;
             this.tile144.TabStop = false;
             // 
             // tile145
             // 
+            this.tile145.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile145.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile145.Location = new System.Drawing.Point(801, 801);
+            this.tile145.Location = new System.Drawing.Point(712, 641);
+            this.tile145.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile145.Name = "tile145";
-            this.tile145.Size = new System.Drawing.Size(100, 100);
+            this.tile145.Size = new System.Drawing.Size(89, 80);
             this.tile145.TabIndex = 147;
             this.tile145.TabStop = false;
             // 
             // tile146
             // 
+            this.tile146.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile146.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile146.Location = new System.Drawing.Point(901, 801);
+            this.tile146.Location = new System.Drawing.Point(801, 641);
+            this.tile146.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile146.Name = "tile146";
-            this.tile146.Size = new System.Drawing.Size(100, 100);
+            this.tile146.Size = new System.Drawing.Size(89, 80);
             this.tile146.TabIndex = 148;
             this.tile146.TabStop = false;
             // 
             // tile147
             // 
+            this.tile147.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile147.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile147.Location = new System.Drawing.Point(1001, 801);
+            this.tile147.Location = new System.Drawing.Point(890, 641);
+            this.tile147.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile147.Name = "tile147";
-            this.tile147.Size = new System.Drawing.Size(100, 100);
+            this.tile147.Size = new System.Drawing.Size(89, 80);
             this.tile147.TabIndex = 149;
             this.tile147.TabStop = false;
             // 
             // tile148
             // 
+            this.tile148.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile148.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile148.Location = new System.Drawing.Point(1101, 801);
+            this.tile148.Location = new System.Drawing.Point(979, 641);
+            this.tile148.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile148.Name = "tile148";
-            this.tile148.Size = new System.Drawing.Size(100, 100);
+            this.tile148.Size = new System.Drawing.Size(89, 80);
             this.tile148.TabIndex = 150;
             this.tile148.TabStop = false;
             // 
             // tile149
             // 
+            this.tile149.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile149.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile149.Location = new System.Drawing.Point(1201, 801);
+            this.tile149.Location = new System.Drawing.Point(1068, 641);
+            this.tile149.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile149.Name = "tile149";
-            this.tile149.Size = new System.Drawing.Size(100, 100);
+            this.tile149.Size = new System.Drawing.Size(89, 80);
             this.tile149.TabIndex = 151;
             this.tile149.TabStop = false;
             // 
             // tile150
             // 
+            this.tile150.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile150.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile150.Location = new System.Drawing.Point(1301, 801);
+            this.tile150.Location = new System.Drawing.Point(1156, 641);
+            this.tile150.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile150.Name = "tile150";
-            this.tile150.Size = new System.Drawing.Size(100, 100);
+            this.tile150.Size = new System.Drawing.Size(89, 80);
             this.tile150.TabIndex = 152;
             this.tile150.TabStop = false;
             // 
             // tile151
             // 
+            this.tile151.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile151.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile151.Location = new System.Drawing.Point(1401, 801);
+            this.tile151.Location = new System.Drawing.Point(1245, 641);
+            this.tile151.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile151.Name = "tile151";
-            this.tile151.Size = new System.Drawing.Size(100, 100);
+            this.tile151.Size = new System.Drawing.Size(89, 80);
             this.tile151.TabIndex = 153;
             this.tile151.TabStop = false;
             // 
             // tile152
             // 
+            this.tile152.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile152.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile152.Location = new System.Drawing.Point(1501, 801);
+            this.tile152.Location = new System.Drawing.Point(1334, 641);
+            this.tile152.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile152.Name = "tile152";
-            this.tile152.Size = new System.Drawing.Size(100, 100);
+            this.tile152.Size = new System.Drawing.Size(89, 80);
             this.tile152.TabIndex = 154;
             this.tile152.TabStop = false;
             // 
             // tile153
             // 
+            this.tile153.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile153.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile153.Location = new System.Drawing.Point(1601, 801);
+            this.tile153.Location = new System.Drawing.Point(1423, 641);
+            this.tile153.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile153.Name = "tile153";
-            this.tile153.Size = new System.Drawing.Size(100, 100);
+            this.tile153.Size = new System.Drawing.Size(89, 80);
             this.tile153.TabIndex = 155;
             this.tile153.TabStop = false;
             // 
             // tile154
             // 
+            this.tile154.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile154.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile154.Location = new System.Drawing.Point(1, 901);
+            this.tile154.Location = new System.Drawing.Point(1, 721);
+            this.tile154.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile154.Name = "tile154";
-            this.tile154.Size = new System.Drawing.Size(100, 100);
+            this.tile154.Size = new System.Drawing.Size(89, 80);
             this.tile154.TabIndex = 156;
             this.tile154.TabStop = false;
             // 
             // tile155
             // 
+            this.tile155.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile155.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile155.Location = new System.Drawing.Point(101, 901);
+            this.tile155.Location = new System.Drawing.Point(90, 721);
+            this.tile155.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile155.Name = "tile155";
-            this.tile155.Size = new System.Drawing.Size(100, 100);
+            this.tile155.Size = new System.Drawing.Size(89, 80);
             this.tile155.TabIndex = 157;
             this.tile155.TabStop = false;
             // 
             // tile156
             // 
+            this.tile156.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile156.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile156.Location = new System.Drawing.Point(201, 901);
+            this.tile156.Location = new System.Drawing.Point(179, 721);
+            this.tile156.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile156.Name = "tile156";
-            this.tile156.Size = new System.Drawing.Size(100, 100);
+            this.tile156.Size = new System.Drawing.Size(89, 80);
             this.tile156.TabIndex = 158;
             this.tile156.TabStop = false;
             // 
             // tile157
             // 
+            this.tile157.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile157.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile157.Location = new System.Drawing.Point(301, 901);
+            this.tile157.Location = new System.Drawing.Point(268, 721);
+            this.tile157.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile157.Name = "tile157";
-            this.tile157.Size = new System.Drawing.Size(100, 100);
+            this.tile157.Size = new System.Drawing.Size(89, 80);
             this.tile157.TabIndex = 159;
             this.tile157.TabStop = false;
             // 
             // tile158
             // 
+            this.tile158.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile158.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile158.Location = new System.Drawing.Point(401, 901);
+            this.tile158.Location = new System.Drawing.Point(356, 721);
+            this.tile158.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile158.Name = "tile158";
-            this.tile158.Size = new System.Drawing.Size(100, 100);
+            this.tile158.Size = new System.Drawing.Size(89, 80);
             this.tile158.TabIndex = 160;
             this.tile158.TabStop = false;
             // 
             // tile159
             // 
+            this.tile159.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile159.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile159.Location = new System.Drawing.Point(501, 901);
+            this.tile159.Location = new System.Drawing.Point(445, 721);
+            this.tile159.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile159.Name = "tile159";
-            this.tile159.Size = new System.Drawing.Size(100, 100);
+            this.tile159.Size = new System.Drawing.Size(89, 80);
             this.tile159.TabIndex = 161;
             this.tile159.TabStop = false;
             // 
             // tile160
             // 
+            this.tile160.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile160.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile160.Location = new System.Drawing.Point(601, 901);
+            this.tile160.Location = new System.Drawing.Point(534, 721);
+            this.tile160.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile160.Name = "tile160";
-            this.tile160.Size = new System.Drawing.Size(100, 100);
+            this.tile160.Size = new System.Drawing.Size(89, 80);
             this.tile160.TabIndex = 162;
             this.tile160.TabStop = false;
             // 
             // tile161
             // 
+            this.tile161.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile161.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile161.Location = new System.Drawing.Point(701, 901);
+            this.tile161.Location = new System.Drawing.Point(623, 721);
+            this.tile161.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile161.Name = "tile161";
-            this.tile161.Size = new System.Drawing.Size(100, 100);
+            this.tile161.Size = new System.Drawing.Size(89, 80);
             this.tile161.TabIndex = 163;
             this.tile161.TabStop = false;
             // 
             // tile162
             // 
+            this.tile162.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile162.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile162.Location = new System.Drawing.Point(801, 901);
+            this.tile162.Location = new System.Drawing.Point(712, 721);
+            this.tile162.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile162.Name = "tile162";
-            this.tile162.Size = new System.Drawing.Size(100, 100);
+            this.tile162.Size = new System.Drawing.Size(89, 80);
             this.tile162.TabIndex = 164;
             this.tile162.TabStop = false;
             // 
             // tile163
             // 
+            this.tile163.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile163.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile163.Location = new System.Drawing.Point(901, 901);
+            this.tile163.Location = new System.Drawing.Point(801, 721);
+            this.tile163.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile163.Name = "tile163";
-            this.tile163.Size = new System.Drawing.Size(100, 100);
+            this.tile163.Size = new System.Drawing.Size(89, 80);
             this.tile163.TabIndex = 165;
             this.tile163.TabStop = false;
             // 
             // tile164
             // 
+            this.tile164.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile164.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile164.Location = new System.Drawing.Point(1001, 901);
+            this.tile164.Location = new System.Drawing.Point(890, 721);
+            this.tile164.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile164.Name = "tile164";
-            this.tile164.Size = new System.Drawing.Size(100, 100);
+            this.tile164.Size = new System.Drawing.Size(89, 80);
             this.tile164.TabIndex = 166;
             this.tile164.TabStop = false;
             // 
             // tile165
             // 
+            this.tile165.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile165.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile165.Location = new System.Drawing.Point(1101, 901);
+            this.tile165.Location = new System.Drawing.Point(979, 721);
+            this.tile165.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile165.Name = "tile165";
-            this.tile165.Size = new System.Drawing.Size(100, 100);
+            this.tile165.Size = new System.Drawing.Size(89, 80);
             this.tile165.TabIndex = 167;
             this.tile165.TabStop = false;
             // 
             // tile166
             // 
+            this.tile166.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile166.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile166.Location = new System.Drawing.Point(1201, 901);
+            this.tile166.Location = new System.Drawing.Point(1068, 721);
+            this.tile166.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile166.Name = "tile166";
-            this.tile166.Size = new System.Drawing.Size(100, 100);
+            this.tile166.Size = new System.Drawing.Size(89, 80);
             this.tile166.TabIndex = 168;
             this.tile166.TabStop = false;
             // 
             // tile167
             // 
+            this.tile167.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile167.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile167.Location = new System.Drawing.Point(1301, 901);
+            this.tile167.Location = new System.Drawing.Point(1156, 721);
+            this.tile167.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile167.Name = "tile167";
-            this.tile167.Size = new System.Drawing.Size(100, 100);
+            this.tile167.Size = new System.Drawing.Size(89, 80);
             this.tile167.TabIndex = 169;
             this.tile167.TabStop = false;
             // 
             // tile168
             // 
+            this.tile168.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile168.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile168.Location = new System.Drawing.Point(1401, 901);
+            this.tile168.Location = new System.Drawing.Point(1245, 721);
+            this.tile168.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile168.Name = "tile168";
-            this.tile168.Size = new System.Drawing.Size(100, 100);
+            this.tile168.Size = new System.Drawing.Size(89, 80);
             this.tile168.TabIndex = 170;
             this.tile168.TabStop = false;
             // 
             // tile169
             // 
+            this.tile169.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile169.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile169.Location = new System.Drawing.Point(1501, 901);
+            this.tile169.Location = new System.Drawing.Point(1334, 721);
+            this.tile169.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile169.Name = "tile169";
-            this.tile169.Size = new System.Drawing.Size(100, 100);
+            this.tile169.Size = new System.Drawing.Size(89, 80);
             this.tile169.TabIndex = 171;
             this.tile169.TabStop = false;
             // 
             // tile170
             // 
+            this.tile170.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tile170.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tile170.Location = new System.Drawing.Point(1601, 901);
+            this.tile170.Location = new System.Drawing.Point(1423, 721);
+            this.tile170.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tile170.Name = "tile170";
-            this.tile170.Size = new System.Drawing.Size(100, 100);
+            this.tile170.Size = new System.Drawing.Size(89, 80);
             this.tile170.TabIndex = 172;
             this.tile170.TabStop = false;
             // 
             // picEnemyCheeto
             // 
+            this.picEnemyCheeto.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.picEnemyCheeto.BackColor = System.Drawing.Color.Transparent;
             this.picEnemyCheeto.BackgroundImage = global::Fall2020_CSC403_Project.Properties.Resources.enemy_cheetos;
             this.picEnemyCheeto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.picEnemyCheeto.Location = new System.Drawing.Point(317, 309);
-            this.picEnemyCheeto.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.picEnemyCheeto.Location = new System.Drawing.Point(282, 247);
+            this.picEnemyCheeto.Margin = new System.Windows.Forms.Padding(4);
             this.picEnemyCheeto.Name = "picEnemyCheeto";
-            this.picEnemyCheeto.Size = new System.Drawing.Size(77, 88);
+            this.picEnemyCheeto.Size = new System.Drawing.Size(68, 70);
             this.picEnemyCheeto.TabIndex = 0;
             this.picEnemyCheeto.TabStop = false;
             // 
             // picEnemyPoisonPacket
             // 
+            this.picEnemyPoisonPacket.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.picEnemyPoisonPacket.BackColor = System.Drawing.Color.Transparent;
             this.picEnemyPoisonPacket.BackgroundImage = global::Fall2020_CSC403_Project.Properties.Resources.enemy_poisonpacket;
             this.picEnemyPoisonPacket.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+<<<<<<< HEAD
+            this.picEnemyPoisonPacket.Location = new System.Drawing.Point(637, 247);
+            this.picEnemyPoisonPacket.Margin = new System.Windows.Forms.Padding(4);
+=======
             this.picEnemyPoisonPacket.Location = new System.Drawing.Point(717, 309);
             this.picEnemyPoisonPacket.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+>>>>>>> 1bc7446ed032b478595a326c46bbbe0b9ea7737c
             this.picEnemyPoisonPacket.Name = "picEnemyPoisonPacket";
-            this.picEnemyPoisonPacket.Size = new System.Drawing.Size(77, 88);
+            this.picEnemyPoisonPacket.Size = new System.Drawing.Size(68, 70);
             this.picEnemyPoisonPacket.TabIndex = 173;
             this.picEnemyPoisonPacket.TabStop = false;
             // 
             // picBossKoolAid
             // 
+            this.picBossKoolAid.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.picBossKoolAid.BackColor = System.Drawing.Color.Transparent;
             this.picBossKoolAid.BackgroundImage = global::Fall2020_CSC403_Project.Properties.Resources.enemy_koolaid;
             this.picBossKoolAid.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.picBossKoolAid.Location = new System.Drawing.Point(917, 113);
-            this.picBossKoolAid.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.picBossKoolAid.Location = new System.Drawing.Point(815, 90);
+            this.picBossKoolAid.Margin = new System.Windows.Forms.Padding(4);
             this.picBossKoolAid.Name = "picBossKoolAid";
-            this.picBossKoolAid.Size = new System.Drawing.Size(77, 88);
+            this.picBossKoolAid.Size = new System.Drawing.Size(68, 70);
             this.picBossKoolAid.TabIndex = 174;
             this.picBossKoolAid.TabStop = false;
             // 
+<<<<<<< HEAD
+            // picNPCVillager
+            // 
+            this.picNPCVillager.BackColor = System.Drawing.Color.Transparent;
+            this.picNPCVillager.BackgroundImage = global::Fall2020_CSC403_Project.Properties.Resources.npc_villager;
+            this.picNPCVillager.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.picNPCVillager.Location = new System.Drawing.Point(1244, 360);
+            this.picNPCVillager.Margin = new System.Windows.Forms.Padding(4);
+            this.picNPCVillager.Name = "picNPCVillager";
+            this.picNPCVillager.Size = new System.Drawing.Size(68, 70);
+            this.picNPCVillager.TabIndex = 174;
+            this.picNPCVillager.TabStop = false;
+            // 
+            // label2
+            // 
+            this.label2.BackColor = System.Drawing.Color.White;
+            this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label2.Font = new Font(label2.Font, FontStyle.Bold);
+            this.label2.Location = new System.Drawing.Point(463, 585);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(500, 100);
+            this.label2.TabIndex = 175;
+            this.label2.Text = "label2";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+=======
             // axWindowsMediaPlayer1
             // 
+            this.axWindowsMediaPlayer1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.axWindowsMediaPlayer1.Enabled = true;
             this.axWindowsMediaPlayer1.Location = new System.Drawing.Point(1677, 1015);
             this.axWindowsMediaPlayer1.Name = "axWindowsMediaPlayer1";
@@ -2036,17 +2468,24 @@
             this.axWindowsMediaPlayer1.Size = new System.Drawing.Size(75, 23);
             this.axWindowsMediaPlayer1.TabIndex = 175;
             this.axWindowsMediaPlayer1.Visible = false;
+>>>>>>> 1bc7446ed032b478595a326c46bbbe0b9ea7737c
             // 
             // FrmLevel
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+<<<<<<< HEAD
+            this.ClientSize = new System.Drawing.Size(1568, 840);
+            this.Controls.Add(this.label2);
+=======
             this.ClientSize = new System.Drawing.Size(1764, 1050);
             this.Controls.Add(this.axWindowsMediaPlayer1);
+>>>>>>> 1bc7446ed032b478595a326c46bbbe0b9ea7737c
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblPlayerHealthFull);
+            this.Controls.Add(this.picNPCVillager);
             this.Controls.Add(this.picBossKoolAid);
             this.Controls.Add(this.picEnemyPoisonPacket);
             this.Controls.Add(this.picEnemyCheeto);
@@ -2222,14 +2661,18 @@
             this.Controls.Add(this.tile1);
             this.Controls.Add(this.lblInGameTime);
             this.Controls.Add(this.picPlayer);
+            this.Controls.Add(this.picSword);
+            this.Controls.Add(this.picHealthPot);
             this.DoubleBuffered = true;
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmLevel";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Explore";
             this.Load += new System.EventHandler(this.FrmLevel_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FrmLevel_KeyDown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.FrmLevel_KeyUp);
+            ((System.ComponentModel.ISupportInitialize)(this.picSword)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picHealthPot)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picPlayer)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tile1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tile2)).EndInit();
@@ -2404,7 +2847,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.picEnemyCheeto)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picEnemyPoisonPacket)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBossKoolAid)).EndInit();
+<<<<<<< HEAD
+            ((System.ComponentModel.ISupportInitialize)(this.picNPCVillager)).EndInit();
+=======
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).EndInit();
+>>>>>>> 1bc7446ed032b478595a326c46bbbe0b9ea7737c
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2592,9 +3039,17 @@
     private System.Windows.Forms.PictureBox tile170;
     private System.Windows.Forms.PictureBox picEnemyPoisonPacket;
     private System.Windows.Forms.PictureBox picBossKoolAid;
+    private System.Windows.Forms.PictureBox picNPCVillager;
     private System.Windows.Forms.Label lblPlayerHealthFull;
     private System.Windows.Forms.Label label1;
-        private AxWMPLib.AxWindowsMediaPlayer axWindowsMediaPlayer1;
+<<<<<<< HEAD
+    private System.Windows.Forms.PictureBox picSword;
+    private System.Windows.Forms.PictureBox picHealthPot;
+    private System.Windows.Forms.Label label2;
+     
+=======
+    private AxWMPLib.AxWindowsMediaPlayer axWindowsMediaPlayer1;
+>>>>>>> 1bc7446ed032b478595a326c46bbbe0b9ea7737c
     }
 }
 

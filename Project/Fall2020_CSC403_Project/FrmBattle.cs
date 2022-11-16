@@ -18,6 +18,9 @@ namespace Fall2020_CSC403_Project {
     private Sword sword;
     private Inventory inventoryHeal;
     private Inventory inventorySword;
+    public static int volume_level = 0;
+    public static int charClass = 1;
+    public static int skin = 0;
 
     
 
@@ -28,6 +31,9 @@ namespace Fall2020_CSC403_Project {
       inventoryHeal = Game.inventoryHeal;
       inventorySword = Game.inventorySword;
       sword = Game.sword;
+      volume_level = FrmLevel.volume_level;
+      charClass = FrmLevel.charClass;
+      skin = FrmLevel.skin;
     }
 
     public void Setup() {
@@ -36,6 +42,22 @@ namespace Fall2020_CSC403_Project {
       picEnemy.Refresh();
       BackColor = enemy.Color;
       picBossBattle.Visible = false;
+
+            // update player picture
+      if (charClass == 1)
+      {
+        if (skin == 1) picPlayer.BackgroundImage = global::Fall2020_CSC403_Project.Properties.Resources.player_skin;
+      }
+      if (charClass == 2)
+      {
+        if (skin == 1) picPlayer.BackgroundImage = global::Fall2020_CSC403_Project.Properties.Resources.player_2_skin;
+        else picPlayer.BackgroundImage = global::Fall2020_CSC403_Project.Properties.Resources.player_2;
+      }
+      if (charClass == 3)
+      {
+        if (skin == 1) picPlayer.BackgroundImage = global::Fall2020_CSC403_Project.Properties.Resources.player_3_skin;
+        else picPlayer.BackgroundImage = global::Fall2020_CSC403_Project.Properties.Resources.player_3;
+      }
 
       // Observer pattern
       enemy.AttackEvent += PlayerDamage;
@@ -47,8 +69,16 @@ namespace Fall2020_CSC403_Project {
         inventorySword.setQuantity(0);
       }
 
-      if (sword.Durability > 0) {
+      if (sword.Durability > 0 & inventorySword.Quantity > 0) {
         picSword.Image = Properties.Resources.sword;
+      }
+
+      if (inventoryHeal.Quantity == 4)
+      {
+        picHealthPot1.Image = Properties.Resources.health_potion;
+        picHealthPot2.Image = Properties.Resources.health_potion;
+        picHealthPot3.Image = Properties.Resources.health_potion;
+        picHealthPot4.Image = Properties.Resources.health_potion;
       }
 
       if (inventoryHeal.Quantity == 3) {
@@ -71,6 +101,7 @@ namespace Fall2020_CSC403_Project {
     UpdateHealthBars();
     axWindowsMediaPlayer1.URL = @"Battle_music_v2.wav";
     axWindowsMediaPlayer1.settings.playCount = 9999;
+    axWindowsMediaPlayer1.settings.volume = volume_level;
   }
 
     public static FrmBattle GetInstance(Enemy enemy) {
@@ -134,7 +165,11 @@ namespace Fall2020_CSC403_Project {
             inventoryHeal.DeleteFromQuantity(1);
        }
        // display potions on screen in inventory
-       if (inventoryHeal.Quantity == 2) {
+       if (inventoryHeal.Quantity == 3)
+       { 
+                picHealthPot4.Image = null;
+       }
+       else if (inventoryHeal.Quantity == 2) {
             
                 picHealthPot3.Image = null;
        }
