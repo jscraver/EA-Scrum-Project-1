@@ -66,8 +66,8 @@
     </Compile>
     <Compile Include="FrmDeath.Designer.cs">
       <DependentUpon>FrmDeath.cs</DependentUpon>
-	</Compile>
-	<Compile Include="FrmCharacterSelect.cs">
+    </Compile>
+    <Compile Include="FrmCharacterSelect.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmCharacterSelect.Designer.cs">
@@ -104,8 +104,8 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmDeath.resx">
       <DependentUpon>FrmDeath.cs</DependentUpon>
-	</EmbeddedResource>
-	<EmbeddedResource Include="FrmCharacterSelect.resx">
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCharacterSelect.resx">
       <DependentUpon>FrmCharacterSelect.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmLevel.resx">

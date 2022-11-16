@@ -390,7 +390,7 @@ namespace Fall2020_CSC403_Project {
       if (enemyPoisonPacket.Health <= 0 && !poisonPacketDeath){
            poisonPacketDeath = true;
            enemycount -= 1;
-      if (!talked && CharWasSeen(player.Collider.rect, npcVillager.Collider.rect))
+      if (!talked && HitAChar(player, npcVillager))
             talked = true;
             Talk();
 
