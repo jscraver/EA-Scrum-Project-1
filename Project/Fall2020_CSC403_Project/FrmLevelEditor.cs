@@ -30,6 +30,8 @@ namespace Fall2020_CSC403_Project
 
         private void FrmLevelEditor_Load(object sender, EventArgs e)
         {
+            currentlyselected = tile19;
+            currentlyselected.BorderStyle = BorderStyle.Fixed3D;
             int rownumber = 0;
             int columnnumber = 0;
 
@@ -64,7 +66,7 @@ namespace Fall2020_CSC403_Project
                     case "110": tilepicture.BackgroundImage = Properties.Resources.Stone_Texture; break;
                     case "111": tilepicture.BackgroundImage = Properties.Resources.Water_Texture; break;
                 }
-                if (tiletexturecode2 == "1" && tilepicture.BackgroundImage == Properties.Resources.Grass_Texture) { 
+                if (tiletexturecode2 == "1" && tiletexturecode == "010") { 
                     tilepicture.BackgroundImage = Properties.Resources.GrassSwordTexture;
                 }
             }
@@ -74,7 +76,9 @@ namespace Fall2020_CSC403_Project
             if (sender is PictureBox)
             {
                 PictureBox pictureBox = sender as PictureBox;
+                currentlyselected.BorderStyle = BorderStyle.None;
                 currentlyselected = pictureBox;
+                currentlyselected.BorderStyle = BorderStyle.Fixed3D;
                 int tilenumber = Int32.Parse(pictureBox.Name.Substring(4))-1;
                 char[] tilecode = level[tilenumber / LEVEL_COLUMN_SIZE, tilenumber % LEVEL_COLUMN_SIZE];
                 checkedListBox1.ItemCheck -= CheckBox_Ticked;
