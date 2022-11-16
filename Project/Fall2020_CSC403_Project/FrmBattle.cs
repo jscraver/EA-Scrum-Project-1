@@ -132,7 +132,7 @@ namespace Fall2020_CSC403_Project {
             if (inventorySword.Quantity > 0 && sword.Durability > 0)
             {
                 sword.attackWithSwordLight(player);
-                damage = -3 * (int)player.strength;
+                damage = 3 * (int)player.strength;
                 sword.subtractDurability(1);
                 label9.Text = "Durability: " + sword.Durability;
                 label6.Text = "You strike for "+damage+" damage.";
@@ -145,7 +145,7 @@ namespace Fall2020_CSC403_Project {
             else
             {
                 player.OnAttack(-2);
-                damage = -2 * (int)player.strength;
+                damage = 2 * (int)player.strength;
                 label6.Text = "You strike for "+damage+" damage.";
                 btnAttack.Hide();
                 await Task.Delay(2000);
