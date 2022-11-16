@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.picPlayer = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.picPlayer)).BeginInit();
             this.SuspendLayout();
@@ -39,22 +38,11 @@
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Impact", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(243, 46);
+            this.label1.Location = new System.Drawing.Point(244, 170);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(275, 80);
             this.label1.TabIndex = 1;
             this.label1.Text = "YOU WIN!";
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(324, 191);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(112, 55);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "RESTART";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // picPlayer
             // 
@@ -74,7 +62,6 @@
             this.BackColor = System.Drawing.Color.Goldenrod;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.picPlayer);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Name = "FrmWin";
             this.Text = "FrmWin";
@@ -87,7 +74,6 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox picPlayer;
     }
 }

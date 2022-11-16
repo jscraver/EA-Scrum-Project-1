@@ -159,19 +159,25 @@ namespace Fall2020_CSC403_Project {
        // display potions on screen in inventory
        if (inventoryHeal.Quantity == 2) {
                 label8.Text = "You have 2 potions left.";
+                btnHeal.Hide();
                 await Task.Delay(1000);
+                btnHeal.Show();
                 label8.Text = "";
                 picHealthPot3.Image = null;
        }
        else if (inventoryHeal.Quantity == 1) {
                 label8.Text = "You have 1 potion left.";
+                btnHeal.Hide();
                 await Task.Delay(1000);
+                btnHeal.Show();
                 label8.Text = "";
                 picHealthPot2.Image = null;
        }
        else if (inventoryHeal.Quantity == 0) { 
                 label8.Text = "You are out of potions!";
+                btnHeal.Hide();
                 await Task.Delay(1000);
+                btnHeal.Show();
                 label8.Text = "";
                 picHealthPot1.Image = null;
        }
