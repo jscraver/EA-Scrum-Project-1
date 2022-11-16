@@ -7,6 +7,7 @@ using System.Windows.Forms;
 using System.CodeDom;
 using MyGameLibrary;
 using System.IO;
+using System.Threading.Tasks;
 
 namespace Fall2020_CSC403_Project {
   public partial class FrmLevel : Form{
@@ -38,16 +39,25 @@ namespace Fall2020_CSC403_Project {
     static int SWITCH1 = 1;
     static int SWITCH2 = 1;
 
+    private bool playerDeath;
+    private int enemycount = 3;
+    private bool poisonPacketDeath = false;
+    private bool enemyCheetoDeath = false;
+    private bool bossKoolaidDeath = false;
+    private bool gameWin = false;
+
+
     public FrmLevel() {
       InitializeComponent();
     }
 
     private void FrmLevel_Load(object sender, EventArgs e) {
+      playerDeath = false;
       const int LEVEL_ROW_SIZE = 10;
       const int LEVEL_COLUMN_SIZE = 17;
       const int PADDING = 7;
       InteractionPossible = true;
-
+      
       int rownumber = 0;
       int columnnumber = 0;
       int numwalls = 0;
@@ -253,14 +263,37 @@ namespace Fall2020_CSC403_Project {
       if (HitAChar(player, bossKoolaid) && bossKoolaid.Health > 0)
            Fight(bossKoolaid);
 
-      if (enemyPoisonPacket.Health <= 0)
+      if (enemyPoisonPacket.Health <= 0 && !poisonPacketDeath){
+           poisonPacketDeath = true;
+           enemycount -= 1;
            picEnemyPoisonPacket.Dispose();
-      if (enemyCheeto.Health <= 0)
+      }
+      if (enemyCheeto.Health <= 0 && !enemyCheetoDeath){
+           enemyCheetoDeath = true;
+           enemycount -= 1;
            picEnemyCheeto.Dispose();
-      if (bossKoolaid.Health <= 0)
+      }
+      if (bossKoolaid.Health <= 0 && !bossKoolaidDeath){
+           bossKoolaidDeath = true;
+           enemycount -= 1;
            picBossKoolAid.Dispose();
-      if (player.Health <= 0)
-           Application.Restart();
+      }
+      if (player.Health <= 0 && !playerDeath)
+      {    
+           this.Dispose();
+           playerDeath = true;
+           FrmDeath death = new FrmDeath();
+           death.ShowDialog();
+      }
+      
+      if (enemycount == 0 && !gameWin)
+      {
+          gameWin = true;
+          FrmWin win = new FrmWin();
+          win.ShowDialog(); 
+          Application.Restart();
+      }
+      
 
       // check collision with walls
       if (HitAWall(player))

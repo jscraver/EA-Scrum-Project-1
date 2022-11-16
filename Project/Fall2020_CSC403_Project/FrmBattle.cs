@@ -106,18 +106,22 @@ namespace Fall2020_CSC403_Project {
         {
             sword.attackWithSwordLight(player);
             sword.subtractDurability(1);
-            label9.Text = "Durability:  " + sword.Durability;
-            label6.Text = "MR. PEANUT strikes for 6 damage";
+            label9.Text = "Durability: " + sword.Durability;
+            label6.Text = "You strike for 6 damage.";
+            btnAttack.Hide();
             await Task.Delay(2000);
             label6.Text = "";
+            btnAttack.Show();
             }
 
         else
         {
             player.OnAttack(-2);
-            label6.Text = "MR. PEANUT strikes for 4 damage";
+            label6.Text = "You strike for 4 damage.";
+            btnAttack.Hide();
             await Task.Delay(2000);
             label6.Text = "";
+            btnAttack.Show();
 
         }
 
